@@ -241,6 +241,9 @@ GameObject:
   - component: {fileID: 473190057}
   - component: {fileID: 473190056}
   - component: {fileID: 473190060}
+  - component: {fileID: 473190061}
+  - component: {fileID: 473190062}
+  - component: {fileID: 473190063}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -363,6 +366,61 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &473190061
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 473190055}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ef8cd82db3918249bfbffafc3339830, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &473190062
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 473190055}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Actions: {fileID: -944628639613478452, guid: f7fbab66a7355894c8587cb257c908f1, type: 3}
+  m_NotificationBehavior: 0
+  m_UIInputModule: {fileID: 0}
+  m_DeviceLostEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_DeviceRegainedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ControlsChangedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ActionEvents: []
+  m_NeverAutoSwitchControlSchemes: 0
+  m_DefaultControlScheme: 
+  m_DefaultActionMap: Actions
+  m_SplitScreenIndex: -1
+  m_Camera: {fileID: 0}
+--- !u!114 &473190063
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 473190055}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08a37489a9a64b941bbcde31a9dd79ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 7
 --- !u!1 &843531983
 GameObject:
   m_ObjectHideFlags: 0
@@ -626,6 +684,7 @@ GameObject:
   - component: {fileID: 1562651638}
   - component: {fileID: 1562651637}
   - component: {fileID: 1562651636}
+  - component: {fileID: 1562651639}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -707,6 +766,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 35, y: 0, z: 0}
+--- !u!114 &1562651639
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1562651635}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6ce86260e2ea5a43a21a235ef7a167f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 473190059}
+  offset: {x: 0, y: 5, z: -7}
 --- !u!1 &1891487417
 GameObject:
   m_ObjectHideFlags: 0
