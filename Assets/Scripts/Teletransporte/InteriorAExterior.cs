@@ -4,15 +4,14 @@ using UnityEngine;
 
 public class InteriorAExterior : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+   public Transform player, destination;
+  public GameObject playerGO;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+  void OnTriggerEnter(Collider other){
+	  if(other.CompareTag("Player")){
+		  playerGO.SetActive(false);
+		  player.position = destination.position;
+		  playerGO.SetActive(true);
+	  }
+  }
 }
