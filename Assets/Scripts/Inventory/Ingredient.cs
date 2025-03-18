@@ -17,14 +17,14 @@ public class Ingredient : MonoBehaviour
         inventoryManager = GameObject.Find("InventoryCanvas").GetComponent<InventoryManager>();
     }
 
-    private void OnCollisionEnter(Collision collision)
+    private void OnTriggerEnter(Collider other)
     {
-        if (collision.gameObject.tag == "Player")
+        if (other.CompareTag("Player") && _inputController.Interact)
         {
             inventoryManager.AddIngredient(ingredientName);
             Destroy(gameObject);
         }
         
     }
-
+  
 }
