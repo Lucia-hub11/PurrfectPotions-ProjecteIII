@@ -9,10 +9,11 @@ public class Ingredient : MonoBehaviour
 
     private InventoryManager inventoryManager;
 
-
+    private InputController _inputController;
     // Start is called before the first frame update
     void Start()
     {
+        _inputController = GetComponent<InputController>();
         inventoryManager = GameObject.Find("InventoryCanvas").GetComponent<InventoryManager>();
     }
 

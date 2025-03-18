@@ -50,6 +50,6 @@ public class InputController : MonoBehaviour
     {
         _interact = false;
         _click = false;
-        //_inventory = false;
+        _inventory = false;
     }
 }
