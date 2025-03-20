@@ -20,13 +20,13 @@ public class InventoryManager : MonoBehaviour
     void Update()
     {
 
-        if (_inputController.Inventory)
+        /*if (_inputController.Inventory)
         {
             Debug.Log("Tecla I detectada. Intentant canviar estat d'inventari.");
             inventoryOpen = !inventoryOpen; // Inverteix l'estat de l'inventari
             InventoryWindow.SetActive(inventoryOpen); // Activa o desactiva la finestra
-        }
-        /*if (_inputController.Inventory && !inventoryOpen)
+        }*/
+        if (_inputController.Inventory && !inventoryOpen)
         {
             Debug.Log("obrir inventari");
             InventoryWindow.SetActive(true);
@@ -36,7 +36,7 @@ public class InventoryManager : MonoBehaviour
         {
             InventoryWindow.SetActive(false);
             inventoryOpen = false;
-        }*/
+        }
     }
 
     public void AddIngredient (string ingredientName)

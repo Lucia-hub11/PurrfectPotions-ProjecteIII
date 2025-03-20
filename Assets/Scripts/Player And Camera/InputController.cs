@@ -32,6 +32,7 @@ public class InputController : MonoBehaviour
 
     private void OnInteract()
     {
+        Debug.Log("Clicat tecla E");
         _interact = true;
     }
 
