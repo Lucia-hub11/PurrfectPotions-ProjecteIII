@@ -154,9 +154,9 @@ MonoBehaviour:
   cardPrefab: {fileID: 281403143876379675, guid: adb92d8191c18f543a89de5d8e402da5, type: 3}
   gridTransform: {fileID: 968185136}
   sprites:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 21300000, guid: 76bd638e1f6384b4d8d60507f0dfdaf4, type: 3}
+  - {fileID: 21300000, guid: 3870299b85ee8264cb37dbdfc53cb692, type: 3}
+  - {fileID: 21300000, guid: 15719d678c08f1c47825de29aa3ff70e, type: 3}
 --- !u!4 &49687326
 Transform:
   m_ObjectHideFlags: 0
