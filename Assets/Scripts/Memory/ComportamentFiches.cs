@@ -4,11 +4,17 @@ using UnityEngine;
 
 public class ComportamentFiches : MonoBehaviour
 {
-    [SerializeField] Card cardPrefab;
+    [SerializeField] Fiches cardPrefab;
     [SerializeField] Transform gridTransform;
     [SerializeField] Sprite[] sprites;
 
     private List<Sprite> spritePairs;
+
+    private void Start()
+    {
+        PrepareSprites();
+        CreateCards();
+    }
 
     private void PrepareSprites()
     {
@@ -20,6 +26,15 @@ public class ComportamentFiches : MonoBehaviour
         }
 
         ShuffleSprites(spritePairs);
+    }
+
+    void CreateCards()
+    {
+        for(int i=0; i<spritePairs.Count; i++)
+        {
+            Fiches card = Instantiate(cardPrefab, gridTransform);
+            card.SetIconSprite(spritePairs[i]);
+        }
     }
 
     void ShuffleSprites(List<Sprite> spriteList)
