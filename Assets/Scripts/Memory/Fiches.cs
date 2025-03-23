@@ -12,6 +12,13 @@ public class Fiches : MonoBehaviour
 
     public bool isSelected;
 
+    public ComportamentFiches controller;
+
+    public void OnCardClick()
+    {
+        controller.SetSelected(this);
+    }
+
     public void SetIconSprite(Sprite sp)
     {
         iconSprite = sp;

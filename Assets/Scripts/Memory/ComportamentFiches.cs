@@ -34,6 +34,15 @@ public class ComportamentFiches : MonoBehaviour
         {
             Fiches card = Instantiate(cardPrefab, gridTransform);
             card.SetIconSprite(spritePairs[i]);
+            card.controller = this;
+        }
+    }
+
+    public void SetSelected(Fiches card)
+    {
+        if (card.isSelected ==false)
+        {
+            card.Show();
         }
     }
 
