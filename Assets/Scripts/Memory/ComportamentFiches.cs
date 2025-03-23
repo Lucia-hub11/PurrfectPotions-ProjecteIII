@@ -10,6 +10,9 @@ public class ComportamentFiches : MonoBehaviour
 
     private List<Sprite> spritePairs;
 
+    Fiches firstSelected;
+    Fiches secondSelected;
+
     private void Start()
     {
         PrepareSprites();
@@ -43,6 +46,34 @@ public class ComportamentFiches : MonoBehaviour
         if (card.isSelected ==false)
         {
             card.Show();
+
+            if (firstSelected ==null)
+            {
+                firstSelected = card;
+                return;
+            }
+
+            if (secondSelected ==null)
+            {
+                secondSelected = card;
+                StartCoroutine(CheckMatching(firstSelected, secondSelected));
+                firstSelected = null;
+                secondSelected = null;
+            }
+        }
+    }
+
+    IEnumerator CheckMatching(Fiches a, Fiches b)
+    {
+        yield return new WaitForSeconds(0.3f);
+        if(a.iconSprite == b.iconSprite)
+        {
+
+        }
+        else
+        {
+            a.Hide();
+            b.Hide();
         }
     }
 
