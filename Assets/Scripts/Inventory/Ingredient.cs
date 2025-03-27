@@ -1,30 +1,82 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class Ingredient : MonoBehaviour
 {
-    [SerializeField]
+    [SerializeField] //quan fer servir SErialize i quan public etc???
     private string ingredientName;
+    public float ingredientRange = 4;
+    public GameObject interactText;
 
     private InventoryManager inventoryManager;
-
     private InputController _inputController;
-    // Start is called before the first frame update
-    void Start()
+    private Transform playerTransform;
+
+    private void OnDrawGizmos()
     {
-        _inputController = GetComponent<InputController>();
-        inventoryManager = GameObject.Find("InventoryCanvas").GetComponent<InventoryManager>();
+        Gizmos.DrawWireSphere(transform.position, ingredientRange);
     }
 
-    private void OnCollisionEnter(Collision collision)
+    void Start()
     {
-        if (collision.gameObject.tag == "Player")
+        // buscar el Player i el InputController assignat
+        GameObject player = GameObject.FindGameObjectWithTag("Player");
+        playerTransform = player.transform;
+        _inputController = player.GetComponent<InputController>();
+        //buscar l'Inventory
+        GameObject inventoryObject = GameObject.Find("InventoryCanvas");
+        if (inventoryObject != null)
+        {
+            inventoryManager = inventoryObject.GetComponent<InventoryManager>();
+        }
+        else
+        {
+            Debug.LogError("No s'ha trobat 'InventoryCanvas'.");
+        }
+
+        //text 'Clica E per agafar'
+        if (interactText != null)
+        {
+            interactText.SetActive(false);
+        }   
+    }
+
+    private void Update()
+    {
+        //rang al voltant del ingredient
+        bool isInRange = Vector3.Distance(transform.position, playerTransform.position) < ingredientRange;
+
+        if (interactText != null)
+        {
+            if (isInRange)
+            {
+                Debug.Log("player esta al range!");
+                interactText.SetActive(true);
+            }
+            else
+            {
+                interactText.SetActive(false);
+            }
+        } // simplificat seria aixi if (interactText) interactText.SetActive(isInRange);
+
+        if (isInRange && _inputController.Interact)
+        {
+            CollectIngredient();
+            interactText.SetActive(false);
+        } 
+    }
+    private void CollectIngredient()
+    {
+        if (inventoryManager != null)
         {
             inventoryManager.AddIngredient(ingredientName);
             Destroy(gameObject);
         }
-        
+        else
+        {
+            Debug.LogError("InventoryManager no està assignat.");
+        }
     }
-
 }

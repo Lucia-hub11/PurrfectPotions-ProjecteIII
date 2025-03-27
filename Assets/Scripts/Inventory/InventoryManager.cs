@@ -4,29 +4,27 @@ using UnityEngine;
 
 public class InventoryManager : MonoBehaviour
 {
-    public GameObject InventoryWindow; //saber què activa
-    private bool inventoryOpen;
+    public GameObject InventoryWindow; //saber què activa, asignar al Inspector
+    private bool inventoryOpen = false;
 
     private InputController _inputController;
 
-    // Start is called before the first frame update
     void Start()
     {
-        _inputController = GetComponent<InputController>();
-
+        // Buscar el Player i el seu InputController
+        GameObject player = GameObject.FindGameObjectWithTag("Player");
+        _inputController = player.GetComponent<InputController>();
+        
+        // Assegurar-se que l'inventari comença tancat (tot i que ja està tancat per defecte en teoria)
+        if (InventoryWindow != null)
+        {
+            InventoryWindow.SetActive(false);
+        }
     }
 
-    // Update is called once per frame
     void Update()
     {
-
-        if (_inputController.Inventory)
-        {
-            Debug.Log("Tecla I detectada. Intentant canviar estat d'inventari.");
-            inventoryOpen = !inventoryOpen; // Inverteix l'estat de l'inventari
-            InventoryWindow.SetActive(inventoryOpen); // Activa o desactiva la finestra
-        }
-        /*if (_inputController.Inventory && !inventoryOpen)
+        if (_inputController.Inventory && !inventoryOpen)
         {
             Debug.Log("obrir inventari");
             InventoryWindow.SetActive(true);
@@ -36,7 +34,7 @@ public class InventoryManager : MonoBehaviour
         {
             InventoryWindow.SetActive(false);
             inventoryOpen = false;
-        }*/
+        }
     }
 
     public void AddIngredient (string ingredientName)
