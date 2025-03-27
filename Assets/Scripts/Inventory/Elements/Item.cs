@@ -8,7 +8,9 @@ public class Item
     {
         Cubo,
         Branca,
-        Coin,
+        Diamant,
 
     }
+
+    public ItemType _itemType;
 }
