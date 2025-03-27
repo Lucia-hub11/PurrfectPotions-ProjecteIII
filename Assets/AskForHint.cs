@@ -6,7 +6,7 @@ using TMPro;
 public class AskForHint : MonoBehaviour
 {
     public TextMeshProUGUI pista;
-    int contador;
+    int contador = 0;
 
     //cal augmentar el contador++ segons els ingredients aconseguits a l'inventari. Esperar a que la Nora aconsegueixi guardar llista d'ingredients aconseguits a l'inventari.
     //De moment contador++ es suma cada cop que es pren el botó per fer la prova.
@@ -15,14 +15,14 @@ public class AskForHint : MonoBehaviour
 
     public void ButtonPressed()
     {
+        pista.text = Hints[contador];
         contador++;
-        pista.text = contador + "";
     }
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        pista.text = contador + "";
     }
 
     // Update is called once per frame
