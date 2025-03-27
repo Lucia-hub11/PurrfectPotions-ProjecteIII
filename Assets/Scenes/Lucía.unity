@@ -2105,6 +2105,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pista: {fileID: 906375726}
+  Hints:
+  - Pista 1
+  - Pista 2
+  - Pista 3
+  - Pista 4
 --- !u!1 &1708356033
 GameObject:
   m_ObjectHideFlags: 0
