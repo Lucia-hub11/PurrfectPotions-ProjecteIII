@@ -6,6 +6,7 @@ public class InventoryManager : MonoBehaviour
 {
     public GameObject InventoryWindow; //saber què activa, asignar al Inspector
     private bool inventoryOpen = false;
+    public IngredientSlot[] ingredientSlot;
 
     private InputController _inputController;
 
@@ -26,19 +27,31 @@ public class InventoryManager : MonoBehaviour
     {
         if (_inputController.Inventory && !inventoryOpen)
         {
+            Time.timeScale = 0; //per pausar el joc quan s'obre l'inventari (si es posena animacions al inventari aixo pot causar problemes!)
             Debug.Log("obrir inventari");
             InventoryWindow.SetActive(true);
             inventoryOpen = true;
         }
         else if (_inputController.Inventory && inventoryOpen)
         {
+            Time.timeScale = 1; //per pausar el joc quan s'obre l'inventari
             InventoryWindow.SetActive(false);
             inventoryOpen = false;
         }
     }
 
-    public void AddIngredient (string ingredientName)
+    public void AddIngredient (string ingredientName, Sprite ingredientSprite)
     {
-        Debug.Log("ingredientName = " + ingredientName);
+        for (int i = 0; i < ingredientSlot.Length; i++)
+        {
+            if (ingredientSlot[i].isFull==false)
+            {
+                ingredientSlot[i].AddIngredientSprite(ingredientName, ingredientSprite);
+                return;
+            }
+        }
+        
+        //Debug.Log("ingredientName = " + ingredientName);
+
     }
 }

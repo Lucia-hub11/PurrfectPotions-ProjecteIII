@@ -5,8 +5,11 @@ using UnityEngine;
 
 public class Ingredient : MonoBehaviour
 {
-    [SerializeField] //quan fer servir SErialize i quan public etc???
+    [SerializeField] 
     private string ingredientName;
+
+    Sprite ingredientSprite;
+
     public float ingredientRange = 4;
     public GameObject interactText;
 
@@ -71,7 +74,7 @@ public class Ingredient : MonoBehaviour
     {
         if (inventoryManager != null)
         {
-            inventoryManager.AddIngredient(ingredientName);
+            inventoryManager.AddIngredient(ingredientName, ingredientSprite);
             Destroy(gameObject);
         }
         else
