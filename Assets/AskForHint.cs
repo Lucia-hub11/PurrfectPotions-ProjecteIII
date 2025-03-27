@@ -12,9 +12,13 @@ public class AskForHint : MonoBehaviour
     //De moment contador++ es suma cada cop que es pren el botó per fer la prova.
 
     public string[] Hints = new string[] { "Pista 1", "Pista 2", "Pista 3", "Pista 4" };
+    private float tempsApareixer = 5f;
+    private float tempsDesapareixer;
 
     public void ButtonPressed()
     {
+        pista.enabled = true;
+        tempsDesapareixer = Time.time + tempsApareixer;
         pista.text = Hints[contador];
         contador++;
     }
@@ -28,6 +32,9 @@ public class AskForHint : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (pista.enabled && (Time.time >= tempsDesapareixer))
+        {
+            pista.enabled = false;
+        }
     }
 }
