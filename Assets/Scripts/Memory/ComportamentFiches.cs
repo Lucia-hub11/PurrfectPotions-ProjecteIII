@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+//Codigo para el funcionamiento del juego
+
 public class ComportamentFiches : MonoBehaviour
 {
     [SerializeField] Fiches cardPrefab;

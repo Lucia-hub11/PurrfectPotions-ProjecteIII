@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+//Codigo para generar las fichas
+
 public class Fiches : MonoBehaviour
 {
     [SerializeField] private Image iconImage;
