@@ -1,11 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using TMPro;
 
 public class AskForHint : MonoBehaviour
 {
     public TextMeshProUGUI pista;
+    public Image pistaSprite;
     int contador = 0;
 
     //cal augmentar el contador++ segons els ingredients aconseguits a l'inventari. Esperar a que la Nora aconsegueixi guardar llista d'ingredients aconseguits a l'inventari.
@@ -17,6 +19,7 @@ public class AskForHint : MonoBehaviour
 
     public void ButtonPressed()
     {
+        pistaSprite.enabled = true;
         pista.enabled = true;
         tempsDesapareixer = Time.time + tempsApareixer;
         pista.text = Hints[contador];
@@ -35,6 +38,7 @@ public class AskForHint : MonoBehaviour
         if (pista.enabled && (Time.time >= tempsDesapareixer))
         {
             pista.enabled = false;
+            pistaSprite.enabled = false;
         }
     }
 }
