@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Inventory_bottom 
+public class Inventory_bottom : MonoBehaviour
 {
     private List<Item> itemList;
 
