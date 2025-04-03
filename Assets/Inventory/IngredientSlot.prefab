@@ -165,8 +165,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2eae7326668bd234c92584dee542e89d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ingredientName: Poma
-  itemSprite: {fileID: 0}
+  ingredientName: 
   isFull: 0
   itemImage: {fileID: 3605294846556967153}
 --- !u!1 &7879311949260367373
