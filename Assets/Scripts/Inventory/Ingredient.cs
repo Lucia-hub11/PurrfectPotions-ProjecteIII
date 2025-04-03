@@ -8,7 +8,7 @@ public class Ingredient : MonoBehaviour
     [SerializeField] 
     private string ingredientName;
 
-    Sprite ingredientSprite;//emm
+    public Sprite ingredientSprite;
 
     public float ingredientRange = 4;
     public GameObject interactText;

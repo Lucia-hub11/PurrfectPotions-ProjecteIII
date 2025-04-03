@@ -1784,6 +1784,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ingredientName: Poma
+  ingredientSprite: {fileID: 21300000, guid: dcaf8c9dd9e58094cb1a507edcddd22f, type: 3}
   ingredientRange: 5
   interactText: {fileID: 1738829826}
 --- !u!135 &715197606
