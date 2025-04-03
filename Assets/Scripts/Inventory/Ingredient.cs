@@ -58,9 +58,9 @@ public class Ingredient : MonoBehaviour
                 Debug.Log("player esta al range!");
                 interactText.SetActive(true);
             }
-            else
+            else //aqui hauria de fer que quan surti del range sigui fals, no sempre que fora sigui fals pq si no es barallen
             {
-                interactText.SetActive(false);
+                //interactText.SetActive(false);
             }
         } // simplificat seria aixi if (interactText) interactText.SetActive(isInRange);
 
