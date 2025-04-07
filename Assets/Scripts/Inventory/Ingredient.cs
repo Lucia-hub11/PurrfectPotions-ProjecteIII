@@ -31,7 +31,7 @@ public class Ingredient : MonoBehaviour
         _inputController = player.GetComponent<InputController>();
         //buscar l'Inventory
         GameObject inventoryObject = GameObject.Find("InventoryCanvas");
-        GameObject inventoryBottom = GameObject.Find("BottomSlotsCanvas");
+        GameObject inventoryBottom = GameObject.Find("BottomObjectsCanvas");
 
         inventoryManager = inventoryObject.GetComponent<InventoryManager>();
 
@@ -41,7 +41,7 @@ public class Ingredient : MonoBehaviour
         }
         else
         {
-            Debug.LogError("No s'ha trobat 'BottomSlotsCanvas'.");
+            Debug.LogError("No s'ha trobat 'BottomObjectsCanvas'.");
         }
 
         //text 'Clica E per agafar'
