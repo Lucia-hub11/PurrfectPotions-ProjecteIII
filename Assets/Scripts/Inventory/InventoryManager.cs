@@ -10,6 +10,8 @@ public class InventoryManager : MonoBehaviour
 
     private InputController _inputController;
 
+    public GameObject InteractTextCanvas;
+
     void Start()
     {
         // Buscar el Player i el seu InputController
@@ -31,12 +33,15 @@ public class InventoryManager : MonoBehaviour
             Debug.Log("obrir inventari");
             InventoryWindow.SetActive(true);
             inventoryOpen = true;
+            InteractTextCanvas.SetActive(false);//desactivar el text de "Clica E per interactuar", sinó quedava per sobre
+
         }
         else if (_inputController.Inventory && inventoryOpen)
         {
             Time.timeScale = 1; //per pausar el joc quan s'obre l'inventari
             InventoryWindow.SetActive(false);
             inventoryOpen = false;
+            InteractTextCanvas.SetActive(true);//tornar a activar el canvas on hi ha els textos d'interacció
         }
     }
 

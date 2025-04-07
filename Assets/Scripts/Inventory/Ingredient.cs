@@ -14,6 +14,7 @@ public class Ingredient : MonoBehaviour
     public GameObject interactText;
 
     private InventoryManager inventoryManager;
+    private BottomInventoryManager bottomInventoryManager;
     private InputController _inputController;
     private Transform playerTransform;
 
@@ -30,13 +31,17 @@ public class Ingredient : MonoBehaviour
         _inputController = player.GetComponent<InputController>();
         //buscar l'Inventory
         GameObject inventoryObject = GameObject.Find("InventoryCanvas");
+        GameObject inventoryBottom = GameObject.Find("BottomSlotsCanvas");
+
+        inventoryManager = inventoryObject.GetComponent<InventoryManager>();
+
         if (inventoryObject != null)
         {
-            inventoryManager = inventoryObject.GetComponent<InventoryManager>();
+            bottomInventoryManager = inventoryBottom.GetComponent<BottomInventoryManager>();
         }
         else
         {
-            Debug.LogError("No s'ha trobat 'InventoryCanvas'.");
+            Debug.LogError("No s'ha trobat 'BottomSlotsCanvas'.");
         }
 
         //text 'Clica E per agafar'
@@ -60,7 +65,7 @@ public class Ingredient : MonoBehaviour
             }
             else //aqui hauria de fer que quan surti del range sigui fals, no sempre que fora sigui fals pq si no es barallen
             {
-                //interactText.SetActive(false);
+                interactText.SetActive(false);
             }
         } // simplificat seria aixi if (interactText) interactText.SetActive(isInRange);
 
@@ -80,6 +85,16 @@ public class Ingredient : MonoBehaviour
         else
         {
             Debug.LogError("InventoryManager no està assignat.");
+        }
+
+        if (bottomInventoryManager != null)
+        {
+            bottomInventoryManager.AddIngredient(ingredientName, ingredientSprite);
+            Destroy(gameObject);
+        }
+        else
+        {
+            Debug.LogError("bottomInventoryManager no està assignat.");
         }
     }
 }
