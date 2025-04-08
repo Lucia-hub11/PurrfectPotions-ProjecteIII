@@ -6,10 +6,13 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 9fc0d4010bbf28b4594072e72b8655ab
+    path: Assets/Scenes/Anastasia.unity
+    guid: 8cc0277e35ae5a44bb691c9a60e3b793
   - enabled: 1
     path: "Assets/Scenes/Luc\xEDa.unity"
     guid: c28fdae52bcdf504397f4bba2bfb1d39
+  - enabled: 1
+    path: Assets/Scenes/SampleScene.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 646964c6f41c79f45bd169279a6160f7, type: 2}
