@@ -4630,18 +4630,6 @@ MonoBehaviour:
   - {fileID: 383956878}
   - {fileID: 262401330}
   - {fileID: 1118109823}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
   InteractTextCanvas: {fileID: 2043808359}
 --- !u!1001 &1273329542
 PrefabInstance:

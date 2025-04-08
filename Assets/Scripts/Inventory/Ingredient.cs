@@ -79,8 +79,9 @@ public class Ingredient : MonoBehaviour
     {
         if (inventoryManager != null)
         {
-            inventoryManager.AddIngredient(ingredientName, ingredientSprite);
+            inventoryManager.AddIngredient(ingredientName, ingredientSprite);//AQUÍ FER UN IF PER SI ES INGREDIENT O OBJECTE
             Destroy(gameObject);
+            interactText.SetActive(false);
         }
         else
         {
