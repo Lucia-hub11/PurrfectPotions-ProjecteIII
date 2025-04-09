@@ -14,7 +14,8 @@ public class Ingredient : MonoBehaviour
     public GameObject interactText;
 
     private InventoryManager inventoryManager;
-    private BottomInventoryManager bottomInventoryManager;
+    private BottomInventoryManager fromObjectsBottomInventoryManager;
+    private BottomInventoryManager fromIngredientsBottomInventoryManager;
     private InputController _inputController;
     private Transform playerTransform;
 
@@ -31,18 +32,13 @@ public class Ingredient : MonoBehaviour
         _inputController = player.GetComponent<InputController>();
         //buscar l'Inventory
         GameObject inventoryObject = GameObject.Find("InventoryCanvas");
-        GameObject inventoryBottom = GameObject.Find("BottomObjectsCanvas");
+        GameObject objectsBottom = GameObject.Find("BottomObjectsCanvas");
+        GameObject ingredientsBottom = GameObject.Find("BottomIngredientsCanvas");
 
         inventoryManager = inventoryObject.GetComponent<InventoryManager>();
+        fromObjectsBottomInventoryManager = objectsBottom.GetComponent<BottomInventoryManager>();
+        fromIngredientsBottomInventoryManager = ingredientsBottom.GetComponent<BottomInventoryManager>();
 
-        if (inventoryObject != null)
-        {
-            bottomInventoryManager = inventoryBottom.GetComponent<BottomInventoryManager>();
-        }
-        else
-        {
-            Debug.LogError("No s'ha trobat 'BottomObjectsCanvas'.");
-        }
 
         //text 'Clica E per agafar'
         if (interactText != null)
@@ -60,10 +56,10 @@ public class Ingredient : MonoBehaviour
         {
             if (isInRange)
             {
-                Debug.Log("player esta al range!");
+                //Debug.Log("player esta al range!");
                 interactText.SetActive(true);
             }
-            else //aqui hauria de fer que quan surti del range sigui fals, no sempre que fora sigui fals pq si no es barallen
+            else //cada model té un text per separat pq si no es barallen
             {
                 interactText.SetActive(false);
             }
@@ -79,19 +75,47 @@ public class Ingredient : MonoBehaviour
     {
         if (inventoryManager != null)
         {
-            inventoryManager.AddIngredient(ingredientName, ingredientSprite);//AQUÍ FER UN IF PER SI ES INGREDIENT O OBJECTE
-            Destroy(gameObject);
-            interactText.SetActive(false);
+            if(gameObject.tag == "Ingredient")
+            {
+                Debug.Log("aixo es un ingredient!!!");
+                inventoryManager.AddIngredient(ingredientName, ingredientSprite);
+                Destroy(gameObject);
+                interactText.SetActive(false);
+            }
+            else if (gameObject.tag == "Object")
+            {
+                Debug.Log("aixo es un OBJECTE!!!");
+                inventoryManager.AddObject(ingredientName, ingredientSprite);//canviar per funcio addobject del inventory Manager
+                Destroy(gameObject);
+                interactText.SetActive(false);
+            }
+            else
+            {
+                Debug.Log("No hi ha cap tag Ingredient o Objecte");
+            }
+            
         }
         else
         {
             Debug.LogError("InventoryManager no està assignat.");
         }
 
-        if (bottomInventoryManager != null)
+        if (fromObjectsBottomInventoryManager != null)
         {
-            bottomInventoryManager.AddIngredient(ingredientName, ingredientSprite);
-            Destroy(gameObject);
+            if (gameObject.tag == "Ingredient")
+            {
+                fromIngredientsBottomInventoryManager.AddIngredient(ingredientName, ingredientSprite);
+                Destroy(gameObject);
+            }
+            else if (gameObject.tag == "Object")
+            {
+                fromObjectsBottomInventoryManager.AddObject(ingredientName, ingredientSprite);//canviar per funcio addobject del inventory Manager
+                Destroy(gameObject);
+            }
+            else
+            {
+                Debug.Log("No hi ha cap tag Ingredient o Objecte");
+            }
         }
         else
         {

@@ -60,19 +60,19 @@ public class InventoryManager : MonoBehaviour
         //Debug.Log("ingredientName = " + ingredientName);
 
     }
-    /*
-    public void AddIngredient(string ingredientName, Sprite ingredientSprite)
+    
+    public void AddObject(string ingredientName, Sprite ingredientSprite)
     {
-        for (int i = 0; i < ingredientSlot.Length; i++)
+        for (int i = 0; i < objectSlot.Length; i++)
         {
-            if (ingredientSlot[i].isFull == false)
+            if (objectSlot[i].isFull == false)
             {
-                ingredientSlot[i].AddIngredientSprite(ingredientName, ingredientSprite);
+                objectSlot[i].AddObjectSprite(ingredientName, ingredientSprite);
                 return;
             }
         }
 
         //Debug.Log("ingredientName = " + ingredientName);
 
-    }*///FUNCIÓ PER FER EL MATEIXO PERO AMB ADD OBJECT
+    }//FUNCIÓ PER FER EL MATEIXO PERO AMB ADD OBJECT
 }
