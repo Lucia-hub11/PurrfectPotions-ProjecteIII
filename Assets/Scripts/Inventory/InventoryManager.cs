@@ -7,6 +7,7 @@ public class InventoryManager : MonoBehaviour
     public GameObject InventoryWindow; //saber què activa, asignar al Inspector
     private bool inventoryOpen = false;
     public IngredientSlot[] ingredientSlot;
+    public ObjectSlot[] objectSlot;
 
     private InputController _inputController;
 
@@ -59,4 +60,19 @@ public class InventoryManager : MonoBehaviour
         //Debug.Log("ingredientName = " + ingredientName);
 
     }
+    
+    public void AddObject(string ingredientName, Sprite ingredientSprite)
+    {
+        for (int i = 0; i < objectSlot.Length; i++)
+        {
+            if (objectSlot[i].isFull == false)
+            {
+                objectSlot[i].AddObjectSprite(ingredientName, ingredientSprite);
+                return;
+            }
+        }
+
+        //Debug.Log("ingredientName = " + ingredientName);
+
+    }//FUNCIÓ PER FER EL MATEIXO PERO AMB ADD OBJECT
 }
