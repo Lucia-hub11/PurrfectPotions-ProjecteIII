@@ -24,4 +24,11 @@ public class IngredientSlot : MonoBehaviour
         itemImage.sprite = itemSprite;
         itemImage.enabled = true;
     }
+    public void ClearIngredient()
+    {
+        ingredientName = "";
+        isFull = false;
+        itemImage.sprite = null;
+        itemImage.enabled = false;
+    }
 }
