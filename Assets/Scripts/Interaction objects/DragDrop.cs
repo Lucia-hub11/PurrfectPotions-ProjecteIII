@@ -28,7 +28,7 @@ public class DragDrop : MonoBehaviour, IBeginDragHandler, IEndDragHandler, IDrag
     {
         // Convertimos la posición del ratón en coordenadas locales dentro del Canvas
         Vector2 position;
-        RectTransformUtility.ScreenPointToLocalPointInRectangle(canvas.GetComponent<RectTransform>(), eventData.position, canvas.worldCamera, out position);
+        RectTransformUtility.ScreenPointToLocalPointInRectangle(rectTransform.parent as RectTransform, eventData.position, canvas.worldCamera, out position);
         rectTransform.localPosition = position;  // Actualizamos la posición del objeto en el Canvas
     }
 
