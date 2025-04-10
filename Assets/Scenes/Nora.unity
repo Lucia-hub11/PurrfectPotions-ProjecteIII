@@ -138,6 +138,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: ObjectSlot
       objectReference: {fileID: 0}
+    - target: {fileID: 2284905709284187825, guid: 7ee8d3ad1c2e27d4f91d82df65a9a9db, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3605294846556967153, guid: 7ee8d3ad1c2e27d4f91d82df65a9a9db, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6247318950143819653, guid: 7ee8d3ad1c2e27d4f91d82df65a9a9db, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -217,6 +225,14 @@ PrefabInstance:
     - target: {fileID: 6247318950143819653, guid: 7ee8d3ad1c2e27d4f91d82df65a9a9db, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7350288157360794672, guid: 7ee8d3ad1c2e27d4f91d82df65a9a9db, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7879311949260367373, guid: 7ee8d3ad1c2e27d4f91d82df65a9a9db, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
