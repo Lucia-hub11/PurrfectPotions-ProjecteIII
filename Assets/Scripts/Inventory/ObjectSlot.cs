@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class IngredientSlot : MonoBehaviour
+public class ObjectSlot : MonoBehaviour
 {
     public string ingredientName;
     public bool isFull;
@@ -16,7 +16,8 @@ public class IngredientSlot : MonoBehaviour
         itemImage.gameObject.SetActive(false);
     }
 
-    public void AddIngredientSprite(string ingredientName, Sprite itemSprite)
+
+    public void AddObjectSprite(string ingredientName, Sprite itemSprite)//bueno li he canviat el nom per si de cas donava problemes que fos el mateix, per provar
     {
         itemImage.gameObject.SetActive(true);
         this.ingredientName = ingredientName;
