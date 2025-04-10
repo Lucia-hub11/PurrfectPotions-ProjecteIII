@@ -11,9 +11,12 @@ public class IngredientSlot : MonoBehaviour
     [SerializeField]
     private Image itemImage; //la que apareix
 
+    public GameObject ObtainedText;
+
     void Start()
     {
         itemImage.gameObject.SetActive(false);
+        ObtainedText.SetActive(false);
     }
 
     public void AddIngredientSprite(string ingredientName, Sprite itemSprite)
@@ -23,5 +26,12 @@ public class IngredientSlot : MonoBehaviour
         isFull = true;
         itemImage.sprite = itemSprite;
         itemImage.enabled = true;
+        ObtainedText.SetActive(true);
+        Invoke("HideText", 5f);
+    }
+
+    private void HideText()
+    {
+        ObtainedText.SetActive(false);
     }
 }
