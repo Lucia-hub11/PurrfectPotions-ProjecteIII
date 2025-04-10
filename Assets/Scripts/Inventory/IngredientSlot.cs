@@ -11,8 +11,14 @@ public class IngredientSlot : MonoBehaviour
     [SerializeField]
     private Image itemImage; //la que apareix
 
+    void Start()
+    {
+        itemImage.gameObject.SetActive(false);
+    }
+
     public void AddIngredientSprite(string ingredientName, Sprite itemSprite)
     {
+        itemImage.gameObject.SetActive(true);
         this.ingredientName = ingredientName;
         isFull = true;
         itemImage.sprite = itemSprite;

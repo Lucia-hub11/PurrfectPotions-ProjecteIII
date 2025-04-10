@@ -11,8 +11,15 @@ public class ObjectSlot : MonoBehaviour
     [SerializeField]
     private Image itemImage; //la que apareix
 
+    void Start()
+    {
+        itemImage.gameObject.SetActive(false);
+    }
+
+
     public void AddObjectSprite(string ingredientName, Sprite itemSprite)//bueno li he canviat el nom per si de cas donava problemes que fos el mateix, per provar
     {
+        itemImage.gameObject.SetActive(true);
         this.ingredientName = ingredientName;
         isFull = true;
         itemImage.sprite = itemSprite;
