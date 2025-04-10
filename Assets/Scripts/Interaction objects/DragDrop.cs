@@ -9,11 +9,13 @@ public class DragDrop : MonoBehaviour, IBeginDragHandler, IEndDragHandler, IDrag
     private RectTransform rectTransform;   
     private CanvasGroup canvasGroup;  
     private Vector3 originalPosition;
+    private IngredientSlot ingredientSlot;
 
     private void Awake()
     {
         rectTransform = GetComponent<RectTransform>();
         canvasGroup = GetComponent<CanvasGroup>();
+        ingredientSlot = GetComponent<IngredientSlot>();
     }
 
     public void OnBeginDrag(PointerEventData eventData)
