@@ -34,9 +34,11 @@ public class DragDrop : MonoBehaviour, IBeginDragHandler, IEndDragHandler, IDrag
 
     public void OnEndDrag(PointerEventData eventData)
     {
+        //Cosas que tengo que hacer aquí
         //Leer tag de ingrediente y objeto, hay que hacer arrays para recorrer o compararlos uno a uno.
         //Si es el correcto: imagen se elimina pero prefab vuelve vacío a la posición original. Ocurre la acción.
         //Si es el incorrecto: imagen vuelve a la posición original y no ocurre la acción.
+        //Hacer diferenciación entre ingrediente y objeto porque van a scripts diferentes.
         canvasGroup.alpha = 1f;
         canvasGroup.blocksRaycasts = true;
 
