@@ -41,11 +41,10 @@ public class ObjectSlot : MonoBehaviour
     public void ClearObject()
     {
         Debug.Log("ha legado aquí sin problemas");
-        //ingredientName = "";
-        //isFull = false;
-        //itemImage.sprite = null;
-        //itemImage.enabled = true;
-        //itemImage.gameObject.SetActive(false);
+        ingredientName = "";
+        isFull = false;
+        itemImage.sprite = null;
+        itemImage.enabled = false;
     }
 
 }

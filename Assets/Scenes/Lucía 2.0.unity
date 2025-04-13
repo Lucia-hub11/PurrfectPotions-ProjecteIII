@@ -9367,6 +9367,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvas: {fileID: 784449275}
+  objectSlot: {fileID: 1800914413905588709}
 --- !u!1001 &5935740725131047015
 PrefabInstance:
   m_ObjectHideFlags: 0
