@@ -35,7 +35,7 @@ public class DragDrop : MonoBehaviour, IBeginDragHandler, IEndDragHandler, IDrag
 
     public void OnEndDrag(PointerEventData eventData)
     {
-        //Leer tag de ingrediente y objeto, hay que hacer o arrays para recorrer o compararlos uno a uno.
+        //Leer tag de ingrediente y objeto, hay que hacer arrays para recorrer o compararlos uno a uno.
         //Si es el correcto: imagen se elimina pero prefab vuelve vacío a la posición original. Ocurre la acción.
         //Si es el incorrecto: imagen vuelve a la posición original y no ocurre la acción.
         canvasGroup.alpha = 1f;
@@ -46,6 +46,7 @@ public class DragDrop : MonoBehaviour, IBeginDragHandler, IEndDragHandler, IDrag
 
         if (Physics.Raycast(ray, out hit))
         {
+            ingredientSlot.ClearIngredient();
             rectTransform.position = originalPosition;
             Debug.Log("Objeto 3D tocado: " + hit.collider.gameObject.name);
         }

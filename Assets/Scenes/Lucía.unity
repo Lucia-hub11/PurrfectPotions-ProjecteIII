@@ -266,6 +266,7 @@ MonoBehaviour:
   - {fileID: 589151553}
   - {fileID: 775582753}
   - {fileID: 1304729292}
+  objectSlot: []
 --- !u!114 &45321347
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1701,6 +1702,7 @@ MonoBehaviour:
   - {fileID: 1353784311}
   - {fileID: 901060268}
   - {fileID: 1338789262}
+  objectSlot: []
 --- !u!114 &402295092
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7286,6 +7288,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  objectSlot: []
   InteractTextCanvas: {fileID: 0}
 --- !u!114 &1716477794
 MonoBehaviour:
