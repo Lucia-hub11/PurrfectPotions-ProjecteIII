@@ -16,6 +16,11 @@ public class DragDrop : MonoBehaviour, IBeginDragHandler, IEndDragHandler, IDrag
         rectTransform = GetComponent<RectTransform>();
         canvasGroup = GetComponent<CanvasGroup>();
         ingredientSlot = GetComponent<IngredientSlot>();
+
+        if (ingredientSlot == null)
+        {
+            Debug.LogError("IngredientSlot component not found on the same GameObject as DragDrop!");
+        }
     }
 
     public void OnBeginDrag(PointerEventData eventData)
