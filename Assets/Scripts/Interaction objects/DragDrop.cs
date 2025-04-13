@@ -9,18 +9,12 @@ public class DragDrop : MonoBehaviour, IBeginDragHandler, IEndDragHandler, IDrag
     private RectTransform rectTransform;   
     private CanvasGroup canvasGroup;  
     private Vector3 originalPosition;
-    private IngredientSlot ingredientSlot;
+    public ObjectSlot objectSlot;
 
     private void Awake()
     {
         rectTransform = GetComponent<RectTransform>();
         canvasGroup = GetComponent<CanvasGroup>();
-        ingredientSlot = GetComponent<IngredientSlot>();
-
-        if (ingredientSlot == null)
-        {
-            Debug.LogError("IngredientSlot component not found on the same GameObject as DragDrop!");
-        }
     }
 
     public void OnBeginDrag(PointerEventData eventData)
@@ -51,7 +45,7 @@ public class DragDrop : MonoBehaviour, IBeginDragHandler, IEndDragHandler, IDrag
 
         if (Physics.Raycast(ray, out hit))
         {
-            ingredientSlot.ClearIngredient();
+            objectSlot.ClearObject();
             rectTransform.position = originalPosition;
             Debug.Log("Objeto 3D tocado: " + hit.collider.gameObject.name);
         }
