@@ -15,18 +15,21 @@ public class IngredientSlot : MonoBehaviour
 
     void Start()
     {
-        itemImage.gameObject.SetActive(false);
         ObtainedText.SetActive(false);
     }
 
     public void AddIngredientSprite(string ingredientName, Sprite itemSprite)
     {
-        itemImage.gameObject.SetActive(true);
+        
         this.ingredientName = ingredientName;
         isFull = true;
         itemImage.sprite = itemSprite;
         itemImage.enabled = true;
+        itemImage.gameObject.SetActive(true);
         ObtainedText.SetActive(true);
+        itemImage.enabled = true;
+        itemImage.canvasRenderer.SetAlpha(1f);
+
         Invoke("HideText", 5f);
     }
 
