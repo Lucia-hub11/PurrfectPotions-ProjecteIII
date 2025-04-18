@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -11,14 +12,29 @@ public class IngredientSlot : MonoBehaviour
 
     [SerializeField]
     private Image itemImage; //la que apareix
+    //[SerializeField] private Button skipButton;
 
     public GameObject ObtainedText;
 
     private Sprite spriteWait;
+    /*private void Awake()
+    {
+        if (skipButton != null)
+            skipButton.onClick.AddListener(OnSkipClick);
+    }*/
+
+    /*public void OnSkipClick()
+    {
+        CancelInvoke(nameof(RegularAddSprite));
+        CloverThoughts.SetActive(false);
+        if (spriteWait != null)
+            RegularAdd(spriteWait);
+    }*/
 
     void Start()
     {
         ObtainedText.SetActive(false);
+        CloverThoughts.SetActive(false);//aixo no sé pq no ho fa
     }
 
     public void AddIngredientSprite(string ingredientName, Sprite itemSprite)
