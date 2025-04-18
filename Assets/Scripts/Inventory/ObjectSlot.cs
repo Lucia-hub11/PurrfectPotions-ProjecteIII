@@ -16,21 +16,24 @@ public class ObjectSlot : MonoBehaviour
 
     void Start()
     {
-        itemImage.gameObject.SetActive(false);
         ObtainedText.SetActive(false);
     }
 
 
     public void AddObjectSprite(string ingredientName, Sprite itemSprite)//bueno li he canviat el nom per si de cas donava problemes que fos el mateix, per provar
     {
-        itemImage.gameObject.SetActive(true);
+        
         this.ingredientName = ingredientName;
         isFull = true;
         itemImage.sprite = itemSprite;
         itemImage.enabled = true;
+        itemImage.gameObject.SetActive(true);
+        itemImage.enabled = true;
+        itemImage.canvasRenderer.SetAlpha(1f);
+
         ObtainedText.SetActive(true);
         Invoke("HideText", 5f);
-
+        
     }
 
     private void HideText()

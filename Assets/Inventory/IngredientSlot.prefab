@@ -168,6 +168,7 @@ MonoBehaviour:
   ingredientName: 
   isFull: 0
   itemImage: {fileID: 3605294846556967153}
+  ObtainedText: {fileID: 0}
 --- !u!1 &7879311949260367373
 GameObject:
   m_ObjectHideFlags: 0
