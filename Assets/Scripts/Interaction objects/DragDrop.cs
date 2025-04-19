@@ -48,15 +48,15 @@ public class DragDrop : MonoBehaviour, IBeginDragHandler, IEndDragHandler, IDrag
 
         if (Physics.Raycast(ray, out hit))
         {
-            string ingredient = IngredientSlot.ingredientName;
-            string objecte = ObjectSlot.ingredientName;
+            string ingredient = ingredientSlot.ingredientName;
+            string objecte = objectSlot.ingredientName;
             string target = hit.collider.gameObject.name;
 
             //Unes cuantes combinacions d'exemple, per l'hito cal posar les correctes
             if ((ingredient == "llagrima" && target == "calder") ||
                 (ingredient == "poma" && target == "calder") ||
                 (ingredient == "sucre" && target == "calder") ||
-                (objecte == "diamant" && target == "corb"))
+                (objecte == "Diamond" && target == "corb"))
             {
                 objectSlot.ClearObject();
                 ingredientSlot.ClearIngredient();
@@ -66,6 +66,7 @@ public class DragDrop : MonoBehaviour, IBeginDragHandler, IEndDragHandler, IDrag
             else{
                 rectTransform.position = originalPosition;
                 Debug.Log("Objeto incorrecto :(" + hit.collider.gameObject.name);
+                Debug.Log("Item: " + objectSlot.ingredientName);
             }
         }
         else
