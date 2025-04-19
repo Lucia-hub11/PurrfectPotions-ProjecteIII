@@ -62,6 +62,8 @@ public class DragDrop : MonoBehaviour, IBeginDragHandler, IEndDragHandler, IDrag
                 ingredientSlot.ClearIngredient();
                 rectTransform.position = originalPosition;
                 Debug.Log("Objeto correcto!"  + hit.collider.gameObject.name);
+                //AQUÍ la acción que toque; por ejemplo hacer la poción o obtener la pluma o así.
+                //Debería tanto funcionar para objetos como ingredientes (todos los items del inventario y objetos 3d del juego).
             }
             else{
                 rectTransform.position = originalPosition;
