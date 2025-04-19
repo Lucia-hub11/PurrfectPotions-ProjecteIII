@@ -10,6 +10,7 @@ public class DragDrop : MonoBehaviour, IBeginDragHandler, IEndDragHandler, IDrag
     private CanvasGroup canvasGroup;  
     private Vector3 originalPosition;
     public ObjectSlot objectSlot;
+    public IngredientSlot ingredientSlot;
 
     private void Awake()
     {
@@ -47,9 +48,25 @@ public class DragDrop : MonoBehaviour, IBeginDragHandler, IEndDragHandler, IDrag
 
         if (Physics.Raycast(ray, out hit))
         {
-            objectSlot.ClearObject();
-            rectTransform.position = originalPosition;
-            Debug.Log("Objeto 3D tocado: " + hit.collider.gameObject.name);
+            string ingredient = IngredientSlot.ingredientName;
+            string objecte = ObjectSlot.ingredientName;
+            string target = hit.collider.gameObject.name;
+
+            //Unes cuantes combinacions d'exemple, per l'hito cal posar les correctes
+            if ((ingredient == "llagrima" && target == "calder") ||
+                (ingredient == "poma" && target == "calder") ||
+                (ingredient == "sucre" && target == "calder") ||
+                (objecte == "diamant" && target == "corb"))
+            {
+                objectSlot.ClearObject();
+                ingredientSlot.ClearIngredient();
+                rectTransform.position = originalPosition;
+                Debug.Log("Objeto correcto!"  + hit.collider.gameObject.name);
+            }
+            else{
+                rectTransform.position = originalPosition;
+                Debug.Log("Objeto incorrecto :(" + hit.collider.gameObject.name);
+            }
         }
         else
         {

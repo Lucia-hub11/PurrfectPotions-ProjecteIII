@@ -40,7 +40,6 @@ public class ObjectSlot : MonoBehaviour
 
     public void ClearObject()
     {
-        Debug.Log("ha legado aquí sin problemas");
         ingredientName = "";
         isFull = false;
         itemImage.sprite = null;
