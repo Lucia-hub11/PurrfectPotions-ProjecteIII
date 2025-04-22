@@ -3,13 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class DragDrop : MonoBehaviour, IBeginDragHandler, IEndDragHandler, IDragHandler
+public class DragDropIngredients : MonoBehaviour, IBeginDragHandler, IEndDragHandler, IDragHandler
 {
     [SerializeField] private Canvas canvas;
-    private RectTransform rectTransform;   
-    private CanvasGroup canvasGroup;  
+    private RectTransform rectTransform;
+    private CanvasGroup canvasGroup;
     private Vector3 originalPosition;
-    public ObjectSlot objectSlot;
     public IngredientSlot ingredientSlot;
 
     private void Awake()
@@ -49,26 +48,24 @@ public class DragDrop : MonoBehaviour, IBeginDragHandler, IEndDragHandler, IDrag
         if (Physics.Raycast(ray, out hit))
         {
             string ingredient = ingredientSlot.ingredientName;
-            string objecte = objectSlot.ingredientName;
             string target = hit.collider.gameObject.name;
 
             //Unes cuantes combinacions d'exemple, per l'hito cal posar les correctes
             if ((ingredient == "llagrima" && target == "calder") ||
                 (ingredient == "poma" && target == "calder") ||
-                (ingredient == "sucre" && target == "calder") ||
-                (objecte == "Diamond" && target == "corb"))
+                (ingredient == "sucre" && target == "calder"))
             {
-                objectSlot.ClearObject();
                 ingredientSlot.ClearIngredient();
                 rectTransform.position = originalPosition;
-                Debug.Log("Objeto correcto!"  + hit.collider.gameObject.name);
+                Debug.Log("Objeto correcto!" + hit.collider.gameObject.name);
                 //AQUÍ la acción que toque; por ejemplo hacer la poción o obtener la pluma o así.
                 //Debería tanto funcionar para objetos como ingredientes (todos los items del inventario y objetos 3d del juego).
             }
-            else{
+            else
+            {
                 rectTransform.position = originalPosition;
                 Debug.Log("Objeto incorrecto :(" + hit.collider.gameObject.name);
-                Debug.Log("Item: " + objectSlot.ingredientName);
+                Debug.Log("Item: " + ingredientSlot.ingredientName);
             }
         }
         else

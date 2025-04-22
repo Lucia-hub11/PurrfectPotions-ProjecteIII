@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class ObjectSlot : MonoBehaviour
 {
-    public string ingredientName;
+    public string objectName;
     public bool isFull;
 
     [SerializeField]
@@ -23,7 +23,7 @@ public class ObjectSlot : MonoBehaviour
     public void AddObjectSprite(string ingredientName, Sprite itemSprite)//bueno li he canviat el nom per si de cas donava problemes que fos el mateix, per provar
     {
         
-        this.ingredientName = ingredientName;
+        this.objectName = ingredientName;
         isFull = true;
         itemImage.sprite = itemSprite;
         itemImage.enabled = true;
@@ -43,7 +43,7 @@ public class ObjectSlot : MonoBehaviour
 
     public void ClearObject()
     {
-        ingredientName = "";
+        objectName = "";
         isFull = false;
         itemImage.sprite = null;
         itemImage.enabled = false;
