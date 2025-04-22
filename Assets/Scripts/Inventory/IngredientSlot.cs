@@ -77,4 +77,11 @@ public class IngredientSlot : MonoBehaviour
     {
         ObtainedText.SetActive(false);
     }
+    public void ClearIngredient()
+    {
+        ingredientName = "";
+        isFull = false;
+        itemImage.sprite = null;
+        itemImage.enabled = false;
+    }
 }

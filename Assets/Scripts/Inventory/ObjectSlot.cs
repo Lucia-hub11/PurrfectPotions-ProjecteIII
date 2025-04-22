@@ -41,4 +41,12 @@ public class ObjectSlot : MonoBehaviour
         ObtainedText.SetActive(false);
     }
 
+    public void ClearObject()
+    {
+        ingredientName = "";
+        isFull = false;
+        itemImage.sprite = null;
+        itemImage.enabled = false;
+    }
+
 }

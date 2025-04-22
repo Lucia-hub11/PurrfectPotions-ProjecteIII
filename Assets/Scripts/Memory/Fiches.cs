@@ -37,4 +37,9 @@ public class Fiches : MonoBehaviour
         iconImage.sprite = hiddenIconSprite;
         isSelected = false;
     }
+
+    public bool isHidden()
+    {
+        return iconImage.sprite == hiddenIconSprite;
+    }
 }

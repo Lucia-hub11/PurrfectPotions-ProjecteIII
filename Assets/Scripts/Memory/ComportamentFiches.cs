@@ -9,8 +9,10 @@ public class ComportamentFiches : MonoBehaviour
     [SerializeField] Fiches cardPrefab;
     [SerializeField] Transform gridTransform;
     [SerializeField] Sprite[] sprites;
+    [SerializeField] Canvas memoryCanvas;
 
     private List<Sprite> spritePairs;
+    private List<Fiches> allCards;
 
     Fiches firstSelected;
     Fiches secondSelected;
@@ -19,6 +21,7 @@ public class ComportamentFiches : MonoBehaviour
     {
         PrepareSprites();
         CreateCards();
+        StartCoroutine(ShowCards());
     }
 
     private void PrepareSprites()
@@ -35,11 +38,29 @@ public class ComportamentFiches : MonoBehaviour
 
     void CreateCards()
     {
+        allCards = new List<Fiches>();
+
         for(int i=0; i<spritePairs.Count; i++)
         {
             Fiches card = Instantiate(cardPrefab, gridTransform);
             card.SetIconSprite(spritePairs[i]);
             card.controller = this;
+            allCards.Add(card);
+        }
+    }
+
+    IEnumerator ShowCards()
+    {
+        foreach (var card in allCards)
+        {
+            card.Show();
+        }
+
+        yield return new WaitForSeconds(10f);
+
+        foreach (var card in allCards)
+        {
+            card.Hide();
         }
     }
 
@@ -59,8 +80,6 @@ public class ComportamentFiches : MonoBehaviour
             {
                 secondSelected = card;
                 StartCoroutine(CheckMatching(firstSelected, secondSelected));
-                firstSelected = null;
-                secondSelected = null;
             }
         }
     }
@@ -70,12 +89,24 @@ public class ComportamentFiches : MonoBehaviour
         yield return new WaitForSeconds(0.3f);
         if(a.iconSprite == b.iconSprite)
         {
-
+            //no fa res, es queden emparellades
         }
         else
         {
-            a.Hide();
-            b.Hide();
+            yield return new WaitForSeconds(0.5f);
+            RestartGame();
+        }
+
+        firstSelected = null;
+        secondSelected = null;
+        CheckGameOver();
+    }
+
+    void RestartGame()
+    {
+        foreach (var card in allCards)
+        {
+            card.Hide();
         }
     }
 
@@ -89,5 +120,17 @@ public class ComportamentFiches : MonoBehaviour
             spriteList[i] = spriteList[randomIndex];
             spriteList[randomIndex] = temp;
         }
+    }
+
+    void CheckGameOver()
+    {
+        foreach (var card in allCards)
+        {
+            if (card.isHidden())
+            {
+                return;
+            }
+        }
+        memoryCanvas.enabled = false;
     }
 }
