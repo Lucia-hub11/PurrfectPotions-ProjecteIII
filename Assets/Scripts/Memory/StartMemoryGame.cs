@@ -15,6 +15,9 @@ public class StartMemoryGame : MonoBehaviour
 		if (other.CompareTag("Player"))
 		{
 			memory.enabled = true;
+			GameObject cardsController = GameObject.Find("CardsController");
+			ComportamentFiches fichesScript = cardsController.GetComponent<ComportamentFiches>();
+			StartCoroutine(fichesScript.ShowCards());
 		}
 	}
 }

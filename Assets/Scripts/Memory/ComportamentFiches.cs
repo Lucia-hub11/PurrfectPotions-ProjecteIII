@@ -21,7 +21,6 @@ public class ComportamentFiches : MonoBehaviour
     {
         PrepareSprites();
         CreateCards();
-        StartCoroutine(ShowCards());
     }
 
     private void PrepareSprites()
@@ -49,7 +48,7 @@ public class ComportamentFiches : MonoBehaviour
         }
     }
 
-    IEnumerator ShowCards()
+    public IEnumerator ShowCards()
     {
         foreach (var card in allCards)
         {
