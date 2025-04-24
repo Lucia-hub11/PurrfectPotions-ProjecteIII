@@ -245,6 +245,7 @@ MonoBehaviour:
   playerGO: {fileID: 473190055}
   IngredientsInventory: {fileID: 0}
   ObjectsInventory: {fileID: 0}
+  cameraSwitcher: {fileID: 1476670844}
 --- !u!1 &190997988
 GameObject:
   m_ObjectHideFlags: 0
@@ -1229,7 +1230,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &695997984
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1957,13 +1958,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1154100388}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.39725816, y: 0.062388975, z: 0.008758372, w: 0.9155419}
-  m_LocalPosition: {x: -67, y: 19, z: -13}
+  m_LocalRotation: {x: 0.323009, y: 0, z: 0, w: 0.9463959}
+  m_LocalPosition: {x: -65.3, y: 10.9, z: -10.1}
   m_LocalScale: {x: 0.66066, y: 0.66066, z: 0.66066}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 46.579, y: 10.156, z: 5.477}
+  m_LocalEulerAnglesHint: {x: 37.69, y: 0, z: 0}
 --- !u!1 &1191055899
 GameObject:
   m_ObjectHideFlags: 0
@@ -2254,6 +2255,52 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 500, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &1476670843
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1476670845}
+  - component: {fileID: 1476670844}
+  m_Layer: 0
+  m_Name: CameraManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1476670844
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1476670843}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c88edc30174e004ea1efd91a7757144, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainCameraGO: {fileID: 1562651635}
+  staticCameraGO: {fileID: 1154100388}
+--- !u!4 &1476670845
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1476670843}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 669.118, y: -694.9801, z: -578.1002}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1562651635
 GameObject:
   m_ObjectHideFlags: 0
@@ -3174,6 +3221,7 @@ MonoBehaviour:
   playerGO: {fileID: 473190055}
   IngredientsInventory: {fileID: 0}
   ObjectsInventory: {fileID: 0}
+  cameraSwitcher: {fileID: 1476670844}
 --- !u!1 &2051198097
 GameObject:
   m_ObjectHideFlags: 0
@@ -3260,3 +3308,4 @@ SceneRoots:
   - {fileID: 207581389}
   - {fileID: 752770538}
   - {fileID: 1154100391}
+  - {fileID: 1476670845}
