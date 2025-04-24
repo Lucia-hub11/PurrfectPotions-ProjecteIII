@@ -11,8 +11,8 @@ public class CameraSwitcher : MonoBehaviour
             Debug.LogError("CameraSwitcher: falta asignar cámaras en el Inspector");
 
         // Estado inicial
-        mainCameraGO.SetActive(true);
-        staticCameraGO.SetActive(false);
+        mainCameraGO.SetActive(false);
+        staticCameraGO.SetActive(true);
     }
 
     public void SwitchToStatic()

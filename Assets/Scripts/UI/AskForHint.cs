@@ -13,7 +13,7 @@ public class AskForHint : MonoBehaviour
     //cal augmentar el contador++ segons els ingredients aconseguits a l'inventari. Esperar a que la Nora aconsegueixi guardar llista d'ingredients aconseguits a l'inventari.
     //De moment contador++ es suma cada cop que es pren el botó per fer la prova.
 
-    public string[] Hints = new string[] { "Pista 1", "Pista 2", "Pista 3", "Pista 4" };
+    public string[] Hints = new string[] { "Ànims!", "Tú pots!", "Segueix així!", "Ja gairabé ho tens!" };
     private float tempsApareixer = 5f;
     private float tempsDesapareixer;
 
