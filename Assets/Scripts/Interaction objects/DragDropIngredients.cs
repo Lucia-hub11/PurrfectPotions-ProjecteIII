@@ -51,9 +51,9 @@ public class DragDropIngredients : MonoBehaviour, IBeginDragHandler, IEndDragHan
             string target = hit.collider.gameObject.name;
 
             //Unes cuantes combinacions d'exemple, per l'hito cal posar les correctes
-            if ((ingredient == "llagrima" && target == "calder") ||
-                (ingredient == "poma" && target == "calder") ||
-                (ingredient == "sucre" && target == "calder"))
+            if ((ingredient == "Tear" && target == "calder") ||
+                (ingredient == "Crow Feather" && target == "calder") ||
+                (ingredient == "Invisible Mushroom" && target == "calder"))
             {
                 ingredientSlot.ClearIngredient();
                 rectTransform.position = originalPosition;

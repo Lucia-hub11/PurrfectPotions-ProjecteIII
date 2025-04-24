@@ -10,7 +10,6 @@ public class DragDropObjects : MonoBehaviour, IBeginDragHandler, IEndDragHandler
     private CanvasGroup canvasGroup;  
     private Vector3 originalPosition;
     public ObjectSlot objectSlot;
-    public IngredientSlot ingredientSlot;
 
     private void Awake()
     {
@@ -48,18 +47,13 @@ public class DragDropObjects : MonoBehaviour, IBeginDragHandler, IEndDragHandler
 
         if (Physics.Raycast(ray, out hit))
         {
-            string ingredient = ingredientSlot.ingredientName;
             string objecte = objectSlot.objectName;
             string target = hit.collider.gameObject.name;
 
             //Unes cuantes combinacions d'exemple, per l'hito cal posar les correctes
-            if ((ingredient == "llagrima" && target == "calder") ||
-                (ingredient == "poma" && target == "calder") ||
-                (ingredient == "sucre" && target == "calder") ||
-                (objecte == "Diamond" && target == "corb"))
+            if ((objecte == "Diamond" && target == "IngredientCorb"))
             {
                 objectSlot.ClearObject();
-                ingredientSlot.ClearIngredient();
                 rectTransform.position = originalPosition;
                 Debug.Log("Objeto correcto!"  + hit.collider.gameObject.name);
                 //AQUÍ la acción que toque; por ejemplo hacer la poción o obtener la pluma o así.
