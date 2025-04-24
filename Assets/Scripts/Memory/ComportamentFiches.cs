@@ -6,6 +6,7 @@ using UnityEngine;
 
 public class ComportamentFiches : MonoBehaviour
 {
+    public Ingredient mushroom;
     [SerializeField] Fiches cardPrefab;
     [SerializeField] Transform gridTransform;
     [SerializeField] Sprite[] sprites;
@@ -50,6 +51,7 @@ public class ComportamentFiches : MonoBehaviour
 
     public IEnumerator ShowCards()
     {
+        Debug.Log("holiii");
         foreach (var card in allCards)
         {
             card.Show();
@@ -60,6 +62,7 @@ public class ComportamentFiches : MonoBehaviour
         foreach (var card in allCards)
         {
             card.Hide();
+            Debug.Log("las escondooo");
         }
     }
 
@@ -131,5 +134,6 @@ public class ComportamentFiches : MonoBehaviour
             }
         }
         memoryCanvas.enabled = false;
+        mushroom.CollectIngredient();
     }
 }

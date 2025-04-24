@@ -5,6 +5,8 @@ using UnityEngine;
 
 public class Ingredient : MonoBehaviour
 {
+    public StartMemoryGame memoryGame;
+
     [SerializeField] 
     private string ingredientName;
 
@@ -67,11 +69,22 @@ public class Ingredient : MonoBehaviour
 
         if (isInRange && _inputController.Interact)
         {
-            CollectIngredient();
-            interactText.SetActive(false);
+            if(ingredientName=="Invisible Mushroom")
+            {
+                memoryGame.JocMemory();
+                Destroy(interactText);
+            }
+            else if(ingredientName=="Crow Feather"){
+                //nada, la interacción con E no hace nada, hay que darle el diamante.
+            }
+            else
+            {
+                CollectIngredient();
+                interactText.SetActive(false);
+            }
         } 
     }
-    private void CollectIngredient()
+    public void CollectIngredient()
     {
         if (inventoryManager != null)
         {

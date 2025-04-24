@@ -4,20 +4,17 @@ using UnityEngine;
 
 public class StartMemoryGame : MonoBehaviour
 {
-	public Canvas memory;
+    public Canvas memory;
     private void Start()
     {
-		memory.enabled = false;
-	}
+        memory.enabled = false;
+    }
 
-	void OnTriggerEnter(Collider other)
-	{
-		if (other.CompareTag("Player"))
-		{
-			memory.enabled = true;
-			GameObject cardsController = GameObject.Find("CardsController");
-			ComportamentFiches fichesScript = cardsController.GetComponent<ComportamentFiches>();
-			StartCoroutine(fichesScript.ShowCards());
-		}
-	}
+    public void JocMemory()
+    {
+        memory.enabled = true;
+        GameObject cardsController = GameObject.Find("CardsController");
+        ComportamentFiches fichesScript = cardsController.GetComponent<ComportamentFiches>();
+        StartCoroutine(fichesScript.ShowCards());
+    }
 }
