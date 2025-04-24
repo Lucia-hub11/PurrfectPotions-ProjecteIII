@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class ObjectSlot : MonoBehaviour
 {
     public string objectName;
+    public DragDropObjects dragdrop;
     public bool isFull;
 
     [SerializeField]
@@ -18,7 +19,6 @@ public class ObjectSlot : MonoBehaviour
     {
         ObtainedText.SetActive(false);
     }
-
 
     public void AddObjectSprite(string ingredientName, Sprite itemSprite)//bueno li he canviat el nom per si de cas donava problemes que fos el mateix, per provar
     {
@@ -47,6 +47,14 @@ public class ObjectSlot : MonoBehaviour
         isFull = false;
         itemImage.sprite = null;
         itemImage.enabled = false;
+    }
+
+    void Upadte()
+    {
+        if (dragdrop.diamantCorb == true)
+        {
+            ClearObject();
+        }
     }
 
 }

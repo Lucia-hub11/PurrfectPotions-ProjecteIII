@@ -371,6 +371,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ploma: {fileID: 1658351515}
+  diamantCorb: 0
   canvas: {fileID: 745714307}
   objectSlot: {fileID: 123194301}
 --- !u!225 &123194304
@@ -4521,6 +4522,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ploma: {fileID: 0}
+  diamantCorb: 0
   canvas: {fileID: 745714307}
   objectSlot: {fileID: 822436196}
 --- !u!225 &822436199
@@ -7672,6 +7674,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ploma: {fileID: 0}
+  diamantCorb: 0
   canvas: {fileID: 745714307}
   objectSlot: {fileID: 1373889372}
 --- !u!1 &1382991549
@@ -10918,6 +10921,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ploma: {fileID: 0}
+  diamantCorb: 0
   canvas: {fileID: 745714307}
   objectSlot: {fileID: 1895088836}
 --- !u!1 &1895379095 stripped
@@ -12173,6 +12177,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ploma: {fileID: 0}
+  diamantCorb: 0
   canvas: {fileID: 745714307}
   objectSlot: {fileID: 2121187126}
 --- !u!1 &2146549888
