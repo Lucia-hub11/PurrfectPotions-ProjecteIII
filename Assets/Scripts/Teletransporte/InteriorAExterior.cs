@@ -16,8 +16,8 @@ public class InteriorAExterior : MonoBehaviour
 		  playerGO.SetActive(false);
 		  player.position = destination.position;
 		  playerGO.SetActive(true);
-          //IngredientsInventory.SetActive(false);
-          //ObjectsInventory.SetActive(true);
+          IngredientsInventory.SetActive(false);
+          ObjectsInventory.SetActive(true);
 
             if (cameraSwitcher != null)
             {
