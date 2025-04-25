@@ -136,15 +136,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.972549, g: 0.9490196, b: 0.8392157, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 30e6b11bacc893444a78c28e9ecc960e, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -167,6 +167,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ingredientName: 
   isFull: 0
+  CloverThoughts: {fileID: 0}
   itemImage: {fileID: 3605294846556967153}
   ObtainedText: {fileID: 0}
 --- !u!1 &7879311949260367373
