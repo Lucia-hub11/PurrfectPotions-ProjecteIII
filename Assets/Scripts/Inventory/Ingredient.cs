@@ -6,6 +6,7 @@ using UnityEngine;
 public class Ingredient : MonoBehaviour
 {
     public StartMemoryGame memoryGame;
+    public CrowTalk crowTalk;
 
     [SerializeField] 
     private string ingredientName;
@@ -76,7 +77,7 @@ public class Ingredient : MonoBehaviour
                 interactText.SetActive(false);
             }
             else if(ingredientName=="Crow Feather"){
-                //nada, la interacci�n con E no hace nada, hay que darle el diamante.
+                crowTalk.ShowCrowTalk();
             }
             else
             {
@@ -95,6 +96,7 @@ public class Ingredient : MonoBehaviour
                 inventoryManager.AddIngredient(ingredientName, ingredientSprite);
                 Destroy(gameObject);
                 interactText.SetActive(false);
+                crowTalk.HideCrowTalk();
             }
             else if (gameObject.tag == "Object")
             {
@@ -120,6 +122,7 @@ public class Ingredient : MonoBehaviour
             {
                 fromIngredientsBottomInventoryManager.AddIngredient(ingredientName, ingredientSprite);
                 Destroy(gameObject);
+                crowTalk.HideCrowTalk();
             }
             else if (gameObject.tag == "Object")
             {
