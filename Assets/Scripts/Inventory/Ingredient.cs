@@ -61,7 +61,7 @@ public class Ingredient : MonoBehaviour
                 //Debug.Log("player esta al range!");
                 interactText.SetActive(true);
             }
-            else //cada model té un text per separat pq si no es barallen
+            else //cada model tï¿½ un text per separat pq si no es barallen
             {
                 interactText.SetActive(false);
             }
@@ -71,11 +71,12 @@ public class Ingredient : MonoBehaviour
         {
             if(ingredientName=="Invisible Mushroom")
             {
-                memoryGame.JocMemory();
-                Destroy(interactText);
+                memoryGame.JocMemory(this);
+                //Destroy(interactText);
+                interactText.SetActive(false);
             }
             else if(ingredientName=="Crow Feather"){
-                //nada, la interacción con E no hace nada, hay que darle el diamante.
+                //nada, la interacciï¿½n con E no hace nada, hay que darle el diamante.
             }
             else
             {
@@ -110,7 +111,7 @@ public class Ingredient : MonoBehaviour
         }
         else
         {
-            Debug.LogError("InventoryManager no està assignat.");
+            Debug.LogError("InventoryManager no estï¿½ assignat.");
         }
 
         if (fromObjectsBottomInventoryManager != null)
@@ -132,7 +133,7 @@ public class Ingredient : MonoBehaviour
         }
         else
         {
-            Debug.LogError("bottomInventoryManager no està assignat.");
+            Debug.LogError("bottomInventoryManager no estï¿½ assignat.");
         }
     }
 }

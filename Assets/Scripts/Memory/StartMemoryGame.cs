@@ -10,11 +10,13 @@ public class StartMemoryGame : MonoBehaviour
         memory.enabled = false;
     }
 
-    public void JocMemory()
+    public void JocMemory(Ingredient ingredient)
     {
         memory.enabled = true;
         GameObject cardsController = GameObject.Find("CardsController");
         ComportamentFiches fichesScript = cardsController.GetComponent<ComportamentFiches>();
+        fichesScript.mushroom = ingredient;
         StartCoroutine(fichesScript.ShowCards());
+        
     }
 }
