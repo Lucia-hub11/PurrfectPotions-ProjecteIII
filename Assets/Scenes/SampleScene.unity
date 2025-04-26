@@ -4275,6 +4275,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canvas: {fileID: 682560315}
   ingredientSlot: {fileID: 1337990304}
+  StaticCamera: {fileID: 587080416}
 --- !u!225 &793399941
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -4912,6 +4913,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canvas: {fileID: 682560315}
   ingredientSlot: {fileID: 123720688}
+  StaticCamera: {fileID: 587080416}
 --- !u!225 &986963810
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -8960,6 +8962,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canvas: {fileID: 682560315}
   ingredientSlot: {fileID: 756913589}
+  StaticCamera: {fileID: 587080416}
 --- !u!1001 &1631781738
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9477,6 +9480,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canvas: {fileID: 682560315}
   ingredientSlot: {fileID: 1999637898}
+  StaticCamera: {fileID: 587080416}
 --- !u!225 &1673705342
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -10714,6 +10718,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canvas: {fileID: 682560315}
   ingredientSlot: {fileID: 375116186}
+  StaticCamera: {fileID: 587080416}
 --- !u!1 &1919235071
 GameObject:
   m_ObjectHideFlags: 0

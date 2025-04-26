@@ -11,6 +11,8 @@ public class DragDropIngredients : MonoBehaviour, IBeginDragHandler, IEndDragHan
     private Vector3 originalPosition;
     public IngredientSlot ingredientSlot;
 
+    public Camera StaticCamera;
+
     private void Awake()
     {
         rectTransform = GetComponent<RectTransform>();
@@ -42,7 +44,7 @@ public class DragDropIngredients : MonoBehaviour, IBeginDragHandler, IEndDragHan
         canvasGroup.alpha = 1f;
         canvasGroup.blocksRaycasts = true;
 
-        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+        Ray ray = StaticCamera.ScreenPointToRay(Input.mousePosition);
         RaycastHit hit;
 
         if (Physics.Raycast(ray, out hit))
@@ -51,9 +53,9 @@ public class DragDropIngredients : MonoBehaviour, IBeginDragHandler, IEndDragHan
             string target = hit.collider.gameObject.name;
 
             //Unes cuantes combinacions d'exemple, per l'hito cal posar les correctes
-            if ((ingredient == "Tear" && target == "calder") ||
-                (ingredient == "Crow Feather" && target == "calder") ||
-                (ingredient == "Invisible Mushroom" && target == "calder"))
+            if ((ingredient == "Tear" && target == "Calder") ||
+                (ingredient == "Crow Feather" && target == "Calder") ||
+                (ingredient == "Invisible Mushroom" && target == "Calder"))
             {
                 ingredientSlot.ClearIngredient();
                 rectTransform.position = originalPosition;
