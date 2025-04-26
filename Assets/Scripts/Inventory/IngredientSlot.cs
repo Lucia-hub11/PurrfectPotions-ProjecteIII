@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -15,6 +16,7 @@ public class IngredientSlot : MonoBehaviour
     //[SerializeField] private Button skipButton;
 
     public GameObject ObtainedText;
+    public Image obtainedImage;
 
     private Sprite spriteWait;
     /*private void Awake()
@@ -44,7 +46,7 @@ public class IngredientSlot : MonoBehaviour
         {
             CloverThoughts.SetActive(true);
             spriteWait = itemSprite;
-            Invoke("RegularAddSprite", 2f);
+            Invoke("RegularAddSprite", 4f);
 
         }
         else
@@ -69,6 +71,9 @@ public class IngredientSlot : MonoBehaviour
         ObtainedText.SetActive(true);
         itemImage.enabled = true;
         itemImage.canvasRenderer.SetAlpha(1f);
+
+        obtainedImage.GetComponent<Image>().sprite = itemSprite;
+
 
         Invoke("HideText", 5f);
     }

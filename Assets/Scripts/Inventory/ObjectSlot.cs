@@ -13,6 +13,7 @@ public class ObjectSlot : MonoBehaviour
     private Image itemImage; //la que apareix
 
     public GameObject ObtainedText;
+    public Image obtainedImage;
 
 
     void Start()
@@ -30,6 +31,8 @@ public class ObjectSlot : MonoBehaviour
         itemImage.gameObject.SetActive(true);
         itemImage.enabled = true;
         itemImage.canvasRenderer.SetAlpha(1f);
+
+        obtainedImage.GetComponent<Image>().sprite = itemSprite;//perquè apareixi al text 'Has obtingut un objecte!'
 
         ObtainedText.SetActive(true);
         Invoke("HideText", 5f);
