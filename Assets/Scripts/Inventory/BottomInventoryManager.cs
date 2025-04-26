@@ -46,4 +46,15 @@ public class BottomInventoryManager : MonoBehaviour
         //Debug.Log("ingredientName = " + ingredientName);
 
     }//FUNCIÓ PER FER EL MATEIXO PERO AMB ADD OBJECT
+
+    public void ClearObject(string objectName)
+    {
+        foreach (var slot in objectSlot)
+        {
+            if (slot.objectName == objectName)
+            {
+                slot.ClearObject();
+            }
+        }
+    }
 }

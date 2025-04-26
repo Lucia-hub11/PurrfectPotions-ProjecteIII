@@ -6,12 +6,13 @@ using UnityEngine.EventSystems;
 public class DragDropObjects : MonoBehaviour, IBeginDragHandler, IEndDragHandler, IDragHandler
 {
     public Ingredient ploma;
-    public bool diamantCorb = false;
     [SerializeField] private Canvas canvas;
     private RectTransform rectTransform;   
     private CanvasGroup canvasGroup;  
     private Vector3 originalPosition;
     public ObjectSlot objectSlot;
+    public InventoryManager inventoryManager;
+    public BottomInventoryManager bottomInventoryManager;
 
     private void Awake()
     {
@@ -55,8 +56,9 @@ public class DragDropObjects : MonoBehaviour, IBeginDragHandler, IEndDragHandler
             //Unes cuantes combinacions d'exemple, per l'hito cal posar les correctes
             if ((objecte == "Diamond" && target == "IngredientCorb"))
             {
-                objectSlot.ClearObject();
-                diamantCorb = true;
+                inventoryManager.ClearObject(objecte);
+                bottomInventoryManager.ClearObject(objecte);
+                //objectSlot.ClearObject();
                 rectTransform.position = originalPosition;
                 Debug.Log("Objeto correcto!"  + hit.collider.gameObject.name);
 
