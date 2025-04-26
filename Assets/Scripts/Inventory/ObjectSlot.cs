@@ -52,12 +52,4 @@ public class ObjectSlot : MonoBehaviour
         itemImage.enabled = false;
     }
 
-    void Upadte()
-    {
-        if (dragdrop.diamantCorb == true)
-        {
-            ClearObject();
-        }
-    }
-
 }

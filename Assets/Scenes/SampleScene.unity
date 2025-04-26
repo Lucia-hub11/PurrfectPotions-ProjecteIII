@@ -523,9 +523,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ploma: {fileID: 1658351515}
-  diamantCorb: 0
   canvas: {fileID: 745714307}
   objectSlot: {fileID: 123194301}
+  inventoryManager: {fileID: 1864136786}
+  bottomInventoryManager: {fileID: 745714304}
 --- !u!225 &123194304
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -1365,6 +1366,7 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 1432061830}
   - {fileID: 2021779682}
   m_Father: {fileID: 736845314}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4275,6 +4277,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canvas: {fileID: 682560315}
   ingredientSlot: {fileID: 1337990304}
+  inventoryManager: {fileID: 1864136786}
+  bottomInventoryManager: {fileID: 682560312}
+  StaticCamera: {fileID: 587080416}
 --- !u!225 &793399941
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -4556,9 +4561,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ploma: {fileID: 0}
-  diamantCorb: 0
   canvas: {fileID: 745714307}
   objectSlot: {fileID: 822436196}
+  inventoryManager: {fileID: 1864136786}
+  bottomInventoryManager: {fileID: 745714304}
 --- !u!225 &822436199
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -4753,7 +4759,7 @@ Transform:
   m_GameObject: {fileID: 950817563}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.34000015, y: 0.67492926, z: -2.6100001}
+  m_LocalPosition: {x: -0.03, y: -0.05, z: -1.87}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4912,6 +4918,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canvas: {fileID: 682560315}
   ingredientSlot: {fileID: 123720688}
+  inventoryManager: {fileID: 1864136786}
+  bottomInventoryManager: {fileID: 682560312}
+  StaticCamera: {fileID: 587080416}
 --- !u!225 &986963810
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -6511,9 +6520,14 @@ MonoBehaviour:
   cardPrefab: {fileID: 281403143876379675, guid: adb92d8191c18f543a89de5d8e402da5, type: 3}
   gridTransform: {fileID: 2021779682}
   sprites:
-  - {fileID: 21300000, guid: 76bd638e1f6384b4d8d60507f0dfdaf4, type: 3}
-  - {fileID: 21300000, guid: 3870299b85ee8264cb37dbdfc53cb692, type: 3}
-  - {fileID: 21300000, guid: 15719d678c08f1c47825de29aa3ff70e, type: 3}
+  - {fileID: 21300000, guid: 4e20c30de57ae4a46898a728c665bff9, type: 3}
+  - {fileID: 21300000, guid: 5eae31ed5d1e32648a167f905776574b, type: 3}
+  - {fileID: 21300000, guid: 4689bd4a1f9da534e878a5af4af862a0, type: 3}
+  - {fileID: 21300000, guid: b112e555e119edc43bcd6a2eee57e59b, type: 3}
+  - {fileID: 21300000, guid: edd17457d5d203748a56df25350d3b5f, type: 3}
+  - {fileID: 21300000, guid: bb6e4273bda10f0408c6ed08c1ceb08e, type: 3}
+  - {fileID: 21300000, guid: fcd2ac28e4a6df04ebc2e244efc76650, type: 3}
+  - {fileID: 21300000, guid: a00e6544e2f48584d9434edf317ae12e, type: 3}
   memoryCanvas: {fileID: 216918033}
 --- !u!4 &1227354227
 Transform:
@@ -7706,9 +7720,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ploma: {fileID: 0}
-  diamantCorb: 0
   canvas: {fileID: 745714307}
   objectSlot: {fileID: 1373889372}
+  inventoryManager: {fileID: 1864136786}
+  bottomInventoryManager: {fileID: 745714304}
 --- !u!1 &1382991549
 GameObject:
   m_ObjectHideFlags: 0
@@ -7895,6 +7910,81 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1398586026}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1432061829
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1432061830}
+  - component: {fileID: 1432061832}
+  - component: {fileID: 1432061831}
+  m_Layer: 5
+  m_Name: Fons
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1432061830
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1432061829}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 4.855608, y: 6.742696, z: 4.638314}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 216918030}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 218.1641, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1432061831
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1432061829}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 7deb0225c2169ea49816c689c75d1c0b, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1432061832
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1432061829}
+  m_CullTransparentMesh: 1
 --- !u!1 &1451399855
 GameObject:
   m_ObjectHideFlags: 0
@@ -7998,7 +8088,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 80
   m_CollisionDetection: 0
 --- !u!136 &1451399860
 CapsuleCollider:
@@ -8960,6 +9050,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canvas: {fileID: 682560315}
   ingredientSlot: {fileID: 756913589}
+  inventoryManager: {fileID: 1864136786}
+  bottomInventoryManager: {fileID: 682560312}
+  StaticCamera: {fileID: 587080416}
 --- !u!1001 &1631781738
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9477,6 +9570,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canvas: {fileID: 682560315}
   ingredientSlot: {fileID: 1999637898}
+  inventoryManager: {fileID: 1864136786}
+  bottomInventoryManager: {fileID: 682560312}
+  StaticCamera: {fileID: 587080416}
 --- !u!225 &1673705342
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -10680,9 +10776,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ploma: {fileID: 0}
-  diamantCorb: 0
   canvas: {fileID: 745714307}
   objectSlot: {fileID: 1895088836}
+  inventoryManager: {fileID: 1864136786}
+  bottomInventoryManager: {fileID: 745714304}
 --- !u!1 &1895379095 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7879311949260367373, guid: ed6ffae03f2358440874287716edf94b, type: 3}
@@ -10714,6 +10811,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canvas: {fileID: 682560315}
   ingredientSlot: {fileID: 375116186}
+  inventoryManager: {fileID: 1864136786}
+  bottomInventoryManager: {fileID: 682560312}
+  StaticCamera: {fileID: 587080416}
 --- !u!1 &1919235071
 GameObject:
   m_ObjectHideFlags: 0
@@ -11412,10 +11512,10 @@ MonoBehaviour:
   m_ChildAlignment: 4
   m_StartCorner: 0
   m_StartAxis: 0
-  m_CellSize: {x: 100, y: 100}
-  m_Spacing: {x: 20, y: 20}
+  m_CellSize: {x: 110, y: 110}
+  m_Spacing: {x: 50, y: 30}
   m_Constraint: 1
-  m_ConstraintCount: 3
+  m_ConstraintCount: 4
 --- !u!1 &2043327579
 GameObject:
   m_ObjectHideFlags: 0
@@ -12182,9 +12282,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ploma: {fileID: 0}
-  diamantCorb: 0
   canvas: {fileID: 745714307}
   objectSlot: {fileID: 2121187126}
+  inventoryManager: {fileID: 1864136786}
+  bottomInventoryManager: {fileID: 745714304}
 --- !u!1 &2128345684
 GameObject:
   m_ObjectHideFlags: 0
