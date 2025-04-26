@@ -19,19 +19,6 @@ public class IngredientSlot : MonoBehaviour
     public Image obtainedImage;
 
     private Sprite spriteWait;
-    /*private void Awake()
-    {
-        if (skipButton != null)
-            skipButton.onClick.AddListener(OnSkipClick);
-    }*/
-
-    /*public void OnSkipClick()
-    {
-        CancelInvoke(nameof(RegularAddSprite));
-        CloverThoughts.SetActive(false);
-        if (spriteWait != null)
-            RegularAdd(spriteWait);
-    }*/
 
     void Start()
     {
@@ -60,7 +47,6 @@ public class IngredientSlot : MonoBehaviour
         RegularAdd(spriteWait);
     }
 
-
     private void RegularAdd(Sprite itemSprite)
     {
         isFull = true;
@@ -72,12 +58,10 @@ public class IngredientSlot : MonoBehaviour
         itemImage.enabled = true;
         itemImage.canvasRenderer.SetAlpha(1f);
 
-        obtainedImage.GetComponent<Image>().sprite = itemSprite;
-
+        obtainedImage.GetComponent<Image>().sprite = itemSprite;//perquè apareixi al text 'Has obtingut un ingredient!'
 
         Invoke("HideText", 5f);
     }
-
     private void HideText()
     {
         ObtainedText.SetActive(false);
