@@ -88,6 +88,7 @@ public class Ingredient : MonoBehaviour
     }
     public void CollectIngredient()
     {
+        Debug.Log($"[CollectIngredient] {gameObject.name} té tag «{gameObject.tag}»");
         if (inventoryManager != null)
         {
             if(gameObject.tag == "Ingredient")
@@ -96,7 +97,6 @@ public class Ingredient : MonoBehaviour
                 inventoryManager.AddIngredient(ingredientName, ingredientSprite);
                 Destroy(gameObject);
                 interactText.SetActive(false);
-                crowTalk.HideCrowTalk();
             }
             else if (gameObject.tag == "Object")
             {
@@ -122,7 +122,6 @@ public class Ingredient : MonoBehaviour
             {
                 fromIngredientsBottomInventoryManager.AddIngredient(ingredientName, ingredientSprite);
                 Destroy(gameObject);
-                crowTalk.HideCrowTalk();
             }
             else if (gameObject.tag == "Object")
             {
