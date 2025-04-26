@@ -57,4 +57,14 @@ public class BottomInventoryManager : MonoBehaviour
             }
         }
     }
+    public void ClearIngredient(string ingredientName)
+    {
+        foreach (var slot in ingredientSlot)
+        {
+            if (slot.ingredientName == ingredientName)
+            {
+                slot.ClearIngredient();
+            }
+        }
+    }
 }

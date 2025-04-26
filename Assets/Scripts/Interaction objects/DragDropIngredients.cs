@@ -10,6 +10,8 @@ public class DragDropIngredients : MonoBehaviour, IBeginDragHandler, IEndDragHan
     private CanvasGroup canvasGroup;
     private Vector3 originalPosition;
     public IngredientSlot ingredientSlot;
+    public InventoryManager inventoryManager;
+    public BottomInventoryManager bottomInventoryManager;
 
     public Camera StaticCamera;
 
@@ -57,7 +59,9 @@ public class DragDropIngredients : MonoBehaviour, IBeginDragHandler, IEndDragHan
                 (ingredient == "Crow Feather" && target == "Calder") ||
                 (ingredient == "Invisible Mushroom" && target == "Calder"))
             {
-                ingredientSlot.ClearIngredient();
+                inventoryManager.ClearIngredient(ingredient);
+                bottomInventoryManager.ClearIngredient(ingredient);
+                //ingredientSlot.ClearIngredient();
                 rectTransform.position = originalPosition;
                 Debug.Log("Objeto correcto!" + hit.collider.gameObject.name);
                 //AQUÍ la acción que toque; por ejemplo hacer la poción o obtener la pluma o así.
