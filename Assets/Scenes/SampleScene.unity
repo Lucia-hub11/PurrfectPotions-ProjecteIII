@@ -1880,7 +1880,7 @@ MonoBehaviour:
   memoryGame: {fileID: 293007100}
   crowTalk: {fileID: 0}
   ingredientName: Invisible Mushroom
-  ingredientSprite: {fileID: 21300000, guid: dac1c66ef8545bf469788077cc93f2fa, type: 3}
+  ingredientSprite: {fileID: 21300000, guid: 895ce5194a6b5d1489c5574e4e65bcf1, type: 3}
   ingredientRange: 3
   interactText: {fileID: 2006739527}
 --- !u!136 &293007097
@@ -7110,7 +7110,7 @@ MonoBehaviour:
   memoryGame: {fileID: 0}
   crowTalk: {fileID: 0}
   ingredientName: Diamond
-  ingredientSprite: {fileID: 21300000, guid: 7ac9c04fd4fc06f4e859dea4064fa61d, type: 3}
+  ingredientSprite: {fileID: 21300000, guid: 7b22b0ed17b2cce4da938b82175e7b5e, type: 3}
   ingredientRange: 4
   interactText: {fileID: 718246180}
 --- !u!65 &1244015767
@@ -9327,7 +9327,7 @@ MonoBehaviour:
   memoryGame: {fileID: 0}
   crowTalk: {fileID: 0}
   ingredientName: Tear
-  ingredientSprite: {fileID: 21300000, guid: 6bbfe35eabbce174c8f9861507da2bba, type: 3}
+  ingredientSprite: {fileID: 21300000, guid: 179b10c99b988d341bc12e9cf98c3558, type: 3}
   ingredientRange: 3
   interactText: {fileID: 2007119294}
 --- !u!136 &1517993592
@@ -10190,7 +10190,7 @@ MonoBehaviour:
   memoryGame: {fileID: 0}
   crowTalk: {fileID: 1658351519}
   ingredientName: Crow Feather
-  ingredientSprite: {fileID: 21300000, guid: 62c6fdb4abae6f64285c6a412730ffdf, type: 3}
+  ingredientSprite: {fileID: 21300000, guid: 2125986fe2063134a9e7f5424f3872fd, type: 3}
   ingredientRange: 3
   interactText: {fileID: 1258645908}
 --- !u!136 &1658351516
