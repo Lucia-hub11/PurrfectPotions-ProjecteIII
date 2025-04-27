@@ -60,7 +60,7 @@ public class IngredientSlot : MonoBehaviour
 
         obtainedImage.GetComponent<Image>().sprite = itemSprite;//perquè apareixi al text 'Has obtingut un ingredient!'
 
-        Invoke("HideText", 5f);
+        Invoke("HideText", 3f);
     }
     private void HideText()
     {

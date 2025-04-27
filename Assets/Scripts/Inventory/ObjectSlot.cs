@@ -35,7 +35,7 @@ public class ObjectSlot : MonoBehaviour
         obtainedImage.GetComponent<Image>().sprite = itemSprite;//perquè apareixi al text 'Has obtingut un objecte!'
 
         ObtainedText.SetActive(true);
-        Invoke("HideText", 5f);
+        Invoke("HideText", 3f);
         
     }
 

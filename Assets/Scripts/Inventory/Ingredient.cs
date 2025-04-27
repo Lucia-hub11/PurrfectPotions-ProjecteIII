@@ -88,54 +88,33 @@ public class Ingredient : MonoBehaviour
     }
     public void CollectIngredient()
     {
-        Debug.Log($"[CollectIngredient] {gameObject.name} té tag «{gameObject.tag}»");
-        if (inventoryManager != null)
+        if (gameObject.tag == "Ingredient")
         {
-            if(gameObject.tag == "Ingredient")
+            if(ingredientName== "Crow Feather")//el mateix però sense destruir-lo
             {
-                Debug.Log("aixo es un ingredient!!!");
                 inventoryManager.AddIngredient(ingredientName, ingredientSprite);
-                Destroy(gameObject);
-                interactText.SetActive(false);
-            }
-            else if (gameObject.tag == "Object")
-            {
-                Debug.Log("aixo es un OBJECTE!!!");
-                inventoryManager.AddObject(ingredientName, ingredientSprite);//canviar per funcio addobject del inventory Manager
-                Destroy(gameObject);
+                fromIngredientsBottomInventoryManager.AddIngredient(ingredientName, ingredientSprite);
                 interactText.SetActive(false);
             }
             else
             {
-                Debug.Log("No hi ha cap tag Ingredient o Objecte");
-            }
-            
-        }
-        else
-        {
-            Debug.LogError("InventoryManager no est� assignat.");
-        }
-
-        if (fromObjectsBottomInventoryManager != null)
-        {
-            if (gameObject.tag == "Ingredient")
-            {
+                inventoryManager.AddIngredient(ingredientName, ingredientSprite);
                 fromIngredientsBottomInventoryManager.AddIngredient(ingredientName, ingredientSprite);
                 Destroy(gameObject);
+                interactText.SetActive(false);
             }
-            else if (gameObject.tag == "Object")
-            {
-                fromObjectsBottomInventoryManager.AddObject(ingredientName, ingredientSprite);//canviar per funcio addobject del inventory Manager
-                Destroy(gameObject);
-            }
-            else
-            {
-                Debug.Log("No hi ha cap tag Ingredient o Objecte");
-            }
+        }
+        else if (gameObject.tag == "Object")
+        {
+            inventoryManager.AddObject(ingredientName, ingredientSprite);//canviar per funcio addobject del inventory Manager
+            fromObjectsBottomInventoryManager.AddObject(ingredientName, ingredientSprite);
+            Destroy(gameObject);
+            interactText.SetActive(false);
         }
         else
         {
-            Debug.LogError("bottomInventoryManager no est� assignat.");
+            Debug.Log("No hi ha cap tag Ingredient o Objecte");
         }
+
     }
 }
