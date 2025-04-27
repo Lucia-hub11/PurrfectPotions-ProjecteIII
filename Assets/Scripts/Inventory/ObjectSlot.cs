@@ -13,6 +13,7 @@ public class ObjectSlot : MonoBehaviour
     private Image itemImage; //la que apareix
 
     public GameObject ObtainedText;
+    public Image obtainedImage;
 
 
     void Start()
@@ -31,6 +32,8 @@ public class ObjectSlot : MonoBehaviour
         itemImage.enabled = true;
         itemImage.canvasRenderer.SetAlpha(1f);
 
+        obtainedImage.GetComponent<Image>().sprite = itemSprite;//perquè apareixi al text 'Has obtingut un objecte!'
+
         ObtainedText.SetActive(true);
         Invoke("HideText", 5f);
         
@@ -47,14 +50,6 @@ public class ObjectSlot : MonoBehaviour
         isFull = false;
         itemImage.sprite = null;
         itemImage.enabled = false;
-    }
-
-    void Upadte()
-    {
-        if (dragdrop.diamantCorb == true)
-        {
-            ClearObject();
-        }
     }
 
 }

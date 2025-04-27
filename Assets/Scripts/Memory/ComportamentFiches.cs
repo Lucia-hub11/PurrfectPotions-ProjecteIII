@@ -134,6 +134,16 @@ public class ComportamentFiches : MonoBehaviour
             }
         }
         memoryCanvas.enabled = false;
+        
+
+
+        /*// per bloquejar input i moviment per fer "pause" pel darrere del minijoc i que no es pugui moure
+        var player = GameObject.FindGameObjectWithTag("Player");
+        var ic = player.GetComponent<InputController>();
+        var pc = player.GetComponent<PlayerController>();
+        if (ic != null) ic.enabled = true;
+        if (pc != null) pc.enabled = true;*/
+
         mushroom.CollectIngredient();
     }
 }
