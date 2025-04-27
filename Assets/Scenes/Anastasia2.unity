@@ -371,9 +371,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ploma: {fileID: 0}
-  diamantCorb: 0
   canvas: {fileID: 745714307}
   objectSlot: {fileID: 123194301}
+  inventoryManager: {fileID: 0}
+  bottomInventoryManager: {fileID: 0}
 --- !u!225 &123194304
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -1612,6 +1613,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   memoryGame: {fileID: 293007100}
+  crowTalk: {fileID: 0}
   ingredientName: Invisible Mushroom
   ingredientSprite: {fileID: 21300000, guid: dac1c66ef8545bf469788077cc93f2fa, type: 3}
   ingredientRange: 3
@@ -4357,6 +4359,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canvas: {fileID: 682560315}
   ingredientSlot: {fileID: 1337990304}
+  inventoryManager: {fileID: 0}
+  bottomInventoryManager: {fileID: 0}
+  StaticCamera: {fileID: 0}
 --- !u!225 &793399941
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -4634,9 +4639,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ploma: {fileID: 0}
-  diamantCorb: 0
   canvas: {fileID: 745714307}
   objectSlot: {fileID: 822436196}
+  inventoryManager: {fileID: 0}
+  bottomInventoryManager: {fileID: 0}
 --- !u!225 &822436199
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -5085,6 +5091,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canvas: {fileID: 682560315}
   ingredientSlot: {fileID: 123720688}
+  inventoryManager: {fileID: 0}
+  bottomInventoryManager: {fileID: 0}
+  StaticCamera: {fileID: 0}
 --- !u!225 &986963810
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -6191,9 +6200,9 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1874329457}
   - {fileID: 2060832004}
   - {fileID: 2146549889}
+  - {fileID: 1874329457}
   m_Father: {fileID: 1864136790}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -6249,6 +6258,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   memoryGame: {fileID: 0}
+  crowTalk: {fileID: 0}
   ingredientName: Diamond
   ingredientSprite: {fileID: 21300000, guid: 7ac9c04fd4fc06f4e859dea4064fa61d, type: 3}
   ingredientRange: 4
@@ -6937,8 +6947,8 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 208584880}
   - {fileID: 1244424399}
+  - {fileID: 208584880}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -7579,9 +7589,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ploma: {fileID: 0}
-  diamantCorb: 0
   canvas: {fileID: 745714307}
   objectSlot: {fileID: 1373889372}
+  inventoryManager: {fileID: 0}
+  bottomInventoryManager: {fileID: 0}
 --- !u!1 &1382991549
 GameObject:
   m_ObjectHideFlags: 0
@@ -8211,6 +8222,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   memoryGame: {fileID: 0}
+  crowTalk: {fileID: 0}
   ingredientName: Tear
   ingredientSprite: {fileID: 21300000, guid: 6bbfe35eabbce174c8f9861507da2bba, type: 3}
   ingredientRange: 3
@@ -9024,6 +9036,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canvas: {fileID: 682560315}
   ingredientSlot: {fileID: 756913589}
+  inventoryManager: {fileID: 0}
+  bottomInventoryManager: {fileID: 0}
+  StaticCamera: {fileID: 0}
 --- !u!1 &1596877097
 GameObject:
   m_ObjectHideFlags: 0
@@ -9355,6 +9370,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   memoryGame: {fileID: 0}
+  crowTalk: {fileID: 0}
   ingredientName: Crow Feather
   ingredientSprite: {fileID: 21300000, guid: 62c6fdb4abae6f64285c6a412730ffdf, type: 3}
   ingredientRange: 3
@@ -9810,6 +9826,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canvas: {fileID: 682560315}
   ingredientSlot: {fileID: 1999637898}
+  inventoryManager: {fileID: 0}
+  bottomInventoryManager: {fileID: 0}
+  StaticCamera: {fileID: 0}
 --- !u!225 &1673705342
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -11331,7 +11350,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 847, y: 337}
+  m_AnchoredPosition: {x: 847.0001, y: 337}
   m_SizeDelta: {x: 99.744, y: 76.866}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1874329458
@@ -11734,9 +11753,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ploma: {fileID: 0}
-  diamantCorb: 0
   canvas: {fileID: 745714307}
   objectSlot: {fileID: 1895088836}
+  inventoryManager: {fileID: 0}
+  bottomInventoryManager: {fileID: 0}
 --- !u!1 &1895379095 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7879311949260367373, guid: ed6ffae03f2358440874287716edf94b, type: 3}
@@ -11768,6 +11788,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canvas: {fileID: 682560315}
   ingredientSlot: {fileID: 375116186}
+  inventoryManager: {fileID: 0}
+  bottomInventoryManager: {fileID: 0}
+  StaticCamera: {fileID: 0}
 --- !u!1 &1919235071
 GameObject:
   m_ObjectHideFlags: 0
@@ -12934,9 +12957,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ploma: {fileID: 0}
-  diamantCorb: 0
   canvas: {fileID: 745714307}
   objectSlot: {fileID: 2121187126}
+  inventoryManager: {fileID: 0}
+  bottomInventoryManager: {fileID: 0}
 --- !u!1 &2146549888
 GameObject:
   m_ObjectHideFlags: 0
