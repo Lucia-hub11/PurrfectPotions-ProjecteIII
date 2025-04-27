@@ -7,6 +7,7 @@ public class Ingredient : MonoBehaviour
 {
     public StartMemoryGame memoryGame;
     public CrowTalk crowTalk;
+    bool crowDimond = false;
 
     [SerializeField] 
     private string ingredientName;
@@ -77,7 +78,15 @@ public class Ingredient : MonoBehaviour
                 interactText.SetActive(false);
             }
             else if(ingredientName=="Crow Feather"){
-                crowTalk.ShowCrowTalk();
+                if (crowDimond == false)
+                {
+                    crowTalk.ShowCrowTalk();
+                }
+                else
+                {
+                    crowTalk.ShowCrowThanks();
+                }
+
             }
             else
             {
@@ -95,6 +104,7 @@ public class Ingredient : MonoBehaviour
                 inventoryManager.AddIngredient(ingredientName, ingredientSprite);
                 fromIngredientsBottomInventoryManager.AddIngredient(ingredientName, ingredientSprite);
                 interactText.SetActive(false);
+                crowDimond = true;
             }
             else
             {
