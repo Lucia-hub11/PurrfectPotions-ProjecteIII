@@ -5544,6 +5544,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PotionCanvas: {fileID: 1431496925}
+  BottomIngredientCanvas: {fileID: 682560311}
+  CanvasHints: {fileID: 1454847789}
+  InventoriCanvas: {fileID: 1864136785}
+  CanvasBotons: {fileID: 1726947248}
 --- !u!1 &1043030893
 GameObject:
   m_ObjectHideFlags: 0

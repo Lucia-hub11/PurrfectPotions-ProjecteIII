@@ -6,7 +6,10 @@ public class PotionManager : MonoBehaviour
 {
     int contadorIngredients = 0;
     public GameObject PotionCanvas;
-    //public GameObject etc;
+    public GameObject BottomIngredientCanvas;
+    public GameObject CanvasHints;
+    public GameObject InventoriCanvas;
+    public GameObject CanvasBotons;
 
     void Start()
     {
@@ -19,7 +22,10 @@ public class PotionManager : MonoBehaviour
         if(contadorIngredients == 3)
         {
             PotionCanvas.SetActive(true);
-            //etc.SetActive(false);
+            BottomIngredientCanvas.SetActive(false);
+            CanvasHints.SetActive(false);
+            InventoriCanvas.SetActive(false);
+            CanvasBotons.SetActive(false);
             Debug.Log("hola la poción ya está hecha que pasa??");
         }
     }
