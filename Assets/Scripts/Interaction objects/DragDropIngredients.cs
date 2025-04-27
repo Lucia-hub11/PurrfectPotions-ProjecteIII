@@ -15,6 +15,14 @@ public class DragDropIngredients : MonoBehaviour, IBeginDragHandler, IEndDragHan
 
     public Camera StaticCamera;
 
+    public Canvas potion;
+    int contadorIngredients = 0 ;
+
+    private void Start()
+    {
+        potion.enabled = false;
+    }
+
     private void Awake()
     {
         rectTransform = GetComponent<RectTransform>();
@@ -66,6 +74,8 @@ public class DragDropIngredients : MonoBehaviour, IBeginDragHandler, IEndDragHan
                 Debug.Log("Objeto correcto!" + hit.collider.gameObject.name);
                 //AQUÍ la acción que toque; por ejemplo hacer la poción o obtener la pluma o así.
                 //Debería tanto funcionar para objetos como ingredientes (todos los items del inventario y objetos 3d del juego).
+
+                contadorIngredients++;
             }
             else
             {
@@ -77,6 +87,11 @@ public class DragDropIngredients : MonoBehaviour, IBeginDragHandler, IEndDragHan
         else
         {
             rectTransform.position = originalPosition;
+        }
+
+        if (contadorIngredients == 3)
+        {
+            potion.enabled = true;
         }
     }
 }
