@@ -78,4 +78,16 @@ public class RecipeBookInteraction : MonoBehaviour
         if (recipeCanvas != null)
             recipeCanvas.SetActive(isRecipeOpen);
     }
+
+    public void CloseRecipeWithButton()
+    {
+        if(isRecipeOpen)
+        {
+            ToggleRecipe();
+            if(pressEText!=null)
+            {
+                pressEText.SetActive(false);
+            }
+        }
+    }
 }

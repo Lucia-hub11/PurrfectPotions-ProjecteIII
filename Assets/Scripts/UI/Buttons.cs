@@ -59,6 +59,17 @@ public class Buttons : MonoBehaviour
         Debug.Log("No detecta el canvasMap");
     }
 
+    //Funcions per tancar per botó individual de canvas
+    public void CloseInventory()
+    {
+        inventoryCanvas.SetActive(false);
+    }
+
+    public void CloseMap()
+    {
+        mapCanvas.SetActive(false);
+    }
+
     //public void ShowInventory()
     //{
     //    inventoryCanvas.SetActive(true);
