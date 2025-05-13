@@ -9,6 +9,8 @@ public class Ingredient : MonoBehaviour
     public CrowTalk crowTalk;
     bool crowDimond = false;
 
+    bool tearObtained = false;
+
     [SerializeField] 
     private string ingredientName;
 
@@ -58,10 +60,14 @@ public class Ingredient : MonoBehaviour
 
         if (interactText != null)
         {
-            if (isInRange)
+            if (isInRange && tearObtained==false)
             {
                 //Debug.Log("player esta al range!");
                 interactText.SetActive(true);
+            }
+            else if(isInRange && tearObtained==true)//per no interactuar amb el trevol un cop ja s'ha agafat la llàgrima
+            {
+                interactText.SetActive(false);
             }
             else //cada model t� un text per separat pq si no es barallen
             {
@@ -88,6 +94,10 @@ public class Ingredient : MonoBehaviour
                 }
 
             }
+            else if (tearObtained==true){
+                
+                interactText.SetActive(false);
+            }
             else
             {
                 CollectIngredient();
@@ -105,6 +115,13 @@ public class Ingredient : MonoBehaviour
                 fromIngredientsBottomInventoryManager.AddIngredient(ingredientName, ingredientSprite);
                 interactText.SetActive(false);
                 crowDimond = true;
+            }
+            if (ingredientName == "Tear")//el mateix però sense destruir-lo
+            {
+                inventoryManager.AddIngredient(ingredientName, ingredientSprite);
+                fromIngredientsBottomInventoryManager.AddIngredient(ingredientName, ingredientSprite);
+                interactText.SetActive(false);
+                tearObtained=true;
             }
             else
             {
