@@ -4,6 +4,7 @@ public class CameraSwitcher : MonoBehaviour
 {
     public GameObject mainCameraGO;    // El GameObject que tiene la Main Camera + AudioListener
     public GameObject staticCameraGO;  // El GameObject que tiene la Static Camera + AudioListener
+    public GameObject followingCamera;
 
     private void Start()
     {
@@ -13,6 +14,7 @@ public class CameraSwitcher : MonoBehaviour
         // Estado inicial
         mainCameraGO.SetActive(false);
         staticCameraGO.SetActive(true);
+        followingCamera.SetActive(true);
     }
 
     public void SwitchToStatic()
@@ -27,6 +29,14 @@ public class CameraSwitcher : MonoBehaviour
         Debug.Log("Canviant a mainCamera");
         staticCameraGO.SetActive(false);
         mainCameraGO.SetActive(true);
+    }
+
+    public void SwitchToFollowing()
+    {
+        Debug.Log("Canviant a FollowingCam");
+        staticCameraGO.SetActive(false);
+        mainCameraGO.SetActive(false);
+        followingCamera.SetActive(true);
     }
 
 
