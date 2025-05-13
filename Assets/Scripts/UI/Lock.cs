@@ -18,8 +18,9 @@ public class Lock : MonoBehaviour
     void Start()
     {
         _lockCharacterNumber = new int[Password.Length];
+        UpdateUI();
     }
-    public void ChangePassword(int number)
+    public void ChangeInsertedPassword(int number)
     {
         _lockCharacterNumber[number]++;
         if(_lockCharacterNumber[number] >=LockCharacterChoices[number].Length)

@@ -1585,7 +1585,7 @@ GameObject:
   - component: {fileID: 177243965}
   - component: {fileID: 177243964}
   m_Layer: 5
-  m_Name: Button
+  m_Name: Button2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1654,7 +1654,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 177243965}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1192719448}
+        m_TargetAssemblyTypeName: Lock, Assembly-CSharp
+        m_MethodName: ChangeInsertedPassword
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &177243965
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1706,7 +1718,7 @@ GameObject:
   - component: {fileID: 179952402}
   - component: {fileID: 179952401}
   m_Layer: 5
-  m_Name: Button (1)
+  m_Name: Button3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1775,7 +1787,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 179952402}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1192719448}
+        m_TargetAssemblyTypeName: Lock, Assembly-CSharp
+        m_MethodName: ChangeInsertedPassword
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &179952402
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1938,7 +1962,7 @@ GameObject:
   - component: {fileID: 202996148}
   - component: {fileID: 202996147}
   m_Layer: 5
-  m_Name: Button (2)
+  m_Name: Button1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2007,7 +2031,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 202996148}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1192719448}
+        m_TargetAssemblyTypeName: Lock, Assembly-CSharp
+        m_MethodName: ChangeInsertedPassword
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &202996148
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9149,8 +9185,8 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 538041428}
-  - {fileID: 177243963}
   - {fileID: 202996146}
+  - {fileID: 177243963}
   - {fileID: 179952400}
   - {fileID: 1505917972}
   m_Father: {fileID: 736845314}
@@ -9173,8 +9209,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Interactable: 1
-  LockCanvas: {fileID: 0}
-  Text: []
+  LockCanvas: {fileID: 1192719443}
+  Text:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   Password: 862
   LockCharacterChoices:
   - 123456789
@@ -11857,7 +11896,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1505917974}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1192719448}
+        m_TargetAssemblyTypeName: Lock, Assembly-CSharp
+        m_MethodName: StopInteract
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1505917974
 MonoBehaviour:
   m_ObjectHideFlags: 0
