@@ -7,6 +7,7 @@ public class Ingredient : MonoBehaviour
 {
     public StartMemoryGame memoryGame;
     public CrowTalk crowTalk;
+    public Canvas Code;
     bool crowDimond = false;
 
     [SerializeField] 
@@ -43,6 +44,7 @@ public class Ingredient : MonoBehaviour
         fromObjectsBottomInventoryManager = objectsBottom.GetComponent<BottomInventoryManager>();
         fromIngredientsBottomInventoryManager = ingredientsBottom.GetComponent<BottomInventoryManager>();
 
+        Code.enabled = false;
 
         //text 'Clica E per agafar'
         if (interactText != null)
@@ -75,6 +77,11 @@ public class Ingredient : MonoBehaviour
             {
                 memoryGame.JocMemory(this);
                 //Destroy(interactText);
+                interactText.SetActive(false);
+            }
+            else if (ingredientName == "Diamond")
+            {
+                Code.enabled = true;
                 interactText.SetActive(false);
             }
             else if(ingredientName=="Crow Feather"){
