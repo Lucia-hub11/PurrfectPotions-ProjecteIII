@@ -2,13 +2,15 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
+//using UnityEngine.UI;
+using TMPro;
 
 public class Lock : MonoBehaviour
 {
     public bool Interactable = true;
     public GameObject LockCanvas;
-    public Text[] Text;
+    //public Text[] Text;
+    public TextMeshProUGUI[] Text;
 
     public string Password;
     public string[] LockCharacterChoices;

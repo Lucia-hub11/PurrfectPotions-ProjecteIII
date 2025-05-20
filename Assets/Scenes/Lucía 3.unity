@@ -1662,7 +1662,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 1
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -1795,7 +1795,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 2
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -2645,7 +2645,7 @@ GameObject:
   - component: {fileID: 244582874}
   - component: {fileID: 244582873}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: Text1 (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7700,7 +7700,7 @@ GameObject:
   - component: {fileID: 1044351547}
   - component: {fileID: 1044351546}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: Text3 (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9211,9 +9211,9 @@ MonoBehaviour:
   Interactable: 1
   LockCanvas: {fileID: 1192719443}
   Text:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 244582873}
+  - {fileID: 1320508482}
+  - {fileID: 1044351546}
   Password: 862
   LockCharacterChoices:
   - 123456789
@@ -10072,7 +10072,7 @@ GameObject:
   - component: {fileID: 1320508483}
   - component: {fileID: 1320508482}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: Text2 (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
