@@ -13,26 +13,34 @@ public class AskForHint : MonoBehaviour
     //cal augmentar el contador++ segons els ingredients aconseguits a l'inventari. Esperar a que la Nora aconsegueixi guardar llista d'ingredients aconseguits a l'inventari.
     //De moment contador++ es suma cada cop que es pren el botó per fer la prova.
 
-    public string[] Hints = new string[] { "Ànims!", "Tú pots!", "Segueix així!", "Ja gairabé ho tens!" };
+    public string[] Hints = new string[] { "", "", "", "" };
     private float tempsApareixer = 5f;
     private float tempsDesapareixer;
 
     public void ButtonPressed()
     {
-        pistaSprite.enabled = true;
-        pista.enabled = true;
-        tempsDesapareixer = Time.time + tempsApareixer;
-        pista.text = Hints[contador];
-        contador++;
+        if (contador<Hints.Length)
+        {
+            pistaSprite.enabled = true;
+            pista.enabled = true;
+            tempsDesapareixer = Time.time + tempsApareixer;
+            pista.text = Hints[contador];
+            contador++;
+        }
+        else
+        {
+            pista.text = Hints[3];
+        }
+
     }
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        pista.text = contador + "";
-    }
+    //// Start is called before the first frame update
+    //void Start()
+    //{
+    //    pista.text = contador + "";
+    //}
 
-    // Update is called once per frame
+    //// Update is called once per frame
     void Update()
     {
         if (pista.enabled && (Time.time >= tempsDesapareixer))

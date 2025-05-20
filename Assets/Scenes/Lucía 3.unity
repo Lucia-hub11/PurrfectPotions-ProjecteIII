@@ -11571,10 +11571,16 @@ MonoBehaviour:
   pista: {fileID: 1358078741}
   pistaSprite: {fileID: 777660295}
   Hints:
-  - "\xC0nims!"
-  - "T\xFA pots!"
-  - "Segueix aix\xED!"
-  - "Ja gairab\xE9 ho tens!"
+  - Com aconseguirem aigua si al pou falta la galleda?
+  - "El preu de les pomes \xE9s molt alt \xFAltimament, no creixen als arbres! Ei,
+    espera un moment..."
+  - Recorda que el menjar el guardem al rebost, fora de la casa.
+  - "Els cristalls del bosc son tan bonics! Els has vist b\xE9?"
+  - 'El laberint: fosc, humid, tranquil... Les condicions ideals pel cultiu de fongs!
+    Ai ara em ve de gust ceps.'
+  - Algo de las flores
+  - Sempre que em frustro passejo entre les flors per relaxar-me
+  - "Sembla que ja tens tot el que necessites per la poci\xF3. Bona feina!"
 --- !u!114 &1454847791
 MonoBehaviour:
   m_ObjectHideFlags: 0
