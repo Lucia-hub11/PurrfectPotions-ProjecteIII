@@ -6,6 +6,7 @@ using UnityEngine;
 public class Ingredient : MonoBehaviour
 {
     public StartMemoryGame memoryGame;
+    public StartClimbers climbersGame;
     public CrowTalk crowTalk;
     bool crowDimond = false;
 
@@ -87,6 +88,11 @@ public class Ingredient : MonoBehaviour
                     crowTalk.ShowCrowThanks();
                 }
 
+            }
+            else if (ingredientName == "Magic Flower")
+            {
+                climbersGame.JocClimbers(this);
+                interactText.SetActive(false);
             }
             else
             {
