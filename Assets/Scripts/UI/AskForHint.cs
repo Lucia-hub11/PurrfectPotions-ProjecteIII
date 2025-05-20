@@ -29,7 +29,7 @@ public class AskForHint : MonoBehaviour
         }
         else
         {
-            pista.text = Hints[3];
+            pista.text = Hints[7];
         }
 
     }
