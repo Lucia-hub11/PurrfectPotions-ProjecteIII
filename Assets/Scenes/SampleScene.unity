@@ -10393,7 +10393,7 @@ MonoBehaviour:
   - {fileID: 909857265}
   - {fileID: 830604201}
   - {fileID: 1060173892}
-  ingredient: {fileID: 0}
+  ingredient: {fileID: 1646146717}
   Password: 862
   LockCharacterChoices:
   - 123456789
