@@ -2,15 +2,15 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-//using UnityEngine.UI;
 using TMPro;
 
 public class Lock : MonoBehaviour
 {
     public bool Interactable = true;
     public GameObject LockCanvas;
-    //public Text[] Text;
     public TextMeshProUGUI[] Text;
+
+    public Ingredient ingredient;
 
     public string Password;
     public string[] LockCharacterChoices;
@@ -49,6 +49,8 @@ public class Lock : MonoBehaviour
     public void Unlock()
     {
         Debug.Log("Unlocked");
+        ingredient.CollectIngredient();
+        LockCanvas.SetActive(false);
     }
 
     private void UpdateUI()
@@ -57,19 +59,6 @@ public class Lock : MonoBehaviour
         for(int i = 0;i<len;i++)
         {
             Text[i].text = LockCharacterChoices[i][_lockCharacterNumber[i]].ToString();
-        }
-    }
-
-    private void OnMouseDown()
-    {
-        Interact();
-    }
-
-    public void Interact()
-    {
-        if(Interactable)
-        {
-            LockCanvas.SetActive(true);
         }
     }
     public void StopInteract()
