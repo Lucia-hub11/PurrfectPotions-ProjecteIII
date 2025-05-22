@@ -17,6 +17,13 @@ public class AskForHint : MonoBehaviour
     private float tempsApareixer = 5f;
     private float tempsDesapareixer;
 
+
+    //función para asignar número de pista según nombre
+    public void AssignHint(string IngredientName)
+    {
+        //recoger el nombde de IngredientName y asignar numero de pista correspondiente.
+    }
+
     public void ButtonPressed()
     {
         //en vez de contador debería ser switch cases?

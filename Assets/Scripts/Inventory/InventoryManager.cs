@@ -54,7 +54,7 @@ public class InventoryManager : MonoBehaviour
             {
                 ingredientSlot[i].AddIngredientSprite(ingredientName, ingredientSprite);
                 Debug.Log("ingredientName = " + ingredientName);
-                //función que pase el nombre de ingredientName supongo que por string a AskForHint
+                //función que pase el nombre de ingredientName supongo que por string a AskForHint a la función AssignHint
                 return;
             }
         }
