@@ -13,12 +13,17 @@ public class AskForHint : MonoBehaviour
     //cal augmentar el contador++ segons els ingredients aconseguits a l'inventari. Esperar a que la Nora aconsegueixi guardar llista d'ingredients aconseguits a l'inventari.
     //De moment contador++ es suma cada cop que es pren el botó per fer la prova.
 
-    public string[] Hints = new string[] { "", "", "", "" };
+    public string[] Hints = new string[] {};
     private float tempsApareixer = 5f;
     private float tempsDesapareixer;
 
     public void ButtonPressed()
     {
+        //en vez de contador debería ser switch cases?
+        //Empezar si no tiene ningun item elegir random entre todas las pistas menos la ultima (son cuatro en total van de 0 a 3, la numero 3 entonces no se muestra)
+        //Siguientes cases sería las opciones de ingredientes que pueden tener, como son tres opciones no hay demasiadas combinaciones pero si fueran más sería complicado.
+        // Tal vez vaya mejor con un if. Poner un contador o algo así y según el item que haya conseguido cambia el número, o directamente mandamos el nombre del ingrediente al script y hacemos if ingredientName == al que sea, entonces random entre estos.
+        //Lo ideal sería enlacar directamente el nombre de cada ingrediente con el número de pista al que corresponde y hacer elegir random entre las pistas MENOS la de ingredientName. Si, esa es la mejor opción.
         if (contador<Hints.Length)
         {
             pistaSprite.enabled = true;
@@ -26,10 +31,15 @@ public class AskForHint : MonoBehaviour
             tempsDesapareixer = Time.time + tempsApareixer;
             pista.text = Hints[contador];
             contador++;
+
+            //contador tiene que depender del objeto encontrado, no de la pista.
+            //recives pistas aleatorias excepto las que pertenezcan a items que ya has conseguido.
+            //No es contador entonces, es vincular un numero de pista para cada objeto en específico.
+            // Nivel 1: Diamond(0), Bolet (1), Flor màgica + llàgrima (2), tornar a casa no debe incluirse en el random, es al final.
         }
         else
         {
-            pista.text = Hints[7];
+            pista.text = Hints[3];
         }
 
     }
@@ -50,3 +60,10 @@ public class AskForHint : MonoBehaviour
         }
     }
 }
+
+
+// Pistas para el tutorial: (seguramente necesite un script diferente pero bueno)
+// Com aconseguirem aigua si al pou falta la galleda?
+// El preu de les pomes és molt alt últimament, no creixen als arbres! Ei, espera un moment...
+// Recorda que el menjar el guardem al rebost, fora de la casa.
+// Sembla que ja tens tot el que necessites per la poció. Bona feina! Torna cap a casa i cuinem-la.

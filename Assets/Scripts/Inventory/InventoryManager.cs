@@ -53,11 +53,11 @@ public class InventoryManager : MonoBehaviour
             if (ingredientSlot[i].isFull==false)
             {
                 ingredientSlot[i].AddIngredientSprite(ingredientName, ingredientSprite);
+                Debug.Log("ingredientName = " + ingredientName);
+                //función que pase el nombre de ingredientName supongo que por string a AskForHint
                 return;
             }
         }
-        
-        //Debug.Log("ingredientName = " + ingredientName);
 
     }
     
@@ -68,11 +68,11 @@ public class InventoryManager : MonoBehaviour
             if (objectSlot[i].isFull == false)
             {
                 objectSlot[i].AddObjectSprite(ingredientName, ingredientSprite);
+                Debug.Log("ingredientName = " + ingredientName);
+                //función que pase el nombre de ingredientName supongo que por string a AskForHint
                 return;
             }
         }
-
-        //Debug.Log("ingredientName = " + ingredientName);
 
     }//FUNCIÓ PER FER EL MATEIXO PERO AMB ADD OBJECT
 

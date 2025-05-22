@@ -11379,6 +11379,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 7
+  rotationSpeed: 0
 --- !u!114 &1451399857
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11571,17 +11572,11 @@ MonoBehaviour:
   pista: {fileID: 1358078741}
   pistaSprite: {fileID: 777660295}
   Hints:
-  - Com aconseguirem aigua si al pou falta la galleda?
-  - "El preu de les pomes \xE9s molt alt \xFAltimament, no creixen als arbres! Ei,
-    espera un moment..."
-  - Recorda que el menjar el guardem al rebost, fora de la casa.
   - "Els cristalls del bosc son tan bonics! Els has vist b\xE9?"
-  - 'El laberint: fosc, humid, tranquil... Les condicions ideals pel cultiu de fongs!
-    Ai ara em ve de gust ceps.'
-  - "En el prat del bosc \xE9s on et vaig trobar, sempre m'emociona aquest record...
-    TTnTT"
-  - Sempre que em frustro passejo entre les flors per relaxar-me
-  - "Sembla que ja tens tot el que necessites per la poci\xF3. Bona feina!"
+  - 'El laberint: fosc, humid, tranquil... Les condicions ideals pel cultiu de fongs!'
+  - Sempre que em frustro passejo entre les flors per relaxar-me, t'ho recomano!
+  - "Sembla que ja tens tot el que necessites per la poci\xF3. Bona feina! Torna
+    cap a casa i cuinem-la."
 --- !u!114 &1454847791
 MonoBehaviour:
   m_ObjectHideFlags: 0
