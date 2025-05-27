@@ -11491,11 +11491,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pista: {fileID: 1358078741}
   pistaSprite: {fileID: 777660295}
-  Hints:
-  - "\xC0nims!"
-  - "T\xFA pots!"
-  - "Segueix aix\xED!"
-  - "Ja gairab\xE9 ho tens!"
+  finalHint: "Sembla que ja tens tot el que necessites per la poci\xF3. Bona feina!
+    Torna cap a casa i cuinem-la."
 --- !u!114 &1454847791
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14770,6 +14767,7 @@ MonoBehaviour:
   - {fileID: 1725627081}
   - {fileID: 167448144}
   - {fileID: 528392189}
+  hintSystem: {fileID: 1454847790}
   InteractTextCanvas: {fileID: 433189550}
 --- !u!114 &1864136787
 MonoBehaviour:
