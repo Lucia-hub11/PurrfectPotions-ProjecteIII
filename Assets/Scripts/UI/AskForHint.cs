@@ -20,9 +20,9 @@ public class AskForHint : MonoBehaviour
     
     private Dictionary<string, string> hintByIngredient = new Dictionary<string, string>()
     {
-        {"Diamond", "Potser brilla més sota la llum del sol."},
-        {"Invisible Mushroom", "Busca en llocs humits i ombrívols..."},
-        {"Tear", "Les flors màgiques creixen on la llàgrima cau."}
+        {"Diamond", "Els cristalls del bosc són tan bonicas! Els has vist bé?"},
+        {"Invisible Mushroom", "El laberint: fosc, humit, tranquil... Ideal pel cultiu de fongs!"},
+        {"Tear", "Quan estic frustrat passejo pel camp de flors. T'ho recomano."}
     };
 
 
