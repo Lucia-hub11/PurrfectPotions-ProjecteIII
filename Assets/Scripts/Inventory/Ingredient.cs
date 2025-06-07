@@ -8,7 +8,9 @@ public class Ingredient : MonoBehaviour
     public StartMemoryGame memoryGame;
     public CrowTalk crowTalk;
     public GameObject Code;
+
     bool crowDimond = false;
+    bool crowFeatherObtained = false;
 
     bool tearObtained = false;
 
@@ -91,6 +93,10 @@ public class Ingredient : MonoBehaviour
                 interactText.SetActive(false);
             }
             else if(ingredientName=="Crow Feather"){
+                if (crowFeatherObtained)
+                {
+                    return;
+                }
                 if (crowDimond == false)
                 {
                     crowTalk.ShowCrowTalk();
@@ -116,14 +122,15 @@ public class Ingredient : MonoBehaviour
     {
         if (gameObject.tag == "Ingredient")
         {
-            if(ingredientName== "Crow Feather")//el mateix però sense destruir-lo
+            if(ingredientName== "Crow Feather" && !crowFeatherObtained)//el mateix però sense destruir-lo
             {
                 inventoryManager.AddIngredient(ingredientName, ingredientSprite);
                 fromIngredientsBottomInventoryManager.AddIngredient(ingredientName, ingredientSprite);
                 interactText.SetActive(false);
                 crowDimond = true;
+                crowFeatherObtained = true;
             }
-            if (ingredientName == "Tear")//el mateix però sense destruir-lo
+            else if (ingredientName == "Tear")//el mateix però sense destruir-lo
             {
                 inventoryManager.AddIngredient(ingredientName, ingredientSprite);
                 fromIngredientsBottomInventoryManager.AddIngredient(ingredientName, ingredientSprite);
