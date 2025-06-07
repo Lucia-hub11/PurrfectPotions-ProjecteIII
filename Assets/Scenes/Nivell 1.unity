@@ -7405,11 +7405,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88abcf49b57674645aa0f81a64569631, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PotionCanvas: {fileID: 1431496925}
-  BottomIngredientCanvas: {fileID: 682560311}
-  CanvasHints: {fileID: 1454847789}
-  InventoriCanvas: {fileID: 1864136785}
-  CanvasBotons: {fileID: 1726947248}
 --- !u!1 &1043030893
 GameObject:
   m_ObjectHideFlags: 0
@@ -12803,7 +12798,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1649131523
 RectTransform:
   m_ObjectHideFlags: 0
@@ -17168,11 +17163,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88abcf49b57674645aa0f81a64569631, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PotionCanvas: {fileID: 1431496925}
-  BottomIngredientCanvas: {fileID: 682560311}
-  CanvasHints: {fileID: 1454847789}
-  InventoriCanvas: {fileID: 1864136785}
-  CanvasBotons: {fileID: 1726947248}
 --- !u!135 &5705370889093014711
 SphereCollider:
   m_ObjectHideFlags: 0
