@@ -1714,7 +1714,6 @@ GameObject:
   m_Component:
   - component: {fileID: 113527691}
   - component: {fileID: 113527692}
-  - component: {fileID: 113527693}
   m_Layer: 0
   m_Name: Bloqueo invisible (1)
   m_TagString: Untagged
@@ -1758,23 +1757,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &113527693
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 113527690}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c21892585786cdd46afa83a284539f49, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Warning: {fileID: 777660295}
-  textWarning: {fileID: 1358078741}
-  missatge: "No et cal anar cap all\xE0 encara."
-  duracioMissatge: 3
-  temps: 0
 --- !u!1001 &123194298
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3540,7 +3522,6 @@ GameObject:
   m_Component:
   - component: {fileID: 213433116}
   - component: {fileID: 213433115}
-  - component: {fileID: 213433117}
   m_Layer: 0
   m_Name: Bloqueo invisible
   m_TagString: Untagged
@@ -3584,23 +3565,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2008869410}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &213433117
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 213433114}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c21892585786cdd46afa83a284539f49, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Warning: {fileID: 777660295}
-  textWarning: {fileID: 1358078741}
-  missatge: "No et cal anar cap all\xE0 encara."
-  duracioMissatge: 3
-  temps: 0
 --- !u!1 &216037528 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: f101c599e7fd21e4c979ac0e993305d6, type: 3}
@@ -27427,6 +27391,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6be27886e19d1ac4ab9c82212cc52f90, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pista: {fileID: 1358078741}
+  pistaSprite: {fileID: 777660295}
+  tutorialTexts:
+  - "Comen\xE7em la teva primera lli\xE7\xF3!"
+  - "Mou-te utilitzant les tecles WASD per despla\xE7ar-te."
+  - "Prem 'I' o fes clic al bot\xF3 per obrir l'inventari i veure la recepta de la
+    poci\xF3."
+  - Surt de casa per buscar els ingredients que necessites.
+  - Has trobat un ingredient! Mira'l a l'inventari.
+  - "Amb el pou podem aconseguir aigua, per\xF2 falta la galleda..."
+  - "Has trobat la galleda! Els objectes tamb\xE9 es guarden a l'inventari."
+  - "Per fer servir un objecte \xE9s tan f\xE0cil com arrossegar-ho des de la barra
+    inferior."
+  - Prova-ho amb la galleda. Arrossega-la cap al pou.
+  - Tens tots els ingredients! Torna cap a casa.
+  - "Arrossega els ingredients al calder per completar la poci\xF3."
 --- !u!1001 &1455412399
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -36608,7 +36588,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2008869410}
-  - component: {fileID: 2008869411}
   m_Layer: 0
   m_Name: Bloqueo invisible
   m_TagString: Untagged
@@ -36633,23 +36612,6 @@ Transform:
   - {fileID: 213433116}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2008869411
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2008869408}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a578530f72b2d4641885f1cc4703af5f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  aviso: {fileID: 1358078741}
-  avisoSprite: {fileID: 777660295}
-  mensaje: "No pots avan\xE7ar encara. Segueix amb el tutorial."
-  tempsApareixer: 4
-  tempsDesapareixer: 0
 --- !u!1001 &2010157906
 PrefabInstance:
   m_ObjectHideFlags: 0
