@@ -9,9 +9,15 @@ EditorBuildSettings:
     path: Assets/Scenes/Play.unity
     guid: 943b2f55c8b6349469f3a7644bb49d0b
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 9fc0d4010bbf28b4594072e72b8655ab
+    path: Assets/Scenes/Tutorial.unity
+    guid: 09bca37369ba88042a1162e83434069e
   - enabled: 1
+    path: Assets/Scenes/Level Complete.unity
+    guid: 75e46b4a755e38d49ad7120937d13921
+  - enabled: 1
+    path: Assets/Scenes/Nivell 1.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 0
     path: "Assets/Scenes/Luc\xEDa.unity"
     guid: c28fdae52bcdf504397f4bba2bfb1d39
   - enabled: 0

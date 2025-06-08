@@ -9,6 +9,8 @@ public class InventoryManager : MonoBehaviour
     public IngredientSlot[] ingredientSlot;
     public ObjectSlot[] objectSlot;
 
+    public AskForHint hintSystem;
+
     private InputController _inputController;
 
     public GameObject InteractTextCanvas;
@@ -53,11 +55,17 @@ public class InventoryManager : MonoBehaviour
             if (ingredientSlot[i].isFull==false)
             {
                 ingredientSlot[i].AddIngredientSprite(ingredientName, ingredientSprite);
+                Debug.Log("ingredientName = " + ingredientName);
+                //función que pase el nombre de ingredientName supongo que por string a AskForHint a la función AssignHint
+               
+                if (hintSystem != null)
+                {
+                    hintSystem.AddCollectedIngredient(ingredientName);
+                }
+                
                 return;
             }
         }
-        
-        //Debug.Log("ingredientName = " + ingredientName);
 
     }
     
@@ -68,11 +76,17 @@ public class InventoryManager : MonoBehaviour
             if (objectSlot[i].isFull == false)
             {
                 objectSlot[i].AddObjectSprite(ingredientName, ingredientSprite);
+                Debug.Log("ingredientName = " + ingredientName);
+                //función que pase el nombre de ingredientName supongo que por string a AskForHint
+               
+                if (hintSystem != null)
+                {
+                    hintSystem.AddCollectedIngredient(ingredientName);
+                }
+                
                 return;
             }
         }
-
-        //Debug.Log("ingredientName = " + ingredientName);
 
     }//FUNCIÓ PER FER EL MATEIXO PERO AMB ADD OBJECT
 

@@ -6,9 +6,11 @@ using UnityEngine;
 public class Ingredient : MonoBehaviour
 {
     public StartMemoryGame memoryGame;
-    public StartClimbers climbersGame;
     public CrowTalk crowTalk;
+    public GameObject Code;
+
     bool crowDimond = false;
+    bool tearObtained = false;
 
     [SerializeField] 
     private string ingredientName;
@@ -44,6 +46,7 @@ public class Ingredient : MonoBehaviour
         fromObjectsBottomInventoryManager = objectsBottom.GetComponent<BottomInventoryManager>();
         fromIngredientsBottomInventoryManager = ingredientsBottom.GetComponent<BottomInventoryManager>();
 
+        Code.SetActive(false);
 
         //text 'Clica E per agafar'
         if (interactText != null)
@@ -59,10 +62,14 @@ public class Ingredient : MonoBehaviour
 
         if (interactText != null)
         {
-            if (isInRange)
+            if (isInRange && tearObtained==false)
             {
                 //Debug.Log("player esta al range!");
                 interactText.SetActive(true);
+            }
+            else if(isInRange && tearObtained==true)//per no interactuar amb el trevol un cop ja s'ha agafat la llàgrima
+            {
+                interactText.SetActive(false);
             }
             else //cada model t� un text per separat pq si no es barallen
             {
@@ -78,6 +85,11 @@ public class Ingredient : MonoBehaviour
                 //Destroy(interactText);
                 interactText.SetActive(false);
             }
+            else if (ingredientName == "Diamond")
+            {
+                Code.SetActive(true);
+                interactText.SetActive(false);
+            }
             else if(ingredientName=="Crow Feather"){
                 if (crowDimond == false)
                 {
@@ -89,9 +101,8 @@ public class Ingredient : MonoBehaviour
                 }
 
             }
-            else if (ingredientName == "Magic Flower")
-            {
-                climbersGame.JocClimbers(this);
+            else if (tearObtained==true){
+                
                 interactText.SetActive(false);
             }
             else
@@ -111,6 +122,13 @@ public class Ingredient : MonoBehaviour
                 fromIngredientsBottomInventoryManager.AddIngredient(ingredientName, ingredientSprite);
                 interactText.SetActive(false);
                 crowDimond = true;
+            }
+            else if (ingredientName == "Tear")//el mateix però sense destruir-lo
+            {
+                inventoryManager.AddIngredient(ingredientName, ingredientSprite);
+                fromIngredientsBottomInventoryManager.AddIngredient(ingredientName, ingredientSprite);
+                interactText.SetActive(false);
+                tearObtained=true;
             }
             else
             {
