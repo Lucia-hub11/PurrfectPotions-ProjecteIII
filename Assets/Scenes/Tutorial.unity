@@ -1730,11 +1730,11 @@ Transform:
   m_GameObject: {fileID: 113527690}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -5.968858, y: 0, z: 0.45117682}
-  m_LocalScale: {x: 0.05893338, y: 1, z: 16.968311}
+  m_LocalPosition: {x: 0, y: 0, z: 35.4}
+  m_LocalScale: {x: 4.6240015, y: 11.133667, z: 78.46149}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 213433116}
+  m_Father: {fileID: 2008869410}
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!65 &113527692
 BoxCollider:
@@ -3558,13 +3558,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 213433114}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.9, y: 0.396, z: -18}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 27.6, y: 0, z: 0}
   m_LocalScale: {x: 4.624, y: 11.133667, z: 78.46148}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 113527691}
-  m_Father: {fileID: 0}
+  m_Children: []
+  m_Father: {fileID: 2008869410}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &216037528 stripped
 GameObject:
@@ -20357,7 +20356,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1454847790}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: AskForHint, Assembly-CSharp
         m_MethodName: ButtonPressed
         m_Mode: 1
@@ -27288,7 +27287,7 @@ GameObject:
   - component: {fileID: 1454847793}
   - component: {fileID: 1454847792}
   - component: {fileID: 1454847791}
-  - component: {fileID: 1454847790}
+  - component: {fileID: 1454847795}
   m_Layer: 5
   m_Name: Canvas(hints)
   m_TagString: Untagged
@@ -27296,22 +27295,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1454847790
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1454847789}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 32e26a056f490924a83e7d7192217faa, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pista: {fileID: 1358078741}
-  pistaSprite: {fileID: 777660295}
-  finalHint: "Sembla que ja tens tot el que necessites per la poci\xF3. Bona feina!
-    Torna cap a casa i cuinem-la."
 --- !u!114 &1454847791
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27396,6 +27379,34 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1454847795
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1454847789}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6be27886e19d1ac4ab9c82212cc52f90, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pista: {fileID: 1358078741}
+  pistaSprite: {fileID: 777660295}
+  tutorialTexts:
+  - "Comen\xE7em la teva primera lli\xE7\xF3!"
+  - "Mou-te utilitzant les tecles WASD per despla\xE7ar-te."
+  - "Prem 'I' o fes clic al bot\xF3 per obrir l'inventari i veure la recepta de la
+    poci\xF3."
+  - Surt de casa per buscar els ingredients que necessites.
+  - Has trobat un ingredient! Mira'l a l'inventari.
+  - "Amb el pou podem aconseguir aigua, per\xF2 falta la galleda..."
+  - "Has trobat la galleda! Els objectes tamb\xE9 es guarden a l'inventari."
+  - "Per fer servir un objecte \xE9s tan f\xE0cil com arrossegar-ho des de la barra
+    inferior."
+  - Prova-ho amb la galleda. Arrossega-la cap al pou.
+  - Tens tots els ingredients! Torna cap a casa.
+  - "Arrossega els ingredients al calder per completar la poci\xF3."
 --- !u!1001 &1455412399
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -34289,7 +34300,7 @@ MonoBehaviour:
   - {fileID: 1725627081}
   - {fileID: 167448144}
   - {fileID: 528392189}
-  hintSystem: {fileID: 1454847790}
+  hintSystem: {fileID: 0}
   InteractTextCanvas: {fileID: 433189550}
 --- !u!114 &1864136787
 MonoBehaviour:
@@ -36568,6 +36579,39 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 500, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &2008869408
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2008869410}
+  m_Layer: 0
+  m_Name: Bloqueo invisible
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2008869410
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2008869408}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -20.7, y: 0.3959999, z: -18}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 113527691}
+  - {fileID: 213433116}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2010157906
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -39435,4 +39479,4 @@ SceneRoots:
   - {fileID: 1724409768}
   - {fileID: 466581586}
   - {fileID: 870148145}
-  - {fileID: 213433116}
+  - {fileID: 2008869410}
