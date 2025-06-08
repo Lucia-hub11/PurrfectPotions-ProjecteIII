@@ -16,6 +16,11 @@ public class Tutorial : MonoBehaviour
 
     public void Start()
     {
+        if (SceneManager.GetActiveScene().name != "Tutorial")
+        {
+            this.enabled = false;
+            return;
+        }
           ShowCurrentHint();
 
     }
@@ -58,6 +63,30 @@ public class Tutorial : MonoBehaviour
             {
                 tutorialStep++; //1, 2 i 3
                 ShowCurrentHint();
+            }
+            if () //ha encontrado un ingrediente
+            {
+
+            }
+            if () //se ha acercado al pozo SIN la galleda
+            {
+
+            }
+            if () //ha encontrado el cubo
+            {
+
+            }
+            if () //se ha acercado al pozo CON la galleda
+            {
+                //pistas 7 i 8
+            }
+            if () //todos los ingredientes
+            {
+
+            }
+            if () //vuelve a entrar en casa
+            {
+
             }
         }
     }
