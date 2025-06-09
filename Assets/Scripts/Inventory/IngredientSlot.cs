@@ -20,6 +20,8 @@ public class IngredientSlot : MonoBehaviour
 
     private Sprite spriteWait;
 
+    public AudioSource obtainedSound;
+
     void Start()
     {
         ObtainedText.SetActive(false);
@@ -55,6 +57,10 @@ public class IngredientSlot : MonoBehaviour
         itemImage.gameObject.SetActive(true);
         CloverThoughts.SetActive(false);
         ObtainedText.SetActive(true);
+        if (obtainedSound != null)
+        {
+            obtainedSound.Play();
+        }
         itemImage.enabled = true;
         itemImage.canvasRenderer.SetAlpha(1f);
 

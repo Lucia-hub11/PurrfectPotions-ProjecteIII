@@ -12,6 +12,9 @@ public class PotionManager : MonoBehaviour
     public GameObject InventoriCanvas;
     public GameObject CanvasBotons;
 
+    public CameraSwitcher cameraSwitcher;
+    public AudioSource potionCanvasSound;
+
     void Start()
     {
         PotionCanvas.SetActive(false);
@@ -20,23 +23,16 @@ public class PotionManager : MonoBehaviour
     {
         contadorIngredients++;
         Debug.Log("Ingredientes en el caldero: " + contadorIngredients);
-        if(contadorIngredients == 3 && SceneManager.GetActiveScene().name == "Tutorial")
+        if ((contadorIngredients == 3 && SceneManager.GetActiveScene().name == "Tutorial") ||
+            (contadorIngredients == 4 && SceneManager.GetActiveScene().name == "Nivell 1"))
         {
             PotionCanvas.SetActive(true);
             BottomIngredientCanvas.SetActive(false);
             CanvasHints.SetActive(false);
             InventoriCanvas.SetActive(false);
             CanvasBotons.SetActive(false);
-            //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-        }
-        else if (contadorIngredients == 4 && SceneManager.GetActiveScene().name == "Nivell 1")
-        {
-            PotionCanvas.SetActive(true);
-            BottomIngredientCanvas.SetActive(false);
-            CanvasHints.SetActive(false);
-            InventoriCanvas.SetActive(false);
-            CanvasBotons.SetActive(false);
-            //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            cameraSwitcher.PauseStaticMusic();
+            potionCanvasSound.Play();
         }
     }
 }
