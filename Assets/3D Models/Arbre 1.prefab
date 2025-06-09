@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 7730560035646185412}
   - component: {fileID: 3729468903426794251}
   m_Layer: 0
-  m_Name: Arbre
+  m_Name: Arbre 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -27,13 +27,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 962909854655326116}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalRotation: {x: -0.40137386, y: 0.05820594, z: 0.025568794, w: 0.9137053}
   m_LocalPosition: {x: -0, y: 0, z: 0}
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -47.43, y: 7.29, z: 0}
 --- !u!33 &8115400738366742857
 MeshFilter:
   m_ObjectHideFlags: 0
