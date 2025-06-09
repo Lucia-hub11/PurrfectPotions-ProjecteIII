@@ -30,6 +30,8 @@ public class AskForHint : MonoBehaviour
 
     public string finalHint = "Sembla que ja tens tot el que necessites per la poció. Bona feina! Torna cap a casa i cuinem-la.";
 
+    public AudioSource buttonSound;
+
     public void AddCollectedIngredient(string ingredientName)
     {
         if (!collectedIngredients.Contains(ingredientName))
@@ -46,6 +48,10 @@ public class AskForHint : MonoBehaviour
 
     public void ButtonPressed()
     {
+        if (buttonSound != null)
+        {
+            buttonSound.Play();
+        }
         //en vez de contador debería ser switch cases?
         //Empezar si no tiene ningun item elegir random entre todas las pistas menos la ultima (son cuatro en total van de 0 a 3, la numero 3 entonces no se muestra)
         //Siguientes cases sería las opciones de ingredientes que pueden tener, como son tres opciones no hay demasiadas combinaciones pero si fueran más sería complicado.
