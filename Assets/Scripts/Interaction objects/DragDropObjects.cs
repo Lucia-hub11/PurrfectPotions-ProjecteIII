@@ -6,6 +6,7 @@ using UnityEngine.EventSystems;
 public class DragDropObjects : MonoBehaviour, IBeginDragHandler, IEndDragHandler, IDragHandler
 {
     public Ingredient ploma;
+    public Ingredient aigua;
     [SerializeField] private Canvas canvas;
     private RectTransform rectTransform;   
     private CanvasGroup canvasGroup;  
@@ -66,6 +67,15 @@ public class DragDropObjects : MonoBehaviour, IBeginDragHandler, IEndDragHandler
                 ploma.crowTalk.HideCrowTalk();
                 //AQUÍ la acción que toque; por ejemplo hacer la poción o obtener la pluma o así.
                 //Debería tanto funcionar para objetos como ingredientes (todos los items del inventario y objetos 3d del juego).
+            }
+            else if ((objecte == "Galleda" && target =="Pou"))
+            {
+                inventoryManager.ClearObject(objecte);
+                bottomInventoryManager.ClearObject(objecte);
+                rectTransform.position = originalPosition;
+                Debug.Log("Objeto correcto!"  + hit.collider.gameObject.name);
+                aigua.CollectIngredient();
+                //si es el primer ingrediente que encuentra activar tutorial
             }
             else{
                 rectTransform.position = originalPosition;
