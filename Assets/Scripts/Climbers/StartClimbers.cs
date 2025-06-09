@@ -1,41 +1,67 @@
-using System.Collections;
-using System.Collections.Generic;
+using System;
 using UnityEngine;
-using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
 public class StartClimbers : MonoBehaviour
 {
-
-    [SerializeField] private Canvas climbersCanvas;
-    [SerializeField] private ClimbersGame climbersLogic;
+    [SerializeField] private Canvas climbersCanvas;       // El Canvas que contiene ClimbersGame
+    [SerializeField] private ClimbersGame climbersLogic;  // El script que hace el raycast
 
     private Ingredient currentIngredient;
 
     private void Awake()
     {
+        // Auto-asignación si no lo pones en el Inspector
         if (climbersCanvas == null)
             climbersCanvas = GetComponent<Canvas>();
         if (climbersLogic == null)
             climbersLogic = GetComponent<ClimbersGame>();
+
+        // ...o en hijos, por si tenías la lógica en un child
+        if (climbersCanvas == null)
+            climbersCanvas = GetComponentInChildren<Canvas>();
+        if (climbersLogic == null)
+            climbersLogic = GetComponentInChildren<ClimbersGame>();
     }
 
     private void Start()
     {
-        climbersCanvas.enabled = false;
+        if (climbersCanvas != null)
+            climbersCanvas.enabled = false;
     }
 
     public void JocClimbers(Ingredient ingredient)
     {
         currentIngredient = ingredient;
+
+        // COMPROBACIONES  
+        if (climbersCanvas == null)
+        {
+            Debug.LogError("[StartClimbers] climbersCanvas NO está asignado.");
+            return;
+        }
+        if (climbersLogic == null)
+        {
+            Debug.LogError("[StartClimbers] climbersLogic NO está asignado.");
+            return;
+        }
+
+        // 1) Pausar el juego
         Time.timeScale = 0f;
+        // 2) Mostrar UI
         climbersCanvas.enabled = true;
 
-        // Desactiva controles 3D
+        // 3) Desactivar controles 3D
         var player = GameObject.FindGameObjectWithTag("Player");
-        player.GetComponent<InputController>().enabled = false;
-        player.GetComponent<PlayerController>().enabled = false;
+        if (player != null)
+        {
+            var ic = player.GetComponent<InputController>();
+            if (ic != null) ic.enabled = false;
+            var pc = player.GetComponent<PlayerController>();
+            if (pc != null) pc.enabled = false;
+        }
 
-        // Eventos de finishing o quit
+        // 4) Suscribir y arrancar minijuego
         climbersLogic.onWin += HandleWin;
         climbersLogic.onQuit += HandleQuit;
         climbersLogic.StartMinigame();
@@ -43,7 +69,8 @@ public class StartClimbers : MonoBehaviour
 
     private void HandleWin()
     {
-        currentIngredient.Collect();  // le da el ingrediente
+        // Al ganar, colecta el ingrediente
+        currentIngredient.CollectIngredient();
         EndClimbers();
     }
 
@@ -54,15 +81,21 @@ public class StartClimbers : MonoBehaviour
 
     private void EndClimbers()
     {
+        //Restaurar tiempo y ocultar UI
         Time.timeScale = 1f;
         climbersCanvas.enabled = false;
 
-        // Reactiva controles 3D
+        //Reactivar controles del jugador
         var player = GameObject.FindGameObjectWithTag("Player");
-        player.GetComponent<InputController>().enabled = true;
-        player.GetComponent<PlayerController>().enabled = true;
+        if (player != null)
+        {
+            var ic = player.GetComponent<InputController>();
+            if (ic != null) ic.enabled = true;
+            var pc = player.GetComponent<PlayerController>();
+            if (pc != null) pc.enabled = true;
+        }
 
-        // Limpiar suscripciones y reset
+        //Desuscribir eventos y resetear minijuego
         climbersLogic.onWin -= HandleWin;
         climbersLogic.onQuit -= HandleQuit;
         climbersLogic.ResetMinigame();

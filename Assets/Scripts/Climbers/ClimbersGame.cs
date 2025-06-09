@@ -23,18 +23,11 @@ public class ClimbersGame : MonoBehaviour
         raycaster = GetComponent<GraphicRaycaster>();
         pointerData = new PointerEventData(EventSystem.current);
     }
-
-    /// <summary>
-    /// Arranca el minijuego (lo deja listo para raycast cada Update).
-    /// </summary>
     public void StartMinigame()
     {
         isPlaying = true;
     }
 
-    /// <summary>
-    /// Para el minijuego (deja de procesar colisiones).
-    /// </summary>
     public void ResetMinigame()
     {
         isPlaying = false;
@@ -44,14 +37,13 @@ public class ClimbersGame : MonoBehaviour
     {
         if (!isPlaying) return;
 
-        // 1) Prepara el PointerEventData con la posición actual del ratón
+        //Prepara el PointerEventData con la posición actual del ratón
         pointerData.position = Input.mousePosition;
 
-        // 2) Ejecuta el raycast sobre todos los elementos UI
+        //Ejecuta el raycast sobre todos los elementos UI
         results.Clear();
         raycaster.Raycast(pointerData, results);
 
-        // 3) Recorre los hits
         foreach (var hit in results)
         {
             if (hit.gameObject.CompareTag(wallTag))
@@ -72,7 +64,7 @@ public class ClimbersGame : MonoBehaviour
             }
         }
 
-        // 4) Si el jugador pulsa Escape, salimos sin ganar
+        //Si el jugador pulsa Escape, salimos sin ganar
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             isPlaying = false;
