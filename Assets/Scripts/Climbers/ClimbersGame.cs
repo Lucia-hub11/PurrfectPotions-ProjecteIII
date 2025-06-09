@@ -30,10 +30,32 @@ public class ClimbersGame : MonoBehaviour
         raycaster = GetComponent<GraphicRaycaster>();
         pointerData = new PointerEventData(EventSystem.current);
         canvas.enabled = false;
+
+        // Auto-asignar si faltan
+        if (uiCursor == null)
+            uiCursor = GetComponentInChildren<UICursor>();
+        if (startPoint == null)
+        {
+            var t = transform.Find("StartPoint");
+            if (t != null)
+                startPoint = t as RectTransform;
+        }
     }
 
     public void StartMinigame()
     {
+        // Comprueba cada referencia
+        if (uiCursor == null)
+            Debug.LogError("[ClimbersGame] uiCursor es null. ¿Lo arrastraste en el Inspector?");
+        else if (uiCursor.cursorRect == null)
+            Debug.LogError("[ClimbersGame] uiCursor.cursorRect es null. ¿Asignaste el Image en UICursor?");
+        if (startPoint == null)
+            Debug.LogError("[ClimbersGame] startPoint es null. ¿Lo arrastraste en el Inspector?");
+
+        // Si alguna falta, salimos para evitar más errores
+        if (uiCursor == null || uiCursor.cursorRect == null || startPoint == null)
+            return;
+
         isPlaying = true;
         canvas.enabled = true;
         uiCursor.Activate();
