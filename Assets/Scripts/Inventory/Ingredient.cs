@@ -132,19 +132,12 @@ public class Ingredient : MonoBehaviour
     }
     public void CollectIngredient()
     {
-        // Debug: comprueba referencias
-        if (inventoryManager == null)
-            Debug.LogError("[Ingredient] inventoryManager es null");
-        if (fromIngredientsBottomInventoryManager == null)
-            Debug.LogError("[Ingredient] fromIngredientsBottomInventoryManager es null");
-        if (fromObjectsBottomInventoryManager == null)
-            Debug.LogError("[Ingredient] fromObjectsBottomInventoryManager es null");
-
-        // Si cualquiera falta, salimos
-        if (inventoryManager == null
-         || fromIngredientsBottomInventoryManager == null
-         || fromObjectsBottomInventoryManager == null)
+        // Comprobamos referencias
+        if (inventoryManager == null || fromIngredientsBottomInventoryManager == null || fromObjectsBottomInventoryManager == null)
+        {
+            Debug.LogError("[Ingredient] Inventario no asignado en Inspector");
             return;
+        }
 
         if (gameObject.tag == "Ingredient")
         {

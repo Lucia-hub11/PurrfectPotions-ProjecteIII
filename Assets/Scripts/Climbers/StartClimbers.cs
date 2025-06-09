@@ -5,10 +5,12 @@ using UnityEngine.EventSystems;
 
 public class StartClimbers : MonoBehaviour
 {
-    public Canvas climbersCanvas;
-    public ClimbersGame climbersGame;
+
+    private Canvas climbersCanvas;
+    private ClimbersGame climbersLogic;
 
     private Ingredient currentIngredient;
+
     private void Start()
     {
         climbersCanvas.enabled = false;
@@ -17,52 +19,44 @@ public class StartClimbers : MonoBehaviour
     public void JocClimbers(Ingredient ingredient)
     {
         currentIngredient = ingredient;
-
-        // 1) Pausar el juego principal
         Time.timeScale = 0f;
-        // 2) Mostrar Canvas y cursor UI
         climbersCanvas.enabled = true;
-        climbersGame.StartMinigame();
 
-        // 3) Opcional: deshabilitar controles de jugador por si acaso
+        // Desactiva controles 3D
         var player = GameObject.FindGameObjectWithTag("Player");
         player.GetComponent<InputController>().enabled = false;
         player.GetComponent<PlayerController>().enabled = false;
 
-        // 4) Comunicarle al ClimbersGame cuál es el ingrediente a dar
-        climbersGame.onWin += HandleWin;
-        climbersGame.onQuit += HandleQuit;
+        // Eventos de finishing o quit
+        climbersLogic.onWin += HandleWin;
+        climbersLogic.onQuit += HandleQuit;
+        climbersLogic.StartMinigame();
     }
 
     private void HandleWin()
     {
-        // Al ganar, añade ingrediente
-        currentIngredient.CollectIngredient();
-
+        currentIngredient.Collect();  // le da el ingrediente
         EndClimbers();
     }
 
     private void HandleQuit()
     {
-        // Si salta sin terminar
         EndClimbers();
     }
 
     private void EndClimbers()
     {
-        // 1) Restaurar tiempo y controles
         Time.timeScale = 1f;
+        climbersCanvas.enabled = false;
+
+        // Reactiva controles 3D
         var player = GameObject.FindGameObjectWithTag("Player");
         player.GetComponent<InputController>().enabled = true;
         player.GetComponent<PlayerController>().enabled = true;
 
-        // 2) Ocultar Canvas y resetear minijuego
-        climbersGame.ResetMinigame();
-        climbersCanvas.enabled = false;
-
-        // 3) Limpiar callbacks
-        climbersGame.onWin -= HandleWin;
-        climbersGame.onQuit -= HandleQuit;
+        // Limpiar suscripciones y reset
+        climbersLogic.onWin -= HandleWin;
+        climbersLogic.onQuit -= HandleQuit;
+        climbersLogic.ResetMinigame();
     }
-
 }
