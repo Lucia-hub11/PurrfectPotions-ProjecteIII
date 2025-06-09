@@ -17,55 +17,62 @@ public class ClimbersGame : MonoBehaviour
     private PointerEventData pointerData;
     private List<RaycastResult> results = new List<RaycastResult>();
     private bool isPlaying = false;
-    private RectTransform startPoint;
 
-    private void Awake()
+    void Awake()
     {
         raycaster = GetComponent<GraphicRaycaster>();
         pointerData = new PointerEventData(EventSystem.current);
-        // Busca un hijo llamado "StartPoint"
-        var t = transform.Find("StartPoint");
-        startPoint = t != null ? t.GetComponent<RectTransform>() : null;
     }
 
+    /// <summary>
+    /// Arranca el minijuego (lo deja listo para raycast cada Update).
+    /// </summary>
     public void StartMinigame()
     {
-        if (startPoint == null) Debug.LogError("No hay StartPoint");
         isPlaying = true;
     }
 
+    /// <summary>
+    /// Para el minijuego (deja de procesar colisiones).
+    /// </summary>
     public void ResetMinigame()
     {
         isPlaying = false;
     }
 
-    private void Update()
+    void Update()
     {
         if (!isPlaying) return;
 
-        // Raycast desde el cursor del sistema
+        // 1) Prepara el PointerEventData con la posición actual del ratón
         pointerData.position = Input.mousePosition;
+
+        // 2) Ejecuta el raycast sobre todos los elementos UI
         results.Clear();
         raycaster.Raycast(pointerData, results);
 
+        // 3) Recorre los hits
         foreach (var hit in results)
         {
             if (hit.gameObject.CompareTag(wallTag))
             {
-                // Reinicia la posición virtual (no mueves cursor del sistema)
-                // Podrías animar un "reset" o simplemente ignorar
-                break;
+                Debug.Log("¡Pared tocada! Reiniciando minijuego...");
+                // Reinicia todo de golpe
+                ResetMinigame();
+                StartMinigame();
+                return;
             }
 
             if (hit.gameObject.CompareTag(finishTag))
             {
+                Debug.Log("Meta alcanzada!");
                 isPlaying = false;
                 onWin?.Invoke();
-                break;
+                return;
             }
         }
 
-        // Si pulsa Esc para salir sin ganar
+        // 4) Si el jugador pulsa Escape, salimos sin ganar
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             isPlaying = false;

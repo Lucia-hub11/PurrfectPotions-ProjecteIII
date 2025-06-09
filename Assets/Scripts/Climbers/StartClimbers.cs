@@ -6,10 +6,18 @@ using UnityEngine.EventSystems;
 public class StartClimbers : MonoBehaviour
 {
 
-    private Canvas climbersCanvas;
-    private ClimbersGame climbersLogic;
+    [SerializeField] private Canvas climbersCanvas;
+    [SerializeField] private ClimbersGame climbersLogic;
 
     private Ingredient currentIngredient;
+
+    private void Awake()
+    {
+        if (climbersCanvas == null)
+            climbersCanvas = GetComponent<Canvas>();
+        if (climbersLogic == null)
+            climbersLogic = GetComponent<ClimbersGame>();
+    }
 
     private void Start()
     {
