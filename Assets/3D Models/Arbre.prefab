@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 8115400738366742857}
   - component: {fileID: 7730560035646185412}
   - component: {fileID: 3729468903426794251}
+  - component: {fileID: 8945549993465721574}
   m_Layer: 0
   m_Name: Arbre
   m_TagString: Untagged
@@ -29,7 +30,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: -0, y: 0, z: 0}
-  m_LocalScale: {x: 100, y: 100, z: 100}
+  m_LocalScale: {x: 128.43047, y: 128.43047, z: 128.43047}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -111,3 +112,24 @@ LODGroup:
     renderers:
     - renderer: {fileID: 7730560035646185412}
   m_Enabled: 1
+--- !u!65 &8945549993465721574
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 962909854655326116}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.026516365, y: 0.02606004, z: 0.03986305}
+  m_Center: {x: 0.00024460696, y: -0.0008905662, z: 0.019923126}
