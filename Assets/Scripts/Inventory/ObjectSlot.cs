@@ -15,6 +15,8 @@ public class ObjectSlot : MonoBehaviour
     public GameObject ObtainedText;
     public Image obtainedImage;
 
+    public AudioSource obtainedSound;
+
 
     void Start()
     {
@@ -35,6 +37,10 @@ public class ObjectSlot : MonoBehaviour
         obtainedImage.GetComponent<Image>().sprite = itemSprite;//perquè apareixi al text 'Has obtingut un objecte!'
 
         ObtainedText.SetActive(true);
+        if (obtainedSound != null)
+        {
+            obtainedSound.Play();
+        }
         Invoke("HideText", 3f);
         
     }

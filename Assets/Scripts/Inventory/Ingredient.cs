@@ -83,7 +83,7 @@ public class Ingredient : MonoBehaviour
 
         if (isInRange && ingredientName=="Aigua")
         {
-            if (galledaPou == false)
+            if (galledaPou == false && tutorial != null)
             {
                 Debug.Log("galleda bien");
                 tutorial.tutorialStep = 5;
@@ -132,14 +132,28 @@ public class Ingredient : MonoBehaviour
     }
     public void CollectIngredient()
     {
+        // Debug: comprueba referencias
+        if (inventoryManager == null)
+            Debug.LogError("[Ingredient] inventoryManager es null");
+        if (fromIngredientsBottomInventoryManager == null)
+            Debug.LogError("[Ingredient] fromIngredientsBottomInventoryManager es null");
+        if (fromObjectsBottomInventoryManager == null)
+            Debug.LogError("[Ingredient] fromObjectsBottomInventoryManager es null");
+
+        // Si cualquiera falta, salimos
+        if (inventoryManager == null
+         || fromIngredientsBottomInventoryManager == null
+         || fromObjectsBottomInventoryManager == null)
+            return;
+
         if (gameObject.tag == "Ingredient")
         {
-            if (primerIngredient==0)
+            if (primerIngredient==0 && tutorial != null)
             {
                 tutorial.tutorialStep = 4;
                 tutorial.ShowCurrentHint();
             }
-            else if (primerIngredient==2)
+            else if (primerIngredient==2 && tutorial != null)
             {
                 tutorial.tutorialStep = 9;
                 tutorial.ShowCurrentHint();
@@ -184,7 +198,7 @@ public class Ingredient : MonoBehaviour
             fromObjectsBottomInventoryManager.AddObject(ingredientName, ingredientSprite);
             Destroy(gameObject);
             interactText.SetActive(false);
-            if(ingredientName=="Galleda")
+            if(ingredientName=="Galleda" && tutorial != null)
             {
                 //Debug.Log(ingredientName);
                 //Activar tutorial de como puedes usar los objetos

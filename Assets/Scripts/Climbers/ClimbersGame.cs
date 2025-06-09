@@ -93,13 +93,14 @@ public class ClimbersGame : MonoBehaviour
         {
             if (r.gameObject.CompareTag(wallTag))
             {
-                // Toca pared -> reset al inicio
+                // Toca pared = reset al inicio
                 uiCursor.cursorRect.position = startPoint.position;
                 break;
             }
             else if (r.gameObject.CompareTag(finishTag))
             {
-                // Ha llegado a meta -> disparar win
+                Debug.Log("He tocado FINISH");
+
                 isPlaying = false;
                 onWin?.Invoke();
                 break;
