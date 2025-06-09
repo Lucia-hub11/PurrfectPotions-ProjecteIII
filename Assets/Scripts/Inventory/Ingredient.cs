@@ -9,6 +9,7 @@ public class Ingredient : MonoBehaviour
     public CrowTalk crowTalk;
     public Tutorial tutorial;
     public GameObject Code;
+    public StartClimbers climbersGame;
 
     bool crowDimond = false;
     bool tearObtained = false;
@@ -96,6 +97,11 @@ public class Ingredient : MonoBehaviour
             {
                 memoryGame.JocMemory(this);
                 //Destroy(interactText);
+                interactText.SetActive(false);
+            }
+            else if (ingredientName == "Magic Flower")
+            {
+                climbersGame.JocClimbers(this);
                 interactText.SetActive(false);
             }
             else if (ingredientName == "Diamond")

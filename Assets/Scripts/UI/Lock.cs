@@ -17,6 +17,11 @@ public class Lock : MonoBehaviour
     public int[] _lockCharacterNumber;
     public string _insertedPassword;
 
+    public Animator cofreAnimator;
+    public Animator diamondAnimator;
+    public GameObject candau;
+    public GameObject interactText;
+
     void Start()
     {
         _lockCharacterNumber = new int[Password.Length];
@@ -49,8 +54,20 @@ public class Lock : MonoBehaviour
     public void Unlock()
     {
         Debug.Log("Unlocked");
-        ingredient.CollectIngredient();
+        cofreAnimator.SetBool("OpenCofre", true);
+        
+        diamondAnimator.SetBool("DiamondFloat", true);
+        Destroy(candau);
+
+        Invoke("WaitForDiamond", 2f);
+
         LockCanvas.SetActive(false);
+        Destroy(interactText);
+    } 
+
+    private void WaitForDiamond()
+    {
+        ingredient.CollectIngredient();
     }
 
     private void UpdateUI()
