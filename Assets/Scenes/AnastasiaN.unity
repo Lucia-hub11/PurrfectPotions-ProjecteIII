@@ -1454,7 +1454,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &158578681
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1468,8 +1468,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 913272776}
-  - {fileID: 1403761217}
-  - {fileID: 929094364}
   m_Father: {fileID: 736845314}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -1568,7 +1566,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   climbersCanvas: {fileID: 158578684}
-  climbersGame: {fileID: 158578687}
+  climbersGame: {fileID: 0}
 --- !u!114 &158578687
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6703,6 +6701,8 @@ RectTransform:
   - {fileID: 282990508}
   - {fileID: 1567015562}
   - {fileID: 1349974400}
+  - {fileID: 1403761217}
+  - {fileID: 929094364}
   m_Father: {fileID: 158578681}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -6773,17 +6773,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 929094363}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.3346979, y: 0.06582546, z: 0.22018151}
+  m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 158578681}
+  m_Father: {fileID: 913272776}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: -383}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: 455.6504, y: 265.4971}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &929094365
 MonoBehaviour:
@@ -11538,12 +11538,12 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1403761216}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 158578681}
+  m_Father: {fileID: 913272776}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
