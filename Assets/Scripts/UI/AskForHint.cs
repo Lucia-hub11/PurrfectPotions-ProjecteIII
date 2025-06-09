@@ -20,7 +20,7 @@ public class AskForHint : MonoBehaviour
     
     private Dictionary<string, string> hintByIngredient = new Dictionary<string, string>()
     {
-        {"Diamond", "Els cristalls del bosc són tan bonicas! Els has vist bé?"},
+        {"Diamond", "Els cristalls del bosc són tan bonics! Els has vist bé?"},
         {"Invisible Mushroom", "El laberint: fosc, humit, tranquil... Ideal pel cultiu de fongs!"},
         {"Tear", "Quan estic frustrat passejo pel camp de flors. T'ho recomano."}
     };
@@ -29,6 +29,8 @@ public class AskForHint : MonoBehaviour
     private List<string> collectedIngredients = new List<string>();
 
     public string finalHint = "Sembla que ja tens tot el que necessites per la poció. Bona feina! Torna cap a casa i cuinem-la.";
+
+    public AudioSource buttonSound;
 
     public void AddCollectedIngredient(string ingredientName)
     {
@@ -46,6 +48,10 @@ public class AskForHint : MonoBehaviour
 
     public void ButtonPressed()
     {
+        if (buttonSound != null)
+        {
+            buttonSound.Play();
+        }
         //en vez de contador debería ser switch cases?
         //Empezar si no tiene ningun item elegir random entre todas las pistas menos la ultima (son cuatro en total van de 0 a 3, la numero 3 entonces no se muestra)
         //Siguientes cases sería las opciones de ingredientes que pueden tener, como son tres opciones no hay demasiadas combinaciones pero si fueran más sería complicado.
