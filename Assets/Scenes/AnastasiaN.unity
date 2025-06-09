@@ -658,6 +658,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ploma: {fileID: 1658351515}
+  aigua: {fileID: 0}
   canvas: {fileID: 745714307}
   objectSlot: {fileID: 123194301}
   inventoryManager: {fileID: 1864136786}
@@ -2776,7 +2777,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   memoryGame: {fileID: 293007100}
   crowTalk: {fileID: 0}
+  tutorial: {fileID: 0}
   Code: {fileID: 0}
+  climbersGame: {fileID: 0}
   ingredientName: Invisible Mushroom
   ingredientSprite: {fileID: 21300000, guid: 895ce5194a6b5d1489c5574e4e65bcf1, type: 3}
   ingredientRange: 3
@@ -5928,7 +5931,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   memoryGame: {fileID: 0}
   crowTalk: {fileID: 0}
+  tutorial: {fileID: 0}
   Code: {fileID: 0}
+  climbersGame: {fileID: 0}
   ingredientName: Tear
   ingredientSprite: {fileID: 21300000, guid: 179b10c99b988d341bc12e9cf98c3558, type: 3}
   ingredientRange: 3
@@ -6334,6 +6339,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ploma: {fileID: 0}
+  aigua: {fileID: 0}
   canvas: {fileID: 745714307}
   objectSlot: {fileID: 822436196}
   inventoryManager: {fileID: 1864136786}
@@ -8848,7 +8854,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   memoryGame: {fileID: 0}
   crowTalk: {fileID: 0}
+  tutorial: {fileID: 0}
   Code: {fileID: 0}
+  climbersGame: {fileID: 0}
   ingredientName: Diamond
   ingredientSprite: {fileID: 21300000, guid: 7b22b0ed17b2cce4da938b82175e7b5e, type: 3}
   ingredientRange: 4
@@ -10035,7 +10043,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   memoryGame: {fileID: 0}
   crowTalk: {fileID: 0}
+  tutorial: {fileID: 0}
   Code: {fileID: 0}
+  climbersGame: {fileID: 0}
   ingredientName: Magic Flower
   ingredientSprite: {fileID: 21300000, guid: e0f7ef99c732d1e4e870f7d278ef3b77, type: 3}
   ingredientRange: 4
@@ -10287,6 +10297,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ploma: {fileID: 0}
+  aigua: {fileID: 0}
   canvas: {fileID: 745714307}
   objectSlot: {fileID: 1373889372}
   inventoryManager: {fileID: 1864136786}
@@ -10791,6 +10802,7 @@ GameObject:
   - component: {fileID: 1451399857}
   - component: {fileID: 1451399856}
   - component: {fileID: 1451399864}
+  - component: {fileID: 1451399865}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -10982,6 +10994,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ae98375681aed24a9c0c26e8f57c86e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!95 &1451399865
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1451399855}
+  m_Enabled: 1
+  m_Avatar: {fileID: 9000000, guid: 4d317e0f43f0818499f8282dd0e2794b, type: 3}
+  m_Controller: {fileID: 9100000, guid: d23e7519de917e742b9ee3b7c54ce45a, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1454847789
 GameObject:
   m_ObjectHideFlags: 0
@@ -11308,7 +11341,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   memoryGame: {fileID: 0}
   crowTalk: {fileID: 0}
+  tutorial: {fileID: 0}
   Code: {fileID: 0}
+  climbersGame: {fileID: 0}
   ingredientName: Tear
   ingredientSprite: {fileID: 21300000, guid: 179b10c99b988d341bc12e9cf98c3558, type: 3}
   ingredientRange: 3
@@ -12301,7 +12336,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   memoryGame: {fileID: 0}
   crowTalk: {fileID: 0}
+  tutorial: {fileID: 0}
   Code: {fileID: 0}
+  climbersGame: {fileID: 0}
   ingredientName: Diamond
   ingredientSprite: {fileID: 21300000, guid: 7b22b0ed17b2cce4da938b82175e7b5e, type: 3}
   ingredientRange: 4
@@ -12518,7 +12555,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   memoryGame: {fileID: 0}
   crowTalk: {fileID: 1658351519}
+  tutorial: {fileID: 0}
   Code: {fileID: 0}
+  climbersGame: {fileID: 0}
   ingredientName: Crow Feather
   ingredientSprite: {fileID: 21300000, guid: 2125986fe2063134a9e7f5424f3872fd, type: 3}
   ingredientRange: 3
@@ -14518,6 +14557,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ploma: {fileID: 0}
+  aigua: {fileID: 0}
   canvas: {fileID: 745714307}
   objectSlot: {fileID: 1895088836}
   inventoryManager: {fileID: 1864136786}
@@ -16105,6 +16145,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ploma: {fileID: 0}
+  aigua: {fileID: 0}
   canvas: {fileID: 745714307}
   objectSlot: {fileID: 2121187126}
   inventoryManager: {fileID: 1864136786}
@@ -16342,7 +16383,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   memoryGame: {fileID: 2593800878671760072}
   crowTalk: {fileID: 0}
+  tutorial: {fileID: 0}
   Code: {fileID: 0}
+  climbersGame: {fileID: 0}
   ingredientName: Invisible Mushroom
   ingredientSprite: {fileID: 21300000, guid: 895ce5194a6b5d1489c5574e4e65bcf1, type: 3}
   ingredientRange: 3

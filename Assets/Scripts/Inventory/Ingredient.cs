@@ -9,7 +9,7 @@ public class Ingredient : MonoBehaviour
     public CrowTalk crowTalk;
     public Tutorial tutorial;
     public GameObject Code;
-    public StartClimbersGame climbersGame;
+    public StartClimbers climbersGame;
 
     bool crowDimond = false;
     bool tearObtained = false;
