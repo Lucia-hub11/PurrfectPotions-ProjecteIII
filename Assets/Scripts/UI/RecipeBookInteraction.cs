@@ -5,17 +5,13 @@ using UnityEngine.UI;
 
 public class RecipeBookInteraction : MonoBehaviour
 {
-    // Referencia al canvas que contiene la receta
     public GameObject recipeCanvas;
-
-    // Referencia al texto de interacción "Press E to interact"
     public GameObject pressEText;
 
-    // Bandera para saber si el jugador está dentro del área de interacción
     private bool canInteract = false;
-
-    // Bandera para saber si la receta está actualmente abierta
     private bool isRecipeOpen = false;
+
+    public AudioSource recipeAudioSource;
 
     private void Start()
     {
@@ -77,6 +73,11 @@ public class RecipeBookInteraction : MonoBehaviour
         isRecipeOpen = !isRecipeOpen;
         if (recipeCanvas != null)
             recipeCanvas.SetActive(isRecipeOpen);
+
+        if (isRecipeOpen && recipeAudioSource != null)
+        {
+            recipeAudioSource.Play();
+        }
     }
 
     public void CloseRecipeWithButton()
