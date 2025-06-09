@@ -58,6 +58,10 @@ public class DragDropIngredients : MonoBehaviour, IBeginDragHandler, IEndDragHan
             //Unes cuantes combinacions d'exemple, per l'hito cal posar les correctes
             if ((ingredient == "Tear" && target == "Calder") ||
                 (ingredient == "Crow Feather" && target == "Calder") ||
+                (ingredient == "Magic Flower" && target == "Calder") ||
+                (ingredient == "Poma" && target == "Calder") ||
+                (ingredient == "Aigua" && target == "Calder") ||
+                (ingredient == "Sucre" && target == "Calder") ||
                 (ingredient == "Invisible Mushroom" && target == "Calder"))
             {
                 inventoryManager.ClearIngredient(ingredient);

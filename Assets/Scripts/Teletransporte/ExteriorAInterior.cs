@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ExteriorAInterior : MonoBehaviour
 {
@@ -8,6 +9,7 @@ public class ExteriorAInterior : MonoBehaviour
 	public GameObject playerGO;
 	public GameObject IngredientsInventory;
     public GameObject ObjectsInventory;
+    public Tutorial tutorial;
 
 	//Referència al script de gestió del canvi de càmeres
 	public CameraSwitcher cameraSwitcher;
@@ -33,6 +35,12 @@ public class ExteriorAInterior : MonoBehaviour
             {
                 Debug.LogWarning("ExteriorAInterior: cameraSwitcher no asignado");
             }
+        }
+
+        if (SceneManager.GetActiveScene().name == "Tutorial" || Ingredient.primerIngredient == 3) //falta la variable que indica que ya tiene los ingredientes
+        {
+             tutorial.tutorialStep = 10;
+             tutorial.ShowCurrentHint();
         }
         
     }
