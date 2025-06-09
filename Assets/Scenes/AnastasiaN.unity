@@ -2775,8 +2775,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   memoryGame: {fileID: 293007100}
-  climbersGame: {fileID: 0}
   crowTalk: {fileID: 0}
+  Code: {fileID: 0}
   ingredientName: Invisible Mushroom
   ingredientSprite: {fileID: 21300000, guid: 895ce5194a6b5d1489c5574e4e65bcf1, type: 3}
   ingredientRange: 3
@@ -5927,8 +5927,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   memoryGame: {fileID: 0}
-  climbersGame: {fileID: 0}
   crowTalk: {fileID: 0}
+  Code: {fileID: 0}
   ingredientName: Tear
   ingredientSprite: {fileID: 21300000, guid: 179b10c99b988d341bc12e9cf98c3558, type: 3}
   ingredientRange: 3
@@ -7187,11 +7187,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88abcf49b57674645aa0f81a64569631, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PotionCanvas: {fileID: 1431496925}
-  BottomIngredientCanvas: {fileID: 682560311}
-  CanvasHints: {fileID: 1454847789}
-  InventoriCanvas: {fileID: 1864136785}
-  CanvasBotons: {fileID: 1726947248}
 --- !u!1 &1043030893
 GameObject:
   m_ObjectHideFlags: 0
@@ -8852,8 +8847,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   memoryGame: {fileID: 0}
-  climbersGame: {fileID: 0}
   crowTalk: {fileID: 0}
+  Code: {fileID: 0}
   ingredientName: Diamond
   ingredientSprite: {fileID: 21300000, guid: 7b22b0ed17b2cce4da938b82175e7b5e, type: 3}
   ingredientRange: 4
@@ -10039,8 +10034,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   memoryGame: {fileID: 0}
-  climbersGame: {fileID: 1362478454}
   crowTalk: {fileID: 0}
+  Code: {fileID: 0}
   ingredientName: 
   ingredientSprite: {fileID: 0}
   ingredientRange: 4
@@ -10795,6 +10790,7 @@ GameObject:
   - component: {fileID: 1451399858}
   - component: {fileID: 1451399857}
   - component: {fileID: 1451399856}
+  - component: {fileID: 1451399864}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -10815,6 +10811,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 7
+  rotationSpeed: 0
 --- !u!114 &1451399857
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10969,9 +10966,22 @@ Transform:
   m_LocalPosition: {x: -65.193245, y: 1.71, z: -0.010637555}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1712901765}
   m_Father: {fileID: 1398586026}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1451399864
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1451399855}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ae98375681aed24a9c0c26e8f57c86e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1454847789
 GameObject:
   m_ObjectHideFlags: 0
@@ -11006,11 +11016,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pista: {fileID: 1358078741}
   pistaSprite: {fileID: 777660295}
-  Hints:
-  - "\xC0nims!"
-  - "T\xFA pots!"
-  - "Segueix aix\xED!"
-  - "Ja gairab\xE9 ho tens!"
+  finalHint: "Sembla que ja tens tot el que necessites per la poci\xF3. Bona feina!
+    Torna cap a casa i cuinem-la."
 --- !u!114 &1454847791
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11300,8 +11307,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   memoryGame: {fileID: 0}
-  climbersGame: {fileID: 0}
   crowTalk: {fileID: 0}
+  Code: {fileID: 0}
   ingredientName: Tear
   ingredientSprite: {fileID: 21300000, guid: 179b10c99b988d341bc12e9cf98c3558, type: 3}
   ingredientRange: 3
@@ -12293,8 +12300,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   memoryGame: {fileID: 0}
-  climbersGame: {fileID: 0}
   crowTalk: {fileID: 0}
+  Code: {fileID: 0}
   ingredientName: Diamond
   ingredientSprite: {fileID: 21300000, guid: 7b22b0ed17b2cce4da938b82175e7b5e, type: 3}
   ingredientRange: 4
@@ -12510,8 +12517,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   memoryGame: {fileID: 0}
-  climbersGame: {fileID: 0}
   crowTalk: {fileID: 1658351519}
+  Code: {fileID: 0}
   ingredientName: Crow Feather
   ingredientSprite: {fileID: 21300000, guid: 2125986fe2063134a9e7f5424f3872fd, type: 3}
   ingredientRange: 3
@@ -13259,6 +13266,72 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1711660404}
   m_CullTransparentMesh: 1
+--- !u!1 &1712901764
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1712901765}
+  - component: {fileID: 1712901767}
+  - component: {fileID: 1712901766}
+  m_Layer: 0
+  m_Name: Animator
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1712901765
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1712901764}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 82.30567, y: 5.133116, z: 3.9631517}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1451399863}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &1712901766
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1712901764}
+  m_Enabled: 1
+  m_Avatar: {fileID: 9000000, guid: 4d317e0f43f0818499f8282dd0e2794b, type: 3}
+  m_Controller: {fileID: 9100000, guid: d23e7519de917e742b9ee3b7c54ce45a, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1712901767
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1712901764}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ae98375681aed24a9c0c26e8f57c86e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1725627078
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14183,6 +14256,7 @@ MonoBehaviour:
   - {fileID: 1725627081}
   - {fileID: 167448144}
   - {fileID: 528392189}
+  hintSystem: {fileID: 0}
   InteractTextCanvas: {fileID: 433189550}
 --- !u!114 &1864136787
 MonoBehaviour:
@@ -16267,8 +16341,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   memoryGame: {fileID: 2593800878671760072}
-  climbersGame: {fileID: 0}
   crowTalk: {fileID: 0}
+  Code: {fileID: 0}
   ingredientName: Invisible Mushroom
   ingredientSprite: {fileID: 21300000, guid: 895ce5194a6b5d1489c5574e4e65bcf1, type: 3}
   ingredientRange: 3
@@ -16316,11 +16390,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88abcf49b57674645aa0f81a64569631, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PotionCanvas: {fileID: 1431496925}
-  BottomIngredientCanvas: {fileID: 682560311}
-  CanvasHints: {fileID: 1454847789}
-  InventoriCanvas: {fileID: 1864136785}
-  CanvasBotons: {fileID: 1726947248}
 --- !u!135 &5705370889093014711
 SphereCollider:
   m_ObjectHideFlags: 0
