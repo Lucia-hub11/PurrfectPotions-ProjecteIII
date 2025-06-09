@@ -16,14 +16,22 @@ public class Animations : MonoBehaviour
 
     void Update()
     {
-        
-        if (Input.GetKey("w") || Input.GetKey("a") || Input.GetKey("s") || Input.GetKey("d"))
-        {
-            anim.SetBool("Move", true);
-        }
-        else
-        {
-            anim.SetBool("Move", false);
-        }
+
+        //if (Input.GetKey("w") || Input.GetKey("a") || Input.GetKey("s") || Input.GetKey("d"))
+        //{
+        //    anim.SetBool("Move", true);
+        //}
+        //else
+        //{
+        //    anim.SetBool("Move", false);
+        //}
+
+        float h = Input.GetAxis("Horizontal");
+        float v = Input.GetAxis("Vertical");
+
+        bool isMoving = Mathf.Abs(h) > 0.1f || Mathf.Abs(v) > 0.1f;
+
+        // Actualitzar Move a l'animator
+        anim.SetBool("Move", isMoving);
     }
 }
