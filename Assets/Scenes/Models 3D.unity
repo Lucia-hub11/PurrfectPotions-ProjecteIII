@@ -1083,6 +1083,63 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e33118baa3814c54098d2aaf431129c4, type: 3}
+--- !u!1001 &1789615153585658307
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 911350221296384868, guid: eea0d7d7ece51f5489cbae7fcb089c5d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 42.464447
+      objectReference: {fileID: 0}
+    - target: {fileID: 911350221296384868, guid: eea0d7d7ece51f5489cbae7fcb089c5d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.0005841957
+      objectReference: {fileID: 0}
+    - target: {fileID: 911350221296384868, guid: eea0d7d7ece51f5489cbae7fcb089c5d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -33.95384
+      objectReference: {fileID: 0}
+    - target: {fileID: 911350221296384868, guid: eea0d7d7ece51f5489cbae7fcb089c5d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 911350221296384868, guid: eea0d7d7ece51f5489cbae7fcb089c5d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 911350221296384868, guid: eea0d7d7ece51f5489cbae7fcb089c5d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 911350221296384868, guid: eea0d7d7ece51f5489cbae7fcb089c5d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 911350221296384868, guid: eea0d7d7ece51f5489cbae7fcb089c5d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 911350221296384868, guid: eea0d7d7ece51f5489cbae7fcb089c5d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 911350221296384868, guid: eea0d7d7ece51f5489cbae7fcb089c5d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8052490236295059258, guid: eea0d7d7ece51f5489cbae7fcb089c5d, type: 3}
+      propertyPath: m_Name
+      value: Arbre sense fulles
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: eea0d7d7ece51f5489cbae7fcb089c5d, type: 3}
 --- !u!4 &2066336428818782942 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1158785041209257377, guid: 80df87af3c9984de7b9a7be7129eaafa, type: 3}
@@ -2617,3 +2674,4 @@ SceneRoots:
   - {fileID: 5287693845812609129}
   - {fileID: 8126923545925952811}
   - {fileID: 8373106955192692946}
+  - {fileID: 1789615153585658307}
