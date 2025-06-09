@@ -8,6 +8,7 @@ public class Ingredient : MonoBehaviour
     public StartMemoryGame memoryGame;
     public CrowTalk crowTalk;
     public GameObject Code;
+    public StartClimbersGame climbersGame;
 
     bool crowDimond = false;
     bool tearObtained = false;
@@ -83,6 +84,11 @@ public class Ingredient : MonoBehaviour
             {
                 memoryGame.JocMemory(this);
                 //Destroy(interactText);
+                interactText.SetActive(false);
+            }
+            else if (ingredientName == "Magic Flower")
+            {
+                climbersGame.JocClimbers(this);
                 interactText.SetActive(false);
             }
             else if (ingredientName == "Diamond")

@@ -9986,7 +9986,7 @@ GameObject:
   - component: {fileID: 1362478455}
   - component: {fileID: 1362478454}
   m_Layer: 0
-  m_Name: flor translucida
+  m_Name: Magic Flower
   m_TagString: Ingredient
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10036,8 +10036,8 @@ MonoBehaviour:
   memoryGame: {fileID: 0}
   crowTalk: {fileID: 0}
   Code: {fileID: 0}
-  ingredientName: 
-  ingredientSprite: {fileID: 0}
+  ingredientName: Magic Flower
+  ingredientSprite: {fileID: 21300000, guid: e0f7ef99c732d1e4e870f7d278ef3b77, type: 3}
   ingredientRange: 4
   interactText: {fileID: 975976273}
 --- !u!135 &1362478456
