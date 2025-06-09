@@ -14,7 +14,7 @@ public class Tutorial : MonoBehaviour
     private float tempsApareixer = 5f;
     private float tempsDesapareixer;
 
-    private int tutorialStep = 0;
+    public int tutorialStep = 0;
 
     public void Start()
     {
@@ -35,7 +35,7 @@ public class Tutorial : MonoBehaviour
         "Surt de casa per buscar els ingredients que necessites.", //3
         "Has trobat un ingredient! Mira'l a l'inventari.", //4
         "Amb el pou podem aconseguir aigua, però falta la galleda...", //5
-        "Has trobat la galleda! Els objectes també es guarden a l'inventari.", //6
+        "Has trobat la galleda! Els objectes es guarden a l'inventari.", //6
         "Per fer servir un objecte és tan fàcil com arrossegar-ho des de la barra inferior.", //7
         "Prova-ho amb la galleda. Arrossega-la cap al pou.", //8
         "Tens tots els ingredients! Torna cap a casa.", //9
@@ -61,9 +61,9 @@ public class Tutorial : MonoBehaviour
             pista.enabled = false;
             pistaSprite.enabled = false;
 
-            if (tutorialStep == 0 || tutorialStep == 1 || tutorialStep == 2)
+            if (tutorialStep == 0 || tutorialStep == 1 || tutorialStep == 2 || tutorialStep == 6 || tutorialStep == 7)
             {
-                tutorialStep++; //1, 2 i 3
+                tutorialStep++; //1, 2, 3, 7 i 8
                 ShowCurrentHint();
             }
             if (tutorialStep == 0) //ha encontrado un ingrediente
