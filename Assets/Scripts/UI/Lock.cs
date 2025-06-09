@@ -67,8 +67,6 @@ public class Lock : MonoBehaviour
 
     private void WaitForDiamond()
     {
-        
-        
         ingredient.CollectIngredient();
     }
 
