@@ -11,6 +11,7 @@ public class ComportamentFiches : MonoBehaviour
     [SerializeField] Transform gridTransform;
     [SerializeField] Sprite[] sprites;
     [SerializeField] Canvas memoryCanvas;
+    [SerializeField] private AudioSource clickSound;
 
     private List<Sprite> spritePairs;
     private List<Fiches> allCards;
@@ -70,6 +71,8 @@ public class ComportamentFiches : MonoBehaviour
     {
         if (card.isSelected ==false)
         {
+            if (clickSound != null)
+            clickSound.Play();
             card.Show();
 
             if (firstSelected ==null)
