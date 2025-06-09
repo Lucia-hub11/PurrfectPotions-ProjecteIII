@@ -56,6 +56,7 @@ public class Tutorial : MonoBehaviour
     
     void Update()
     {
+        //Para las pistas que se reproducen automaticamente
         if (pista.enabled && (Time.time >= tempsDesapareixer))
         {
             pista.enabled = false;
@@ -65,30 +66,6 @@ public class Tutorial : MonoBehaviour
             {
                 tutorialStep++; //1, 2, 3, 7 i 8
                 ShowCurrentHint();
-            }
-            if (tutorialStep == 0) //ha encontrado un ingrediente
-            {
-
-            }
-            if (tutorialStep == 0) //se ha acercado al pozo SIN la galleda
-            {
-
-            }
-            if (tutorialStep == 0) //ha encontrado el cubo
-            {
-
-            }
-            if (tutorialStep == 0) //se ha acercado al pozo CON la galleda
-            {
-                //pistas 7 i 8
-            }
-            if (tutorialStep == 0) //todos los ingredientes
-            {
-
-            }
-            if (tutorialStep == 0) //vuelve a entrar en casa
-            {
-
             }
         }
     }

@@ -14,6 +14,7 @@ public class Ingredient : MonoBehaviour
     bool crowDimond = false;
     bool tearObtained = false;
     bool galledaPou = false;
+    public static int primerIngredient = 0;
 
     [SerializeField] 
     private string ingredientName;
@@ -133,6 +134,18 @@ public class Ingredient : MonoBehaviour
     {
         if (gameObject.tag == "Ingredient")
         {
+            if (primerIngredient==0)
+            {
+                tutorial.tutorialStep = 4;
+                tutorial.ShowCurrentHint();
+            }
+            else if (primerIngredient==2)
+            {
+                tutorial.tutorialStep = 9;
+                tutorial.ShowCurrentHint();
+                //mandar mensaje a ExteriorAInterior
+            }
+
             if(ingredientName== "Crow Feather")//el mateix però sense destruir-lo
             {
                 inventoryManager.AddIngredient(ingredientName, ingredientSprite);
@@ -161,6 +174,9 @@ public class Ingredient : MonoBehaviour
                 Destroy(gameObject);
                 interactText.SetActive(false);
             }
+
+            primerIngredient++;
+            Debug.Log(primerIngredient);
         }
         else if (gameObject.tag == "Object")
         {
