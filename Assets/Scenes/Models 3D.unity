@@ -2510,7 +2510,6 @@ GameObject:
   - component: {fileID: 873202954}
   - component: {fileID: 873202953}
   - component: {fileID: 873202952}
-  - component: {fileID: 873202951}
   m_Layer: 5
   m_Name: Canvas_Enfiladisses
   m_TagString: Untagged
@@ -2518,21 +2517,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &873202951
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 873202950}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8c3c93974d042eb4e9c61041d28c0c5a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cursorRect: {fileID: 2005986943}
-  cursorSprite: {fileID: 21300000, guid: be65ad18f47024647bbf4141aff2f4a4, type: 3}
-  hotspot: {x: 0, y: 0}
 --- !u!114 &873202952
 MonoBehaviour:
   m_ObjectHideFlags: 0
