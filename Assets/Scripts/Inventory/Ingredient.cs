@@ -7,11 +7,13 @@ public class Ingredient : MonoBehaviour
 {
     public StartMemoryGame memoryGame;
     public CrowTalk crowTalk;
+    public Tutorial tutorial;
     public GameObject Code;
     public StartClimbersGame climbersGame;
 
     bool crowDimond = false;
     bool tearObtained = false;
+    bool galledaPou = false;
 
     [SerializeField] 
     private string ingredientName;
@@ -78,6 +80,16 @@ public class Ingredient : MonoBehaviour
             }
         } // simplificat seria aixi if (interactText) interactText.SetActive(isInRange);
 
+        if (isInRange && ingredientName=="Aigua")
+        {
+            if (galledaPou == false)
+            {
+                Debug.Log("galleda bien");
+                tutorial.tutorialStep = 5;
+                tutorial.ShowCurrentHint();
+            }
+        }
+
         if (isInRange && _inputController.Interact)
         {
             if(ingredientName=="Invisible Mushroom")
@@ -105,7 +117,6 @@ public class Ingredient : MonoBehaviour
                 {
                     crowTalk.ShowCrowThanks();
                 }
-
             }
             else if (tearObtained==true){
                 
@@ -129,6 +140,13 @@ public class Ingredient : MonoBehaviour
                 interactText.SetActive(false);
                 crowDimond = true;
             }
+            else if (ingredientName == "Aigua")
+            {
+                inventoryManager.AddIngredient(ingredientName, ingredientSprite);
+                fromIngredientsBottomInventoryManager.AddIngredient(ingredientName, ingredientSprite);
+                interactText.SetActive(false);
+                galledaPou = true;
+            }
             else if (ingredientName == "Tear")//el mateix però sense destruir-lo
             {
                 inventoryManager.AddIngredient(ingredientName, ingredientSprite);
@@ -150,6 +168,15 @@ public class Ingredient : MonoBehaviour
             fromObjectsBottomInventoryManager.AddObject(ingredientName, ingredientSprite);
             Destroy(gameObject);
             interactText.SetActive(false);
+            if(ingredientName=="Galleda")
+            {
+                //Debug.Log(ingredientName);
+                //Activar tutorial de como puedes usar los objetos
+                galledaPou = true;
+                //Debug.Log(galledaPou);
+                tutorial.tutorialStep = 6;
+                tutorial.ShowCurrentHint();
+            }
         }
         else
         {
