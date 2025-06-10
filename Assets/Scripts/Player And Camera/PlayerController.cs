@@ -8,11 +8,16 @@ public class PlayerController : MonoBehaviour
     public float moveSpeed = 7.0f;
     private InputController _inputController;
     public float rotationSpeed;
-    
+
+    public AudioSource footstepsAudioSource;
 
     void Start()
     {
         _inputController = GetComponent<InputController>();
+        if (footstepsAudioSource != null)
+        {
+            footstepsAudioSource.loop = true;
+        }
     }
 
     void Update()
@@ -26,6 +31,18 @@ public class PlayerController : MonoBehaviour
             Quaternion toRotation = Quaternion.LookRotation(moveDirection, Vector3.up);
 
             transform.rotation= Quaternion.RotateTowards(transform.rotation, toRotation, rotationSpeed*Time.deltaTime);
+
+             if (footstepsAudioSource != null && !footstepsAudioSource.isPlaying)
+            {
+                footstepsAudioSource.Play();
+            }
+        }
+        else
+        {
+            if (footstepsAudioSource != null && footstepsAudioSource.isPlaying)
+            {
+                footstepsAudioSource.Pause();
+            }
         }
         
     }
