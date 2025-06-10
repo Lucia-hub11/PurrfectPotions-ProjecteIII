@@ -18,8 +18,8 @@ public class UICursor : MonoBehaviour
 
     void Update()
     {
-        // Mueve el UI cursor a la posición del ratón
-        cursorRect.position = Input.mousePosition;
+        if (cursorRect.gameObject.activeSelf)
+            cursorRect.position = Input.mousePosition;
     }
 
     public void Activate()
@@ -35,7 +35,7 @@ public class UICursor : MonoBehaviour
         cursorRect.gameObject.SetActive(false);
     }
 
-    public void ResetPosition(Vector2 screenPos)
+    public void SetPosition(Vector2 screenPos)
     {
         cursorRect.position = screenPos;
     }
