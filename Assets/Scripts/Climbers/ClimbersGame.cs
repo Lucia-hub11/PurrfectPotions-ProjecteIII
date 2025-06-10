@@ -20,6 +20,7 @@ public class ClimbersGame : MonoBehaviour
     private List<RaycastResult> results = new List<RaycastResult>();
     private bool isPlaying = false;
 
+
     private void Awake()
     {
         raycaster = GetComponent<GraphicRaycaster>();
@@ -69,6 +70,7 @@ public class ClimbersGame : MonoBehaviour
             if (hit.gameObject.CompareTag(finishTag))
             {
                 Debug.Log("Meta alcanzada!");
+                
                 isPlaying = false;
                 onWin?.Invoke();
                 return;
