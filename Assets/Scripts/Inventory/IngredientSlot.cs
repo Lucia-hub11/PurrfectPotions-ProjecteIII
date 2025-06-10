@@ -1,7 +1,6 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -12,20 +11,20 @@ public class IngredientSlot : MonoBehaviour
     public GameObject CloverThoughts;
 
     [SerializeField]
-    private Image itemImage; //la que apareix
-    //[SerializeField] private Button skipButton;
+    private Image itemImage;
 
     public GameObject ObtainedText;
     public Image obtainedImage;
 
     private Sprite spriteWait;
 
-    public AudioSource obtainedSound;
+    public AudioSource externalSoundSource;
+    public AudioClip obtainedClip;
 
     void Start()
     {
         ObtainedText.SetActive(false);
-        CloverThoughts.SetActive(false);//aixo no sé pq no ho fa
+        CloverThoughts.SetActive(false);
     }
 
     public void AddIngredientSprite(string ingredientName, Sprite itemSprite)
@@ -36,7 +35,6 @@ public class IngredientSlot : MonoBehaviour
             CloverThoughts.SetActive(true);
             spriteWait = itemSprite;
             Invoke("RegularAddSprite", 4f);
-
         }
         else
         {
@@ -57,21 +55,28 @@ public class IngredientSlot : MonoBehaviour
         itemImage.gameObject.SetActive(true);
         CloverThoughts.SetActive(false);
         ObtainedText.SetActive(true);
-        if (obtainedSound != null)
-        {
-            obtainedSound.Play();
-        }
-        itemImage.enabled = true;
-        itemImage.canvasRenderer.SetAlpha(1f);
 
-        obtainedImage.GetComponent<Image>().sprite = itemSprite;//perquè apareixi al text 'Has obtingut un ingredient!'
+        PlayObtainedSound();
+
+        itemImage.canvasRenderer.SetAlpha(1f);
+        obtainedImage.GetComponent<Image>().sprite = itemSprite;
 
         Invoke("HideText", 3f);
     }
+
+    private void PlayObtainedSound()
+    {
+        if (externalSoundSource != null && obtainedClip != null)
+        {
+            externalSoundSource.PlayOneShot(obtainedClip);
+        }
+    }
+
     private void HideText()
     {
         ObtainedText.SetActive(false);
     }
+
     public void ClearIngredient()
     {
         ingredientName = "";
