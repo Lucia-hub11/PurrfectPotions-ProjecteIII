@@ -7,10 +7,11 @@ using System;
 
 public class ClimbersGame : MonoBehaviour
 {
+
     [SerializeField] private UICursor uiCursor;
     [SerializeField] private RectTransform startPoint;
-    private string wallTag = "Wall";
-    private string finishTag = "Finish";
+    [SerializeField] private string wallTag = "Wall";
+    [SerializeField] private string finishTag = "Finish";
 
     public event Action onWin;
     public event Action onQuit;
@@ -20,12 +21,13 @@ public class ClimbersGame : MonoBehaviour
     private List<RaycastResult> results = new List<RaycastResult>();
     private bool isPlaying = false;
 
-    void Awake()
+    private void Awake()
     {
         raycaster = GetComponent<GraphicRaycaster>();
         pointerData = new PointerEventData(EventSystem.current);
     }
 
+    /// <summary>Arranca el minijuego</summary>
     public void StartMinigame()
     {
         if (uiCursor == null || startPoint == null)
@@ -39,17 +41,18 @@ public class ClimbersGame : MonoBehaviour
         uiCursor.SetPosition(startPoint.position);
     }
 
+    /// <summary>Para el minijuego</summary>
     public void ResetMinigame()
     {
         isPlaying = false;
         uiCursor.Deactivate();
     }
 
-    void Update()
+    private void Update()
     {
         if (!isPlaying) return;
 
-        // Raycast desde el cursor UI (coincide con Input.mousePosition)
+        // Raycast desde la posición del cursor
         pointerData.position = Input.mousePosition;
         results.Clear();
         raycaster.Raycast(pointerData, results);
@@ -58,9 +61,9 @@ public class ClimbersGame : MonoBehaviour
         {
             if (hit.gameObject.CompareTag(wallTag))
             {
-                Debug.Log("¡Pared tocada! Reiniciando al inicio...");
-                // Solo reposiciona el cursor, luego UICursor.Update() seguirá moviéndolo
-                uiCursor.SetPosition(startPoint.position);
+                Debug.Log("¡Pared tocada! Cerrando minijuego...");
+                isPlaying = false;
+                onQuit?.Invoke();
                 return;
             }
 
