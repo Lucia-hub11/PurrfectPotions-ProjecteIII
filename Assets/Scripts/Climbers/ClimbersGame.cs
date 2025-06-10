@@ -7,6 +7,8 @@ using System;
 
 public class ClimbersGame : MonoBehaviour
 {
+    [SerializeField] private UICursor uiCursor;
+    [SerializeField] private RectTransform startPoint;
     private string wallTag = "Wall";
     private string finishTag = "Finish";
 
@@ -25,22 +27,29 @@ public class ClimbersGame : MonoBehaviour
     }
     public void StartMinigame()
     {
+        if (uiCursor == null || startPoint == null)
+        {
+            Debug.LogError("ClimbersGame: uiCursor o startPoint no asignados");
+            return;
+        }
+
         isPlaying = true;
+        uiCursor.Activate();
+        uiCursor.ResetPosition(startPoint.position);
+        //isPlaying = true;
     }
 
     public void ResetMinigame()
     {
         isPlaying = false;
+        uiCursor.Deactivate();
     }
 
     void Update()
     {
         if (!isPlaying) return;
 
-        //Prepara el PointerEventData con la posición actual del ratón
         pointerData.position = Input.mousePosition;
-
-        //Ejecuta el raycast sobre todos los elementos UI
         results.Clear();
         raycaster.Raycast(pointerData, results);
 
@@ -48,10 +57,9 @@ public class ClimbersGame : MonoBehaviour
         {
             if (hit.gameObject.CompareTag(wallTag))
             {
-                Debug.Log("¡Pared tocada! Reiniciando minijuego...");
-                // Reinicia todo de golpe
-                ResetMinigame();
-                StartMinigame();
+                Debug.Log("¡Pared tocada! Reiniciando al inicio...");
+                // Sólo reposicionar el cursor UI
+                uiCursor.ResetPosition(startPoint.position);
                 return;
             }
 
@@ -64,7 +72,6 @@ public class ClimbersGame : MonoBehaviour
             }
         }
 
-        //Si el jugador pulsa Escape, salimos sin ganar
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             isPlaying = false;
