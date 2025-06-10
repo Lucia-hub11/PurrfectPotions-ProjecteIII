@@ -5,23 +5,27 @@ using UnityEngine.UI;
 
 public class UICursor : MonoBehaviour
 {
-    public RectTransform cursorRect;
-    public Sprite cursorSprite;
-    public Vector2 hotspot = Vector2.zero;
+    [SerializeField] private RectTransform cursorRect;
+    [SerializeField] private Sprite cursorSprite;
+
     private Image imageComp;
 
     void Awake()
     {
         imageComp = cursorRect.GetComponent<Image>();
+        Deactivate();
+    }
+
+    void Update()
+    {
+        if (cursorRect.gameObject.activeSelf)
+            cursorRect.position = Input.mousePosition;
     }
 
     public void Activate()
     {
-        // Oculta el cursor del sistema
         Cursor.visible = false;
-        // Asigna sprite
         imageComp.sprite = cursorSprite;
-        // Muestra el cursor UI
         cursorRect.gameObject.SetActive(true);
     }
 
@@ -31,9 +35,8 @@ public class UICursor : MonoBehaviour
         cursorRect.gameObject.SetActive(false);
     }
 
-    void Update()
+    public void SetPosition(Vector2 screenPos)
     {
-        // Mueve el UI cursor a la posición del ratón
-        cursorRect.position = Input.mousePosition;
+        cursorRect.position = screenPos;
     }
 }
