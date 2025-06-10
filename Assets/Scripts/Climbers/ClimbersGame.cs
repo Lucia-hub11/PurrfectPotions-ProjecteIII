@@ -1,13 +1,12 @@
-using System.Collections;
+using System;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 using UnityEngine.EventSystems;
-using System;
+using UnityEngine.UI;
 
+[RequireComponent(typeof(GraphicRaycaster))]
 public class ClimbersGame : MonoBehaviour
 {
-
     [SerializeField] private UICursor uiCursor;
     [SerializeField] private RectTransform startPoint;
     [SerializeField] private string wallTag = "Wall";
