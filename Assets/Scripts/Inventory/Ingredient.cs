@@ -11,6 +11,8 @@ public class Ingredient : MonoBehaviour
     public GameObject Code;
     public StartClimbers climbersGame;
 
+    public AudioSource codeOpenSound;
+
     bool crowDimond = false;
     bool tearObtained = false;
     bool galledaPou = false;
@@ -108,6 +110,10 @@ public class Ingredient : MonoBehaviour
             {
                 Code.SetActive(true);
                 interactText.SetActive(false);
+                if (codeOpenSound != null)
+                {
+                    codeOpenSound.Play();
+                }
             }
             else if(ingredientName=="Crow Feather"){
                 if (crowDimond == false)

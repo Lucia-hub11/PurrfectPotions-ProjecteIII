@@ -50,6 +50,7 @@ public class AskForHint : MonoBehaviour
     {
         if (buttonSound != null)
         {
+            Debug.Log("Sonido botón");
             buttonSound.Play();
         }
         //en vez de contador debería ser switch cases?

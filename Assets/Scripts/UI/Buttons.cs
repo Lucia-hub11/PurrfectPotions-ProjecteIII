@@ -7,6 +7,8 @@ public class Buttons : MonoBehaviour
     public GameObject inventoryCanvas;
     public GameObject mapCanvas;
 
+    public AudioSource audioSource;
+
     private void Start()
     {
         if(inventoryCanvas==null || mapCanvas == null)
@@ -22,7 +24,7 @@ public class Buttons : MonoBehaviour
         //bool isOpen = inventoryCanvas.activeSelf;
         //inventoryCanvas.SetActive(!isOpen);
 
-        ////Si se acaba de abrir el inventario, se cierra el mapa
+        //Si se acaba de abrir el inventario, se cierra el mapa
         //if(!isOpen)
         //{
         //    mapCanvas.SetActive(false);
@@ -35,6 +37,8 @@ public class Buttons : MonoBehaviour
         mapCanvas.SetActive(false);
 
         Debug.Log("No es detecta el Inventory Canvas");
+
+        PlayUIClickSound();
     }
 
     public void ToggleMap()
@@ -42,7 +46,7 @@ public class Buttons : MonoBehaviour
         //bool isOpen = mapCanvas.activeSelf;
         //mapCanvas.SetActive(!isOpen);
 
-        ////Si se acaba de abrir el mapa, se cierra el inventario
+        //Si se acaba de abrir el mapa, se cierra el inventario
 
         //if (!isOpen)
         //{
@@ -57,17 +61,29 @@ public class Buttons : MonoBehaviour
         inventoryCanvas.SetActive(false);
 
         Debug.Log("No detecta el canvasMap");
+
+        PlayUIClickSound();
     }
 
     //Funcions per tancar per botó individual de canvas
     public void CloseInventory()
     {
         inventoryCanvas.SetActive(false);
+        PlayUIClickSound();
     }
 
     public void CloseMap()
     {
         mapCanvas.SetActive(false);
+        PlayUIClickSound();
+    }
+
+    private void PlayUIClickSound()
+    {
+        if (audioSource != null)
+        {
+            audioSource.Play();
+        }
     }
 
     //public void ShowInventory()

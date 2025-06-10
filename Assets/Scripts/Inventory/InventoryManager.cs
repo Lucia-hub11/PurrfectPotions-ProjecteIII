@@ -15,6 +15,8 @@ public class InventoryManager : MonoBehaviour
 
     public GameObject InteractTextCanvas;
 
+    public AudioSource inventoryToggleSound;
+
     void Start()
     {
         // Buscar el Player i el seu InputController
@@ -37,6 +39,8 @@ public class InventoryManager : MonoBehaviour
             InventoryWindow.SetActive(true);
             inventoryOpen = true;
             InteractTextCanvas.SetActive(false);//desactivar el text de "Clica E per interactuar", sinó quedava per sobre
+            if (inventoryToggleSound != null)
+                inventoryToggleSound.Play();
 
         }
         else if (_inputController.Inventory && inventoryOpen)
@@ -45,6 +49,8 @@ public class InventoryManager : MonoBehaviour
             InventoryWindow.SetActive(false);
             inventoryOpen = false;
             InteractTextCanvas.SetActive(true);//tornar a activar el canvas on hi ha els textos d'interacció
+            if (inventoryToggleSound != null)
+                inventoryToggleSound.Play();
         }
     }
 
