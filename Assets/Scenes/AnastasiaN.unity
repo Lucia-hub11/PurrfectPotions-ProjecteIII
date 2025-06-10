@@ -14109,6 +14109,147 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1667660854}
   m_CullTransparentMesh: 1
+--- !u!1001 &1670903663
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4166240879434695476, guid: 972224ed9e0e75e47b184de4b304ac97, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2.80742
+      objectReference: {fileID: 0}
+    - target: {fileID: 4166240879434695476, guid: 972224ed9e0e75e47b184de4b304ac97, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2.80742
+      objectReference: {fileID: 0}
+    - target: {fileID: 4166240879434695476, guid: 972224ed9e0e75e47b184de4b304ac97, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2.80742
+      objectReference: {fileID: 0}
+    - target: {fileID: 4166240879434695476, guid: 972224ed9e0e75e47b184de4b304ac97, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 125.83249
+      objectReference: {fileID: 0}
+    - target: {fileID: 4166240879434695476, guid: 972224ed9e0e75e47b184de4b304ac97, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.51
+      objectReference: {fileID: 0}
+    - target: {fileID: 4166240879434695476, guid: 972224ed9e0e75e47b184de4b304ac97, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -32.732815
+      objectReference: {fileID: 0}
+    - target: {fileID: 4166240879434695476, guid: 972224ed9e0e75e47b184de4b304ac97, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4166240879434695476, guid: 972224ed9e0e75e47b184de4b304ac97, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4166240879434695476, guid: 972224ed9e0e75e47b184de4b304ac97, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4166240879434695476, guid: 972224ed9e0e75e47b184de4b304ac97, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4166240879434695476, guid: 972224ed9e0e75e47b184de4b304ac97, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4166240879434695476, guid: 972224ed9e0e75e47b184de4b304ac97, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4166240879434695476, guid: 972224ed9e0e75e47b184de4b304ac97, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8765199019216383323, guid: 972224ed9e0e75e47b184de4b304ac97, type: 3}
+      propertyPath: m_Name
+      value: Flor Magica
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8765199019216383323, guid: 972224ed9e0e75e47b184de4b304ac97, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1670903667}
+    - targetCorrespondingSourceObject: {fileID: 8765199019216383323, guid: 972224ed9e0e75e47b184de4b304ac97, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1670903666}
+    - targetCorrespondingSourceObject: {fileID: 8765199019216383323, guid: 972224ed9e0e75e47b184de4b304ac97, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1670903665}
+  m_SourcePrefab: {fileID: 100100000, guid: 972224ed9e0e75e47b184de4b304ac97, type: 3}
+--- !u!1 &1670903664 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8765199019216383323, guid: 972224ed9e0e75e47b184de4b304ac97, type: 3}
+  m_PrefabInstance: {fileID: 1670903663}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1670903665
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1670903664}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e764401d8974fe41bc725a68f649fc4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  climbersCanvas: {fileID: 0}
+  climbersGame: {fileID: 0}
+--- !u!114 &1670903666
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1670903664}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b25132f83c688d4ca7fd13d96eb78bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  memoryGame: {fileID: 0}
+  crowTalk: {fileID: 0}
+  tutorial: {fileID: 0}
+  Code: {fileID: 0}
+  climbersGame: {fileID: 1670903665}
+  ingredientName: Magic Flower
+  ingredientSprite: {fileID: 21300000, guid: e0f7ef99c732d1e4e870f7d278ef3b77, type: 3}
+  ingredientRange: 4
+  interactText: {fileID: 0}
+--- !u!136 &1670903667
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1670903664}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Height: 1
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1673452613
 GameObject:
   m_ObjectHideFlags: 0
@@ -18313,3 +18454,4 @@ SceneRoots:
   - {fileID: 736845314}
   - {fileID: 1398586026}
   - {fileID: 1259607131}
+  - {fileID: 1670903663}
