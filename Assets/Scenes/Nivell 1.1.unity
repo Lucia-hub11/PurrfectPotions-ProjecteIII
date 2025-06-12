@@ -5550,6 +5550,81 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.035153937, y: 0.12864049, z: 0.05839421}
   m_Center: {x: -0.00014246236, y: 0.05377316, z: 0.024330914}
+--- !u!1 &266963867
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 266963868}
+  - component: {fileID: 266963870}
+  - component: {fileID: 266963869}
+  m_Layer: 5
+  m_Name: Enfiladissa (64)
+  m_TagString: Wall
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &266963868
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 266963867}
+  m_LocalRotation: {x: 0.002448496, y: 0.004717796, z: 0.7859062, w: 0.61832297}
+  m_LocalPosition: {x: 0, y: 0, z: -2}
+  m_LocalScale: {x: 0.35380393, y: 0.20372738, z: 0.35380393}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2017653010}
+  m_LocalEulerAnglesHint: {x: -0.251, y: 0.555, z: 103.61}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 707, y: -34}
+  m_SizeDelta: {x: 272.2877, y: 658.8354}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &266963869
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 266963867}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 1544ad510d903b84d89ba96a871551b5, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &266963870
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 266963867}
+  m_CullTransparentMesh: 1
 --- !u!1001 &269588010
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9560,6 +9635,81 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.035153937, y: 0.12864049, z: 0.05839421}
   m_Center: {x: -0.00014246236, y: 0.05377316, z: 0.024330914}
+--- !u!1 &480527312
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 480527313}
+  - component: {fileID: 480527315}
+  - component: {fileID: 480527314}
+  m_Layer: 5
+  m_Name: Enfiladissa (67)
+  m_TagString: Wall
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &480527313
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 480527312}
+  m_LocalRotation: {x: 0.0052040727, y: 0.0010818332, z: 0.9757766, w: -0.21870482}
+  m_LocalPosition: {x: 0, y: 0, z: -2}
+  m_LocalScale: {x: 0.35380393, y: 0.20372738, z: 0.35380393}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2017653010}
+  m_LocalEulerAnglesHint: {x: -0.251, y: 0.555, z: 205.265}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 714, y: -334}
+  m_SizeDelta: {x: 272.2877, y: 658.8354}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &480527314
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 480527312}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 1544ad510d903b84d89ba96a871551b5, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &480527315
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 480527312}
+  m_CullTransparentMesh: 1
 --- !u!1 &482981095 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7381414124010444914, guid: 21ca93ac8fa6b411a9626b67a1341d1f, type: 3}
@@ -10915,6 +11065,81 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 2075929177}
   m_SourcePrefab: {fileID: 100100000, guid: f101c599e7fd21e4c979ac0e993305d6, type: 3}
+--- !u!1 &554610038
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 554610039}
+  - component: {fileID: 554610041}
+  - component: {fileID: 554610040}
+  m_Layer: 5
+  m_Name: Enfiladissa (70)
+  m_TagString: Wall
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &554610039
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 554610038}
+  m_LocalRotation: {x: 0.004131416, y: 0.0033442716, z: 0.9676401, w: 0.25227848}
+  m_LocalPosition: {x: 0, y: 0, z: -1}
+  m_LocalScale: {x: 0.35380393, y: 0.20372738, z: 0.35380393}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2017653010}
+  m_LocalEulerAnglesHint: {x: -0.251, y: 0.555, z: 150.774}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 27, y: 408}
+  m_SizeDelta: {x: 272.2877, y: 658.8354}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &554610040
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 554610038}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 1544ad510d903b84d89ba96a871551b5, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &554610041
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 554610038}
+  m_CullTransparentMesh: 1
 --- !u!1 &556786450 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: f101c599e7fd21e4c979ac0e993305d6, type: 3}
@@ -11367,6 +11592,81 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 1049413534}
   m_SourcePrefab: {fileID: 100100000, guid: f101c599e7fd21e4c979ac0e993305d6, type: 3}
+--- !u!1 &575294856
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 575294857}
+  - component: {fileID: 575294859}
+  - component: {fileID: 575294858}
+  m_Layer: 5
+  m_Name: Enfiladissa (63)
+  m_TagString: Wall
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &575294857
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 575294856}
+  m_LocalRotation: {x: -0.00036644636, y: 0.0053026825, z: 0.34895128, w: 0.9371258}
+  m_LocalPosition: {x: 0, y: 0, z: -2.0919}
+  m_LocalScale: {x: 0.7894577, y: 0.3467995, z: 0.8805899}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2017653010}
+  m_LocalEulerAnglesHint: {x: -0.251, y: 0.555, z: 40.846}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -64.93811, y: 316.39227}
+  m_SizeDelta: {x: 310.9131, y: 704.8804}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &575294858
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 575294856}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 1544ad510d903b84d89ba96a871551b5, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &575294859
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 575294856}
+  m_CullTransparentMesh: 1
 --- !u!1 &577554458
 GameObject:
   m_ObjectHideFlags: 0
@@ -12044,8 +12344,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 50.64}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 697.09766, y: 116.98007}
-  m_SizeDelta: {x: 272.2877, y: 658.8354}
+  m_AnchoredPosition: {x: 690, y: 78}
+  m_SizeDelta: {x: 272.2877, y: 627.9171}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &602938637
 MonoBehaviour:
@@ -12479,6 +12779,81 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.035153948, y: 0.1286405, z: 0.058394197}
   m_Center: {x: -0.00014246913, y: 0.053773135, z: 0.024330914}
+--- !u!1 &628248923
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 628248924}
+  - component: {fileID: 628248926}
+  - component: {fileID: 628248925}
+  m_Layer: 5
+  m_Name: Enfiladissa (61)
+  m_TagString: Wall
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &628248924
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 628248923}
+  m_LocalRotation: {x: -0, y: -0, z: 0.9996674, w: 0.025791688}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.8409418, y: 0.48423114, z: 0.8409418}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2017653010}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 177.044}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -246, y: 347}
+  m_SizeDelta: {x: 248.9422, y: 570.439}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &628248925
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 628248923}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: b49ebd91a46523e42adb1571fc2664eb, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &628248926
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 628248923}
+  m_CullTransparentMesh: 1
 --- !u!1 &628254253
 GameObject:
   m_ObjectHideFlags: 0
@@ -14641,6 +15016,81 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.035153948, y: 0.1286405, z: 0.058394197}
   m_Center: {x: -0.00014246913, y: 0.053773165, z: 0.024330914}
+--- !u!1 &736833942
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 736833943}
+  - component: {fileID: 736833945}
+  - component: {fileID: 736833944}
+  m_Layer: 5
+  m_Name: Enfiladissa (72)
+  m_TagString: Wall
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &736833943
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 736833942}
+  m_LocalRotation: {x: 0.0052040727, y: 0.0010818332, z: 0.9757766, w: -0.21870482}
+  m_LocalPosition: {x: 0, y: 0, z: -4}
+  m_LocalScale: {x: 0.35380393, y: 0.20372738, z: 0.35380393}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2017653010}
+  m_LocalEulerAnglesHint: {x: -0.251, y: 0.555, z: 205.265}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 561, y: 376}
+  m_SizeDelta: {x: 313.0288, y: 714.4024}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &736833944
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 736833942}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 1544ad510d903b84d89ba96a871551b5, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &736833945
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 736833942}
+  m_CullTransparentMesh: 1
 --- !u!1 &736845313
 GameObject:
   m_ObjectHideFlags: 0
@@ -14815,7 +15265,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -82.529}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 667.52386, y: 344.81912}
+  m_AnchoredPosition: {x: 676, y: 376}
   m_SizeDelta: {x: 268.7819, y: 914.9499}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &745433750
@@ -16050,7 +16500,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 64.458}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 667.52386, y: 119.11191}
+  m_AnchoredPosition: {x: 659, y: 94}
   m_SizeDelta: {x: 272.2877, y: 658.8354}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &778175506
@@ -17772,6 +18222,81 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.035153937, y: 0.12864049, z: 0.05839421}
   m_Center: {x: -0.00014246236, y: 0.05377316, z: 0.024330914}
+--- !u!1 &864589706
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 864589707}
+  - component: {fileID: 864589709}
+  - component: {fileID: 864589708}
+  m_Layer: 5
+  m_Name: Enfiladissa (62)
+  m_TagString: Wall
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &864589707
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 864589706}
+  m_LocalRotation: {x: -0, y: -0, z: -0.47139078, w: 0.8819245}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.7370553, y: 0.29090062, z: 1.3631995}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2017653010}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -56.249}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -482, y: 324}
+  m_SizeDelta: {x: 268.7819, y: 914.9499}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &864589708
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 864589706}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: c1f51a415a692ad45a32bc0bb693d470, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &864589709
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 864589706}
+  m_CullTransparentMesh: 1
 --- !u!1 &864705547 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: f101c599e7fd21e4c979ac0e993305d6, type: 3}
@@ -19218,6 +19743,81 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.035153937, y: 0.12864049, z: 0.05839421}
   m_Center: {x: -0.00014246236, y: 0.05377316, z: 0.024330914}
+--- !u!1 &937416554
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 937416555}
+  - component: {fileID: 937416557}
+  - component: {fileID: 937416556}
+  m_Layer: 5
+  m_Name: Enfiladissa (58)
+  m_TagString: Wall
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &937416555
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 937416554}
+  m_LocalRotation: {x: -0, y: -0, z: -0.995957, w: 0.089831784}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1.0889868, y: 0.37285855, z: 1.3631995}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2017653010}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -169.692}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -44, y: -360}
+  m_SizeDelta: {x: 102.6503, y: 460.1559}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &937416556
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 937416554}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: c1f51a415a692ad45a32bc0bb693d470, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &937416557
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 937416554}
+  m_CullTransparentMesh: 1
 --- !u!1 &939532167 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: f101c599e7fd21e4c979ac0e993305d6, type: 3}
@@ -20501,6 +21101,81 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.035153937, y: 0.12864049, z: 0.05839421}
   m_Center: {x: -0.00014246236, y: 0.05377316, z: 0.024330914}
+--- !u!1 &1000755132
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1000755133}
+  - component: {fileID: 1000755135}
+  - component: {fileID: 1000755134}
+  m_Layer: 5
+  m_Name: Enfiladissa (73)
+  m_TagString: Wall
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1000755133
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1000755132}
+  m_LocalRotation: {x: -0, y: -0, z: 0.99656194, w: 0.082851335}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.49444428, y: 0.2847109, z: 0.49444428}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2017653010}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 170.495}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -722, y: 241}
+  m_SizeDelta: {x: 296.5007, y: 685.0869}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1000755134
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1000755132}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 1544ad510d903b84d89ba96a871551b5, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1000755135
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1000755132}
+  m_CullTransparentMesh: 1
 --- !u!1 &1002648449 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: f101c599e7fd21e4c979ac0e993305d6, type: 3}
@@ -20763,6 +21438,81 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d117123a723903145a37ceb76824c6c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1008509815
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1008509816}
+  - component: {fileID: 1008509818}
+  - component: {fileID: 1008509817}
+  m_Layer: 5
+  m_Name: Enfiladissa (59)
+  m_TagString: Wall
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1008509816
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1008509815}
+  m_LocalRotation: {x: -0.0024325445, y: 0.0047260416, z: -0.04987233, w: 0.9987415}
+  m_LocalPosition: {x: 0, y: 0, z: -0}
+  m_LocalScale: {x: 0.5965525, y: 0.34350687, z: 0.5965525}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2017653010}
+  m_LocalEulerAnglesHint: {x: -0.251, y: 0.555, z: -5.719}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 154, y: -338}
+  m_SizeDelta: {x: 229.0444, y: 562.1902}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1008509817
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1008509815}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 1544ad510d903b84d89ba96a871551b5, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1008509818
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1008509815}
+  m_CullTransparentMesh: 1
 --- !u!1 &1009090087 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: f101c599e7fd21e4c979ac0e993305d6, type: 3}
@@ -20888,8 +21638,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 58.856}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 608.9244, y: -68.48895}
-  m_SizeDelta: {x: 272.2877, y: 658.8354}
+  m_AnchoredPosition: {x: 608.9244, y: -69.51825}
+  m_SizeDelta: {x: 274.2175, y: 660.8607}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1013250445
 MonoBehaviour:
@@ -22268,6 +23018,81 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 1083340714}
   m_SourcePrefab: {fileID: 100100000, guid: f101c599e7fd21e4c979ac0e993305d6, type: 3}
+--- !u!1 &1073589712
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1073589713}
+  - component: {fileID: 1073589715}
+  - component: {fileID: 1073589714}
+  m_Layer: 5
+  m_Name: Enfiladissa (71)
+  m_TagString: Wall
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1073589713
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1073589712}
+  m_LocalRotation: {x: 0.0052040727, y: 0.0010818332, z: 0.9757766, w: -0.21870482}
+  m_LocalPosition: {x: 0, y: 0, z: 3}
+  m_LocalScale: {x: 0.35380393, y: 0.20372738, z: 0.35380393}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2017653010}
+  m_LocalEulerAnglesHint: {x: -0.251, y: 0.555, z: 205.265}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 61, y: 393}
+  m_SizeDelta: {x: 272.2877, y: 658.8354}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1073589714
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1073589712}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 1544ad510d903b84d89ba96a871551b5, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1073589715
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1073589712}
+  m_CullTransparentMesh: 1
 --- !u!1001 &1075578774
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -24271,6 +25096,81 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 1640812781}
   m_SourcePrefab: {fileID: 100100000, guid: f101c599e7fd21e4c979ac0e993305d6, type: 3}
+--- !u!1 &1140331343
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1140331344}
+  - component: {fileID: 1140331346}
+  - component: {fileID: 1140331345}
+  m_Layer: 5
+  m_Name: Enfiladissa (66)
+  m_TagString: Wall
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1140331344
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1140331343}
+  m_LocalRotation: {x: 0.0052040727, y: 0.0010818332, z: 0.9757766, w: -0.21870482}
+  m_LocalPosition: {x: 0, y: 0, z: -2}
+  m_LocalScale: {x: 0.35380393, y: 0.20372738, z: 0.35380393}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2017653010}
+  m_LocalEulerAnglesHint: {x: -0.251, y: 0.555, z: 205.265}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 747, y: -186}
+  m_SizeDelta: {x: 272.2877, y: 658.8354}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1140331345
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1140331343}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 1544ad510d903b84d89ba96a871551b5, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1140331346
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1140331343}
+  m_CullTransparentMesh: 1
 --- !u!1 &1154104953 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: f101c599e7fd21e4c979ac0e993305d6, type: 3}
@@ -26136,15 +27036,15 @@ RectTransform:
   m_GameObject: {fileID: 1273570568}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.308436, y: 0.7727019, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 0.086022, y: 0.086022, z: 0.086022}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 2017653010}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 740.62, y: 198.19}
-  m_SizeDelta: {x: 424.51, y: 283.31}
+  m_AnchoredPosition: {x: 714, y: 228}
+  m_SizeDelta: {x: 2048, y: 2048}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1273570570
 MonoBehaviour:
@@ -29800,6 +30700,81 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1434412266}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1435085452
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1435085453}
+  - component: {fileID: 1435085455}
+  - component: {fileID: 1435085454}
+  m_Layer: 5
+  m_Name: Enfiladissa (68)
+  m_TagString: Wall
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1435085453
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1435085452}
+  m_LocalRotation: {x: 0.00528369, y: -0.00057909737, z: 0.8604511, w: -0.5095053}
+  m_LocalPosition: {x: 0, y: 0, z: -2}
+  m_LocalScale: {x: 0.35380393, y: 0.20372738, z: 0.35380393}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2017653010}
+  m_LocalEulerAnglesHint: {x: -0.251, y: 0.555, z: 241.261}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 751, y: -314}
+  m_SizeDelta: {x: 272.2877, y: 658.8354}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1435085454
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1435085452}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 1544ad510d903b84d89ba96a871551b5, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1435085455
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1435085452}
+  m_CullTransparentMesh: 1
 --- !u!1001 &1439630294
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -31449,6 +32424,81 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 482981099}
   m_SourcePrefab: {fileID: 100100000, guid: 21ca93ac8fa6b411a9626b67a1341d1f, type: 3}
+--- !u!1 &1530728302
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1530728303}
+  - component: {fileID: 1530728305}
+  - component: {fileID: 1530728304}
+  m_Layer: 5
+  m_Name: Enfiladissa (69)
+  m_TagString: Wall
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1530728303
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1530728302}
+  m_LocalRotation: {x: 0.0052040727, y: 0.0010818332, z: 0.9757766, w: -0.21870482}
+  m_LocalPosition: {x: 0, y: 0, z: -1.0757}
+  m_LocalScale: {x: 0.35380393, y: 0.20372738, z: 0.35380393}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2017653010}
+  m_LocalEulerAnglesHint: {x: -0.251, y: 0.555, z: 205.265}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 200.10144, y: 385.19482}
+  m_SizeDelta: {x: 313.0288, y: 714.4024}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1530728304
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1530728302}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 1544ad510d903b84d89ba96a871551b5, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1530728305
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1530728302}
+  m_CullTransparentMesh: 1
 --- !u!1 &1531183176 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: f101c599e7fd21e4c979ac0e993305d6, type: 3}
@@ -31694,8 +32744,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 199.941}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -376.3158, y: 253.41699}
-  m_SizeDelta: {x: 279.7995, y: 641.147}
+  m_AnchoredPosition: {x: -394.84265, y: 277.0902}
+  m_SizeDelta: {x: 263.2549, y: 772.522}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1541724392
 MonoBehaviour:
@@ -33930,6 +34980,81 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 500, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &1652051871
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1652051872}
+  - component: {fileID: 1652051874}
+  - component: {fileID: 1652051873}
+  m_Layer: 5
+  m_Name: Enfiladissa (60)
+  m_TagString: Wall
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1652051872
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1652051871}
+  m_LocalRotation: {x: 0.0045172395, y: 0.0028012986, z: 0.9915945, w: 0.12927553}
+  m_LocalPosition: {x: 0, y: 0, z: -1}
+  m_LocalScale: {x: 0.88686, y: 0.51067173, z: 0.88686}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2017653010}
+  m_LocalEulerAnglesHint: {x: -0.251, y: 0.555, z: 165.143}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 225, y: 322}
+  m_SizeDelta: {x: 236.5072, y: 535.0867}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1652051873
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1652051871}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 1544ad510d903b84d89ba96a871551b5, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1652051874
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1652051871}
+  m_CullTransparentMesh: 1
 --- !u!1 &1653592602 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: f101c599e7fd21e4c979ac0e993305d6, type: 3}
@@ -36534,6 +37659,81 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!1 &1768420917
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1768420918}
+  - component: {fileID: 1768420920}
+  - component: {fileID: 1768420919}
+  m_Layer: 5
+  m_Name: Enfiladissa (57)
+  m_TagString: Wall
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1768420918
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1768420917}
+  m_LocalRotation: {x: -0, y: -0, z: 0.7024543, w: 0.71172893}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.49444428, y: 0.2847109, z: 0.49444428}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2017653010}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 89.248}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -630, y: -390}
+  m_SizeDelta: {x: 279.7995, y: 641.147}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1768420919
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1768420917}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 1544ad510d903b84d89ba96a871551b5, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1768420920
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1768420917}
+  m_CullTransparentMesh: 1
 --- !u!1 &1772489598 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: f101c599e7fd21e4c979ac0e993305d6, type: 3}
@@ -41391,6 +42591,8 @@ RectTransform:
   m_Children:
   - {fileID: 1872861702}
   - {fileID: 798721122}
+  - {fileID: 1768420918}
+  - {fileID: 1000755133}
   - {fileID: 1024432013}
   - {fileID: 191070963}
   - {fileID: 1861603831}
@@ -41413,6 +42615,9 @@ RectTransform:
   - {fileID: 23517988}
   - {fileID: 353185803}
   - {fileID: 1002684662}
+  - {fileID: 1652051872}
+  - {fileID: 554610039}
+  - {fileID: 1073589713}
   - {fileID: 1369867027}
   - {fileID: 1867474463}
   - {fileID: 1784186625}
@@ -41427,8 +42632,17 @@ RectTransform:
   - {fileID: 1470829085}
   - {fileID: 829292454}
   - {fileID: 263353165}
+  - {fileID: 1008509816}
   - {fileID: 335636711}
+  - {fileID: 266963868}
+  - {fileID: 2105303588}
+  - {fileID: 1140331344}
+  - {fileID: 1530728303}
+  - {fileID: 736833943}
+  - {fileID: 480527313}
+  - {fileID: 1435085453}
   - {fileID: 934949728}
+  - {fileID: 575294857}
   - {fileID: 155641060}
   - {fileID: 1013250444}
   - {fileID: 602938636}
@@ -41436,6 +42650,7 @@ RectTransform:
   - {fileID: 1404880234}
   - {fileID: 563594134}
   - {fileID: 75576261}
+  - {fileID: 628248924}
   - {fileID: 1541724391}
   - {fileID: 2109858566}
   - {fileID: 2133541651}
@@ -41443,8 +42658,10 @@ RectTransform:
   - {fileID: 1614333821}
   - {fileID: 152137526}
   - {fileID: 1854386738}
+  - {fileID: 937416555}
   - {fileID: 1824787397}
   - {fileID: 705198339}
+  - {fileID: 864589707}
   - {fileID: 331254262}
   - {fileID: 1273570569}
   - {fileID: 966788590}
@@ -43669,6 +44886,81 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 1862143213}
   m_SourcePrefab: {fileID: 100100000, guid: f101c599e7fd21e4c979ac0e993305d6, type: 3}
+--- !u!1 &2105303587
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2105303588}
+  - component: {fileID: 2105303590}
+  - component: {fileID: 2105303589}
+  m_Layer: 5
+  m_Name: Enfiladissa (65)
+  m_TagString: Wall
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2105303588
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2105303587}
+  m_LocalRotation: {x: 0.0052040727, y: 0.0010818332, z: 0.9757766, w: -0.21870482}
+  m_LocalPosition: {x: 0, y: 0, z: -2}
+  m_LocalScale: {x: 0.35380393, y: 0.20372738, z: 0.35380393}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2017653010}
+  m_LocalEulerAnglesHint: {x: -0.251, y: 0.555, z: 205.265}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 755, y: -104}
+  m_SizeDelta: {x: 272.2877, y: 658.8354}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2105303589
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2105303587}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 1544ad510d903b84d89ba96a871551b5, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &2105303590
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2105303587}
+  m_CullTransparentMesh: 1
 --- !u!1001 &2108340178
 PrefabInstance:
   m_ObjectHideFlags: 0
