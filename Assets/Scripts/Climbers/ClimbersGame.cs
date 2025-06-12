@@ -1,12 +1,13 @@
-using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.EventSystems;
 using UnityEngine.UI;
+using UnityEngine.EventSystems;
+using System;
 
-[RequireComponent(typeof(GraphicRaycaster))]
 public class ClimbersGame : MonoBehaviour
 {
+
     [SerializeField] private UICursor uiCursor;
     [SerializeField] private RectTransform startPoint;
     [SerializeField] private string wallTag = "Wall";
@@ -19,7 +20,6 @@ public class ClimbersGame : MonoBehaviour
     private PointerEventData pointerData;
     private List<RaycastResult> results = new List<RaycastResult>();
     private bool isPlaying = false;
-
 
     private void Awake()
     {
@@ -70,7 +70,6 @@ public class ClimbersGame : MonoBehaviour
             if (hit.gameObject.CompareTag(finishTag))
             {
                 Debug.Log("Meta alcanzada!");
-                
                 isPlaying = false;
                 onWin?.Invoke();
                 return;

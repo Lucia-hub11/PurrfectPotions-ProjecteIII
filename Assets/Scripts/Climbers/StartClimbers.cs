@@ -1,6 +1,7 @@
 using System;
 using UnityEngine;
 using UnityEngine.UI;
+using System.Collections;
 
 public class StartClimbers : MonoBehaviour
 {
@@ -8,6 +9,11 @@ public class StartClimbers : MonoBehaviour
     [SerializeField] private ClimbersGame climbersLogic;  // El script que hace el raycast
 
     public Ingredient currentIngredient;
+
+    public GameObject beforeEnfiladisses;
+    public float beforeDuration = 2f;
+
+    bool inClimbers = false;
 
     private void Awake()
     {
@@ -26,28 +32,43 @@ public class StartClimbers : MonoBehaviour
 
     private void Start()
     {
-        if (climbersCanvas != null)
-            climbersCanvas.enabled = false;
+        climbersCanvas.enabled = false;   
+        beforeEnfiladisses.SetActive(false);
     }
 
     public void JocClimbers(Ingredient ingredient)
     {
+        if (inClimbers) return;      // ja estem jugant, ignorem més peticions
+        inClimbers = true;
+
         currentIngredient = ingredient;
 
+        StartCoroutine(ShowBeforeAndStart());
+    }
+    private IEnumerator ShowBeforeAndStart()
+    {
+        beforeEnfiladisses.SetActive(true);
+        // Esperem encara que timeScale = 0 després
+        yield return new WaitForSecondsRealtime(beforeDuration);
+
+        // Amaguem la intro
+        beforeEnfiladisses.SetActive(false);
         // COMPROBACIONES  
         if (climbersCanvas == null)
         {
             Debug.LogError("[StartClimbers] climbersCanvas NO está asignado.");
-            return;
+            yield break;
         }
         if (climbersLogic == null)
         {
             Debug.LogError("[StartClimbers] climbersLogic NO está asignado.");
-            return;
+            yield break;
         }
 
         // 1) Pausar el juego
         Time.timeScale = 0f;
+
+
         // 2) Mostrar UI
         climbersCanvas.enabled = true;
 
@@ -60,6 +81,13 @@ public class StartClimbers : MonoBehaviour
             var pc = player.GetComponent<PlayerController>();
             if (pc != null) pc.enabled = false;
         }
+
+
+        //AFEGIT ARA
+        // Si per alguna raó ja hi havia subscrit el nostre handler, el traiem
+        climbersLogic.onWin -= HandleWin;
+        climbersLogic.onQuit -= HandleQuit;
+        //AFEGIT ARA
 
         // 4) Suscribir y arrancar minijuego
         climbersLogic.onWin += HandleWin;
@@ -76,11 +104,13 @@ public class StartClimbers : MonoBehaviour
 
     private void HandleQuit()
     {
+        
         EndClimbers();
     }
 
     private void EndClimbers()
     {
+        inClimbers = false;
         //Restaurar tiempo y ocultar UI
         Time.timeScale = 1f;
         climbersCanvas.enabled = false;
