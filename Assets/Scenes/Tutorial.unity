@@ -703,7 +703,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3537989752496346583, guid: 933a3176c9fd38e40b16d93149d481cc, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 499304357}
   m_SourcePrefab: {fileID: 100100000, guid: 933a3176c9fd38e40b16d93149d481cc, type: 3}
 --- !u!1001 &38678638
 PrefabInstance:
@@ -916,6 +919,11 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 182829170}
   m_SourcePrefab: {fileID: 100100000, guid: f101c599e7fd21e4c979ac0e993305d6, type: 3}
+--- !u!1 &53597086 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3537989752496346583, guid: 933a3176c9fd38e40b16d93149d481cc, type: 3}
+  m_PrefabInstance: {fileID: 35174484}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &57884890
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8203,6 +8211,7 @@ GameObject:
   - component: {fileID: 466581586}
   - component: {fileID: 466581585}
   - component: {fileID: 466581587}
+  - component: {fileID: 466581588}
   m_Layer: 0
   m_Name: Poma
   m_TagString: Ingredient
@@ -8256,6 +8265,29 @@ MonoBehaviour:
   ingredientSprite: {fileID: 21300000, guid: 630473b77993a2c45bd98afceab26f0b, type: 3}
   ingredientRange: 4
   interactText: {fileID: 499116126}
+--- !u!136 &466581588
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 466581582}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.10242367
+  m_Height: 0.21400937
+  m_Direction: 1
+  m_Center: {x: -0.0059218407, y: -0.005806133, z: 0}
 --- !u!1001 &467737268
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8952,6 +8984,27 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4202604212375523181, guid: 933a3176c9fd38e40b16d93149d481cc, type: 3}
   m_PrefabInstance: {fileID: 35174484}
   m_PrefabAsset: {fileID: 0}
+--- !u!65 &499304357
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 53597086}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.7082946, y: 1, z: 1.4087894}
+  m_Center: {x: 0.0032742333, y: 0, z: 0.0023116907}
 --- !u!1 &499902558 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: f101c599e7fd21e4c979ac0e993305d6, type: 3}
@@ -10808,6 +10861,7 @@ GameObject:
   - component: {fileID: 602967233}
   - component: {fileID: 602967232}
   - component: {fileID: 602967234}
+  - component: {fileID: 602967235}
   m_Layer: 0
   m_Name: Galleda
   m_TagString: Object
@@ -10861,6 +10915,29 @@ MonoBehaviour:
   ingredientSprite: {fileID: 21300000, guid: 68952d39b076bfc48afd0c1f8af12fe7, type: 3}
   ingredientRange: 4
   interactText: {fileID: 1109276682}
+--- !u!136 &602967235
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 602967229}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.999202
+  m_Height: 5.972804
+  m_Direction: 1
+  m_Center: {x: 0.068256, y: 0.9643589, z: 0}
 --- !u!1 &604254214 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: f101c599e7fd21e4c979ac0e993305d6, type: 3}
