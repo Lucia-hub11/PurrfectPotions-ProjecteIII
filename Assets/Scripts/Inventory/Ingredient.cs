@@ -129,6 +129,13 @@ public class Ingredient : MonoBehaviour
                 
                 interactText.SetActive(false);
             }
+            else if (ingredientName=="Aigua")
+            {
+                if(galledaPou ==true)
+                {
+                    CollectIngredient();
+                }
+            }
             else
             {
                 CollectIngredient();
