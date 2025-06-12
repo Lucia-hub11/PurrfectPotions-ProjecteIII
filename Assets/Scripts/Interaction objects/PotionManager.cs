@@ -27,12 +27,12 @@ public class PotionManager : MonoBehaviour
             (contadorIngredients == 4 && SceneManager.GetActiveScene().name == "Nivell 1"))
         {
             PotionCanvas.SetActive(true);
+            potionCanvasSound.Play();
             BottomIngredientCanvas.SetActive(false);
             CanvasHints.SetActive(false);
             InventoriCanvas.SetActive(false);
             CanvasBotons.SetActive(false);
             cameraSwitcher.PauseStaticMusic();
-            potionCanvasSound.Play();
         }
     }
 }
