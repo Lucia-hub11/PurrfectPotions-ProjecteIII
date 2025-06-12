@@ -7,7 +7,7 @@ public class StartClimbers : MonoBehaviour
     [SerializeField] private Canvas climbersCanvas;       // El Canvas que contiene ClimbersGame
     [SerializeField] private ClimbersGame climbersLogic;  // El script que hace el raycast
 
-    private Ingredient currentIngredient;
+    public Ingredient currentIngredient;
 
     private void Awake()
     {

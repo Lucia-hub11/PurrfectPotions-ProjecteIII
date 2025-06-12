@@ -5,16 +5,16 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Play.unity
     guid: 943b2f55c8b6349469f3a7644bb49d0b
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Comic.unity
     guid: 592e6b6b163bdd345b2c958449b4553a
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Tutorial.unity
     guid: f30253fe3f62b574cb67751dc520c2ba
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Nivell 1.unity
     guid: cde89840ff26da144b27f1d3fb8d0cae
   - enabled: 0
@@ -26,5 +26,8 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/Nora.unity
     guid: 2b669e9a853f75642a85a2df17e1690e
+  - enabled: 1
+    path: Assets/Scenes/Nivell 1.1.unity
+    guid: 230000df080f977478fd8ea769b3f456
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 646964c6f41c79f45bd169279a6160f7, type: 2}

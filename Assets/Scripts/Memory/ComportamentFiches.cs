@@ -58,7 +58,7 @@ public class ComportamentFiches : MonoBehaviour
             card.Show();
         }
 
-        yield return new WaitForSeconds(10f);
+        yield return new WaitForSeconds(12f);
 
         foreach (var card in allCards)
         {
