@@ -26,6 +26,7 @@ public class PotionManager : MonoBehaviour
         if ((contadorIngredients == 3 && SceneManager.GetActiveScene().name == "Tutorial") ||
             (contadorIngredients == 4 && SceneManager.GetActiveScene().name == "Nivell 1"))
         {
+            Debug.Log("poción completada");
             PotionCanvas.SetActive(true);
             potionCanvasSound.Play();
             BottomIngredientCanvas.SetActive(false);
