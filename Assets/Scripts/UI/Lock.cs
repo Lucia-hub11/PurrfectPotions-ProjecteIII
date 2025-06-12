@@ -56,7 +56,7 @@ public class Lock : MonoBehaviour
         Debug.Log("Unlocked");
         cofreAnimator.SetBool("OpenCofre", true);
         
-        diamondAnimator.SetBool("DiamondFloat", true);
+        diamondAnimator.SetBool("OnDiamond", true);
         Destroy(candau);
 
         Invoke("WaitForDiamond", 2f);
