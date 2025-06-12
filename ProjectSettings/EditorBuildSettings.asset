@@ -26,7 +26,7 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/Nora.unity
     guid: 2b669e9a853f75642a85a2df17e1690e
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Nivell 1.1.unity
     guid: 230000df080f977478fd8ea769b3f456
   m_configObjects:
