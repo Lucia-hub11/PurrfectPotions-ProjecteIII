@@ -7649,7 +7649,7 @@ MonoBehaviour:
   CanvasHints: {fileID: 1454847789}
   InventoriCanvas: {fileID: 1864136785}
   CanvasBotons: {fileID: 1726947248}
-  cameraSwitcher: {fileID: 0}
+  cameraSwitcher: {fileID: 1400798653}
   potionCanvasSound: {fileID: 414689312}
 --- !u!1 &418741055 stripped
 GameObject:
@@ -8129,6 +8129,7 @@ Transform:
   - {fileID: 1717190473}
   - {fileID: 814534393}
   - {fileID: 499304356}
+  - {fileID: 602967233}
   m_Father: {fileID: 1783497716}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &465036263
@@ -9038,7 +9039,6 @@ Transform:
   - {fileID: 1658351514}
   - {fileID: 1687094512}
   - {fileID: 862542757}
-  - {fileID: 602967233}
   - {fileID: 466581586}
   m_Father: {fileID: 1783497716}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -10832,12 +10832,12 @@ Transform:
   m_GameObject: {fileID: 602967229}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -984.55, y: -539.71, z: -39.02}
+  m_LocalPosition: {x: -37.890015, y: -0.15002441, z: -32.8}
   m_LocalScale: {x: 0.8485489, y: 0.39691722, z: 0.8485489}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1526924214}
-  m_Father: {fileID: 501929402}
+  m_Father: {fileID: 462578101}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &602967234
 MonoBehaviour:
@@ -31217,7 +31217,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 8b366d29ad7da254ba93af7fc0a4f2cd, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
