@@ -29406,9 +29406,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09e199c9a445ddc409d0c1b027e8634b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
+  player: {fileID: 1103029117}
   destination: {fileID: 950817564}
-  playerGO: {fileID: 0}
+  playerGO: {fileID: 1103029116}
   IngredientsInventory: {fileID: 1160722631}
   ObjectsInventory: {fileID: 279404086}
   cameraSwitcher: {fileID: 1400798653}
@@ -32271,7 +32271,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6ce86260e2ea5a43a21a235ef7a167f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
+  target: {fileID: 1103029117}
   offset: {x: 0, y: 5, z: -7}
 --- !u!81 &1704087474
 AudioListener:
@@ -38373,9 +38373,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2deea405df900724f9b5fc9732dbb02e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
+  player: {fileID: 1103029117}
   destination: {fileID: 2005259755}
-  playerGO: {fileID: 0}
+  playerGO: {fileID: 1103029116}
   IngredientsInventory: {fileID: 1160722631}
   ObjectsInventory: {fileID: 279404086}
   tutorial: {fileID: 1454847795}
